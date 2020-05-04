@@ -1,0 +1,16 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: triptych-grotesque;
+    src: url('./TriptychTest-Grotesque.otf');
+}
+
+@font-face {
+    font-family: triptych-italick;
+    src: url('./TriptychTest-Italick.otf');
+}
+
+@font-face {
+    font-family: triptych-roman;
+    src: url('./TriptychTest-Roman.otf');
+}

@@ -1,0 +1,17 @@
+.readings {
+  font-size: 2rem;
+}
+
+.readings li {
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.readings ul li:hover {
+  background: #D62CFF;
+  color: white;
+}
+
+.readings ul li:not(:last-of-type) {
+  border-bottom: 1px dashed black;
+}

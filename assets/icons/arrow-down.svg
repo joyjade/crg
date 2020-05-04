@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>arrow-in-box</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-in-box" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="2">
+        <g id="download" transform="translate(12.000000, 11.000000)" stroke="#000000">
+            <g id="Group">
+                <path d="M0.011115814,10.9434029 L12.0111158,22.9434029 L24.0111158,10.9434029" id="Path-2" stroke-width="2"></path>
+                <line x1="12" y1="1" x2="12" y2="25" id="Path" stroke-width="2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

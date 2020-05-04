@@ -1,0 +1,35 @@
+
+.home {
+  padding: 1rem 3rem 1rem 1.5rem;
+}
+.underline {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.35;
+}
+
+aside {
+  position: relative;
+}
+
+.hidden-image {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width:100%;
+  height:100%;
+  opacity: 0;
+}
+.hidden-image img {
+  width: auto;
+  height: inherit;
+  max-height: 90%;
+}
+
+@media screen and (min-width: 45em) {
+}
