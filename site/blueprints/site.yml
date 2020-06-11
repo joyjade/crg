@@ -1,3 +1,31 @@
 title: Site
-preset: pages
-unlisted: true
+
+
+columns:
+  left:
+    width: 1/2
+    sections: 
+      listed:
+        extends: sections/readings 
+        headline: Published
+        status: listed
+
+  right:
+    width: 1/2
+    sections:
+      drafts:
+        extends: sections/readings 
+        headline: Drafts
+        status: draft
+
+      unlisted:
+        extends: sections/readings 
+        headline: Upcoming
+        status: unlisted
+
+      info:
+        type: pages
+        headline: Info & Meetings
+        status: listed
+    
+      

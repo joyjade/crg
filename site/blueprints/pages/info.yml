@@ -1,5 +1,13 @@
-title: Information
+title: Info
 
 status:
   draft: true
   listed: true
+
+pages: false
+files: false
+
+fields:
+  text:
+    label: Info
+    type: textarea

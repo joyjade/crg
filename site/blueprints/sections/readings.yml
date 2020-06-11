@@ -1,0 +1,7 @@
+type: pages
+headline: Readings
+info: "{{ page.date.toDate('d.m.Y') }}"
+parent: site.find("readings")
+template: reading
+empty: No readings yet
+# sortBy: date asc
