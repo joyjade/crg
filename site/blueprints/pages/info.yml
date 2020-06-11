@@ -1,4 +1,5 @@
 title: Info
+icon: 🖼
 
 status:
   draft: true
@@ -11,3 +12,15 @@ fields:
   text:
     label: Info
     type: textarea
+  email:
+    label: Community Email
+    type: email
+    width: 1/3
+  insta:
+    label: Instagram
+    type: text
+    width: 1/3
+  social:
+    label: Link
+    type: url
+    width: 1/3

@@ -1,5 +1,6 @@
 type: pages
 headline: Readings
+layout: list
 info: "{{ page.date.toDate('d.m.Y') }}"
 parent: site.find("readings")
 template: reading
