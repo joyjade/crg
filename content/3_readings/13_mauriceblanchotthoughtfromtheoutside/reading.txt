@@ -1,4 +1,4 @@
-Title: "Maurice Blanchot: The Thought from the Outside"
+Title: Maurice Blanchot, The Thought from the Outside
 
 ----
 
@@ -6,7 +6,19 @@ Author: Michel Foucault
 
 ----
 
-Published: 
+Translator: Jeffrey Mehlman
+
+----
+
+Subtitle: 
+
+----
+
+Published: 1987
+
+----
+
+Publisher: Zone Books
 
 ----
 
@@ -15,3 +27,11 @@ Text:
 ----
 
 Currently-reading: true
+
+----
+
+Categories: article
+
+----
+
+Tags: 
