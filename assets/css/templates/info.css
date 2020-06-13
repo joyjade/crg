@@ -18,3 +18,12 @@
   margin-bottom: .75rem;
 }
 */
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
