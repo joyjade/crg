@@ -34,18 +34,15 @@ return function($kirby, $pages, $page) {
         } else {
             try {
                 $kirby->email([
-                    'template' => 'emails/email',
-                    'from'     => 'jadeandpearls@gmail.com',
-                    'replyTo'  => $data['email'],
-                    'to'       => 'jadeandpearls@gmail.com',
+                    'from'     => 'info@joy-jade.com',
+                    'to'  => $data['email'],
                     'subject'  => 'HIYA wants to be added to the list!',
-                    'data'     => [
-                        'sender' => 'Jo'
-                    ]
+                    'body'    => 'We will never reply',
                 ]);
 
             } catch (Exception $error) {
                 $alert['error'] = "The form could not be sent";
+                var_dump($error);
             }
 
             // no exception occured, let's send a success message

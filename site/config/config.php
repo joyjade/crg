@@ -6,19 +6,12 @@ return [
         'transport' => [
             'type' => 'smtp',
             'host' => 'localhost',
-            'port' => 25,
-            'security' => false,
+            'port' => 1025,
+            'security' => false
         ]
     ]
     // 'url' => 'http://e50c4148.ngrok.io'
 ];
-
-// MAIL_DRIVER=smtp
-// MAIL_HOST=localhost
-// MAIL_PORT=1025
-// MAIL_USERNAME=null
-// MAIL_PASSWORD=null
-// MAIL_ENCRYPTION=null
 
 // 'type' => 'smtp',
 // 'host' => 'smtp.gmail.com',
