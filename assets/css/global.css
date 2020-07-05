@@ -46,14 +46,13 @@ img {
 }
 
 nav {
-	grid-column: 1
+	grid-column: 1;
 	grid-row: 1;
 	font-size: 2.5rem;
 	display: inline-block;
 	width: auto;	
     height: auto;		
 	padding: 15px 20px;
-
 }
 
 nav div {
