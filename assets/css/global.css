@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
+:focus {
+	outline: none;
+}
+
 body {
 	-webkit-text-size-adjust: 100%;
 	margin: 0.75rem;
@@ -85,7 +89,7 @@ main {
 	border: 2px dotted black;
 }
 
-.triptych-italick{
+.triptych-italick {
 	font-family: triptych-italick;
 	letter-spacing: -0.75px;
 }
@@ -109,30 +113,55 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	letter-spacing: 0.2px;
 }
 
-nav .uppercase {
-	/*text-align: right;*/
-}
-
 .info {
 	padding: 1rem;
 	font-size: 1.5rem;
 }
 
+.button {
+	padding: 0.2rem 0.85rem;
+    border-radius: 0;
+    font-size: 0.9rem;
+    transform: translateY(-12px);
+}
 
+.button:hover {
+	transform: translate(-7px,-14px);
+    box-shadow: 3px 3px black;
+}
 
+/*Email and Signup Form*/
 
+form.subscribe-form {
+	display: flex;
+    width: 700px;
+    margin: 1rem;
+}
 
+.field {
+    margin-bottom: 0.8rem;
+}
 
+.field label {
+	font-size: 1.2rem;
+	margin-right: 0.85rem;
+}
 
+input#name, input#email {
+    border: none;
+    border-bottom: 2px solid blue;
+    flex: 1 1 auto;
+}
 
+.field:nth-of-type(3) {
+    flex: 2;
+}
 
-
-
-
-
-
-
-
+.field {
+    display: flex;
+	flex-flow: row;
+	margin-right: 1.25rem;
+}
 
 
 

@@ -15,8 +15,12 @@ return [
 
 // 'type' => 'smtp',
 // 'host' => 'smtp.gmail.com',
-// 'port' => 587,
+// 'port' => 587, or 465?,
 // 'security' => true,
 // 'auth' => true,
 // 'username' => 'jadeandpearls',
 // 'password' => 'captured4.ever'
+
+// 2-step verification on gmail?
+// You'll need to create an "App Password": 16-digit passcode
+// Generate one with Google

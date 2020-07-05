@@ -36,8 +36,13 @@ return function($kirby, $pages, $page) {
                 $kirby->email([
                     'from'     => 'info@joy-jade.com',
                     'to'  => $data['email'],
-                    'subject'  => 'HIYA wants to be added to the list!',
-                    'body'    => 'We will never reply',
+                    'replyTo' => $data['email'],
+                    'subject'  => 'Signing up to the list',
+                    'template' => 'signup-email', 
+                    'data' => [
+                        'name' => $data['name'],
+                        'email' => $data['email'] 
+                    ]
                 ]);
 
             } catch (Exception $error) {

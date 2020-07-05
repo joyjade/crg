@@ -7,7 +7,7 @@
         <?php if (isset($alert['error'])): ?>
             <div class="alert error"><?= $alert['error'] ?></div>
         <?php endif ?>
-        <form class="subscribe-form" method="post" action="<?= $page->url() ?>">
+        <form class="subscribe-form triptych-italick" method="post" action="<?= $page->url() ?>">
             <div class="honeypot">
                 <label for="website">Website <abbr title="required">*</abbr></label>
                 <input type="website" id="website" name="website">
@@ -26,7 +26,7 @@
                 <input type="email" id="email" name="email" value="<?= $data['email'] ?? '' ?>" required>
                 <?= isset($alert['email']) ? '<span class="alert error">' . html($alert['email']) . '</span>' : '' ?>
             </div>
-            <input class="subscribe-button" type="submit" name="submit" value="Submit">
+            <input class="button triptych" type="submit" name="submit" value="Submit">
         </form>
     <?php endif ?>
 </div>
