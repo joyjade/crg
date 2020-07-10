@@ -1,7 +1,7 @@
 # System files
 # ------------
 
-/site/config/config
+/site/config/config.php
 
 Icon
 .DS_Store
