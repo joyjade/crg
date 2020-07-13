@@ -1,5 +1,4 @@
 /* GLOBAL */
-
 *,
 *:after,
 *:before {
@@ -33,16 +32,19 @@ ul {
 	list-style-type: none;
 }
 
-h1 {
-	font-weight: normal;
-}
-
 strong, b {
   font-weight: 500;
 }
 
 img {
   width: 100%;
+}
+
+.flt {float: left}
+.half {width: 50%}
+.thinpads {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 nav {
@@ -88,6 +90,21 @@ main {
 	border: 2px dotted black;
 }
 
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.35;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
 .triptych-italick {
 	font-family: triptych-italick;
 	letter-spacing: -0.75px;
@@ -112,10 +129,8 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	letter-spacing: 0.2px;
 }
 
-.info {
-	padding: 1rem;
-	font-size: 1.5rem;
-}
+
+/* COMPONENTS */
 
 .button {
 	padding: 0.2rem 0.85rem;
@@ -128,6 +143,50 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	transform: translate(-7px,-14px);
     box-shadow: 3px 3px black;
 }
+
+/* Pages */
+.info {
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.meetings {
+	padding: 1rem;
+}
+
+.meetings h3 {
+    padding-bottom: 0.5rem;
+}
+
+.meetings header {
+	padding-bottom: 2.5rem;
+}
+
+ul.calendar * {
+	font-size: 1.25rem;
+}
+
+ul.calendar li {
+	border-bottom: 1px dashed black;
+	padding: 1rem 0;
+}
+
+ul.calendar header {
+    padding: 0.7rem;
+}
+
+ul.calendar time {
+	display: block;
+	padding-bottom: 1rem;
+}
+
+.event-line {
+	display: flex;
+}
+
+.event-line > div:nth-child(2) { flex: auto }
+
+
 
 /*Email and Signup Form*/
 

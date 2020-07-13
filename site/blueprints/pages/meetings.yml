@@ -1,12 +1,16 @@
-title: Where You Can Find Us
-preset: page
-status:
-  draft: true
-  listed: true
-pages: false
-files: false
+title: Meetings
+preset: pages
+icon: 📅
 
-fields:
-  text:
-    label: Meetings
-    type: textarea
+options:
+  url: false
+  status: false
+  delete: false
+
+drafts:
+  extends: sections/meeting
+  headline: Drafts
+
+listed:
+  extends: sections/meeting
+  headline: Live

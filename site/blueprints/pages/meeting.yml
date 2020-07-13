@@ -1,0 +1,33 @@
+title: Meeting
+preset: page
+pages: false
+icon: 📅
+num: "{{ page.from.toDate('Ymd') }}"
+options: 
+  preview: "{{ page.parent.url }}/#{{ page.slug }}"
+ 
+fields:
+  day:
+    label: Date
+    type: date
+    width: 1/2
+    default: today
+  location:
+    label: Location
+    type: text
+    width: 1/2
+  reading:
+    label: Reading
+    type: select
+    options: query
+    query: 
+      fetch: site.find('readings').children.published
+      title: "{{ page.title }}"
+      value: "{{ page.slug }}"
+  assignment:
+    label: Selection
+    type: text
+  Notes:
+    label: Notes
+    type: textarea
+  

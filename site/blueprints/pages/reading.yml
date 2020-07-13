@@ -1,9 +1,10 @@
 title: Reading
-icon: 📖
+icon: document
 
 status:
       draft: Draft
-      listed: Listed
+      unlisted: Hidden
+      listed: Live
 
 columns: 
   main: 
@@ -25,6 +26,14 @@ columns:
       publisher: 
         type: text
         width: 1/2
+      links:
+        type: structure
+        label: Links
+        fields: 
+          url: 
+            label: URL
+            type: url
+
       text:
         label: Notes
         type: textarea

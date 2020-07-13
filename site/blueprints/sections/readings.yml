@@ -1,8 +1,8 @@
 type: pages
 headline: Readings
 layout: list
-info: "{{ page.date.toDate('d.m.Y') }}"
+text: "{{ page.title }} — {{ page.author }}"
 parent: site.find("readings")
 template: reading
 empty: No readings yet
-# sortBy: date asc
+flip: true

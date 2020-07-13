@@ -6,26 +6,24 @@ columns:
     sections: 
       listed:
         extends: sections/readings 
-        layout: card
-        headline: Published
+        headline: Recent Readings
         status: listed
+        limit: 10
 
   right:
     width: 1/2
     sections:
-      drafts:
-        extends: sections/readings 
-        headline: Drafts
-        status: draft
-
-      unlisted:
-        extends: sections/readings 
-        headline: Upcoming
-        status: unlisted
-
+      pages:
+        type: pages
+        headline: Recent Meetings
+        info: "{{ page.day.toDate('m.d.Y') }}"
+        parent: site.find("meetings")
+        empty: No events yet
+        sortBy: date desc
       info:
         type: pages
-        headline: Info & Meetings
+        headline: Info & Index
         status: listed
+      
     
       

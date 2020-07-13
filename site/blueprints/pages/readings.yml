@@ -1,2 +1,26 @@
 title: Readings
-preset: pages
+type: pages
+icon: 📖
+
+columns:
+  left:
+    width: 2/3
+    sections: 
+      listed:
+        extends: sections/readings 
+        layout: card
+        headline: Live
+        status: listed
+
+  right:
+    width: 1/3
+    sections:
+      drafts:
+        extends: sections/readings 
+        headline: Drafts
+        status: draft
+
+      unlisted:
+        extends: sections/readings 
+        headline: Hidden
+        status: unlisted
