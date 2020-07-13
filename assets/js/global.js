@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 	let titles = document.querySelectorAll('.book-title');
-	let hiddenimage = document.querySelector('.hidden-image');
+	let hiddenimage = document.querySelector('.thumb-image.hidden');
 	let img = hiddenimage.querySelector('img');
 	let noimage = img.src;
 

@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 
-<main class="dotted meetings">
+<main class="<?= $page ?>">
 	<div class="triptych">
 		<header>
 			<h1 class="thinpads"><?= $page->text()->html()?></h1>

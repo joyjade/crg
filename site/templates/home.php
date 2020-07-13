@@ -5,8 +5,8 @@
 		AND $currently_reading = $all_readings->first()): 
 ?>
 
-<main class="dotted">
-	<div class="home triptych">
+<main>
+	<div class="<?= $page ?> triptych">
 		<h1>
 			We meet on Sundays, <span class="underline">the only way we can.</span> 
 				We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
@@ -38,11 +38,7 @@
 	</div>
 </main>
 
-<aside class="dotted">
-	<div class="hidden-image">
-		<img src="<?= $page->image()->url()?>">
-	</div>		
-</aside>
+<?php snippet('aside', ['class' => 'hidden']) ?>
 
 <?php endif ?>
 

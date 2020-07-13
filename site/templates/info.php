@@ -1,7 +1,7 @@
 <?php snippet('nav') ?>
 
-	<main class="dotted">
-		<div class="info triptych">
+	<main>
+		<div class="<?= $page ?> triptych">
 			<p><?= $page-> text() ?></p>
 			<br/>
 			<br/>

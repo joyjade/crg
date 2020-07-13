@@ -11,12 +11,14 @@
 </head>
 
 <body class="grid">
-	<nav class="dotted">
-		<div class="triptych-italick title">
-			<a href="<?= $site->url() ?>"><?= $site->title() ?></a>
+	<nav>
+		<div class="dotted">
+			<div class="triptych-italick title">
+				<a href="<?= $site->url() ?>"><?= $site->title() ?></a>
+			</div>
+			<?php foreach ($site->children()->listed() as $item):?>
+				<div class="triptych uppercase"><?=$item->title()->link()?></div>
+			<?php endforeach ?>
 		</div>
-		<?php foreach ($site->children()->listed() as $item):?>
-			<div class="triptych uppercase"><?=$item->title()->link()?></div>
-		<?php endforeach ?>
 	</nav>
 

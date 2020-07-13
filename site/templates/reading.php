@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 
-<main class="reading dotted">
+<main class="<?= $page ?>">
 	<div class="info triptych">
 			<p><?= $page-> title() ?></p>
 			<p>Author: <?= $page-> author() ?></p>
@@ -32,5 +32,7 @@
 		</div>
 	<?php endif ?>
 </main>
+
+<?php snippet('aside', ['class' => '']) ?>
 
 <?php snippet('footer') ?>

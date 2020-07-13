@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 
-<main class="<?= $page ?> dotted">
+<main class="<?= $page ?>">
 	<ul>
 		<?php foreach ($page->children()->listed()->flip() as $reading): ?>
 		    <li>

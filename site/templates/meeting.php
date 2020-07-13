@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 
-<main class="dotted meetings">
+<main class="<?= $page ?>">
     <a href='<?=$page->parent()->url()?>'>Back to All Meetings and Events</a>
 	<div class="triptych">
 		<h1><?= $page->title()->html() ?></h1>
