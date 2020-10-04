@@ -7,6 +7,11 @@
 	box-sizing: border-box;
 }
 
+::selection {
+	background-color: #D62CFF;
+	color: white;
+  }
+
 :focus {
 	outline: none;
 }
@@ -27,6 +32,7 @@ strong, b {
 img {
   width: 100%;
 }
+
 
 /* LAYOUT */
 
@@ -68,8 +74,32 @@ main {
 	position: relative;
 }
 
+footer {
+	z-index: 10;
+	background-color: white;
+	grid-column: 1/ span 2;
+    grid-row: 2;
+	display: grid;
+	grid-template-columns: 350px 1fr;
+	margin-right: 0.75rem;
+	margin-top: 5px;
+}
+
+footer section {
+	padding: 1rem;
+}
+
+footer > section:nth-child(1) {
+	grid-column: 1 / 2;
+}
+footer > section:nth-child(2) {
+	grid-column: 2 / 3
+}
+
 aside {
 	padding-bottom: 0.75rem;
+	grid-column: 1;
+    grid-row: 2;
 }
 
 aside .dotted {
@@ -78,9 +108,23 @@ aside .dotted {
 	height: 100%;
 }
 
-/* BASIC STYLES */
+.w100 { width: 100%; }
+.w90 { width: 90%; }
+.w80 { width: 80%; }
+.w70 { width: 70%; }
+.w60 { width: 60%; }
+.w50 { width: 50%; }
+.w40 { width: 40%; }
+.w30 { width: 30%; }
+.w20 { width: 20%; }
+.w10 { width: 10%; }
+
+/* STYLES */
+
 .flt {float: left}
 .half {width: 50%}
+.flex {display: flex}
+
 .thinpads {
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -94,14 +138,15 @@ aside .dotted {
 	right: 10px;
 	background-color: white
 }
+
 .arrow:hover {
 	background-color: #D62CFF;
 }
 
-
 .dotted {
 	border: 1px dashed black;
 }
+
 
 /* TYPOGRAPHY */
 
@@ -114,7 +159,15 @@ h1 {
 	line-height: 1.35;
 }
 
+h2 {
+	font-size: 2rem;
+}
+
 h3 {
+	font-size: 1.5rem;	
+}
+
+h4 {
 	font-size: 1.25rem;
 }
 
@@ -177,17 +230,14 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	max-height: 90%;
 }
 
+
 /* Pages */
-.info {
-	padding: 1rem;
-	font-size: 1.5rem;
-}
 
 .meetings {
 	padding: 1rem;
 }
 
-.meetings h3 {
+.meetings h4 {
     padding-bottom: 0.5rem;
 }
 
@@ -220,13 +270,28 @@ ul.calendar time {
 .event-line > div:nth-child(2) { flex: auto }
 
 
+/* Info */
+.info {
+	font-size: 1.2rem;
+	transform: translateY(500px);
+}
+
+.slid-open {
+	transform: translateY(0);
+	transition: transform 800ms ease;
+}
+
+img.slide-close {
+	width: min-content;
+	height: min-content;
+}
 
 /*Email and Signup Form*/
 
 form.subscribe-form {
 	display: flex;
     width: 700px;
-    margin: 1rem;
+	margin: 2rem 0;
 }
 
 .field {
@@ -240,7 +305,7 @@ form.subscribe-form {
 
 input#name, input#email {
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #D62CFF;
     flex: 1 1 auto;
 }
 
@@ -253,6 +318,15 @@ input#name, input#email {
 	flex-flow: row;
 	margin-right: 1.25rem;
 }
+
+.honeypot {
+	position: absolute;
+	left: -9999px;
+  }
+  
+  abbr[title] {
+	text-decoration: none;
+  }
 
 
 

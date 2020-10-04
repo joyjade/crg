@@ -2,21 +2,45 @@
   position: relative;
 }
 
-.info {
-  padding: 1rem;
+.panel {
+  padding: 2rem;
+}
 
+.author {
+	padding-top: 1rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.detail-body {
+  padding-top: 1rem;
+}
+
+.detail-body > div {
+  margin-right: 2rem;
+}
+
+.detail-body h4 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #D62CFF;
+  margin-bottom: 1rem;
+}
+
+.next-button, .prev-button {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  height: 35px;
+  margin: 0.75rem;
 }
 
 .prev-button {
-  position: absolute;
-  bottom: 0;
   left: 0;
-  margin: 1rem;
 }
 
 .next-button {
-  position: absolute;
-  bottom: 0;
   right: 0;
-  margin: 1rem;
 }

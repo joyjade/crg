@@ -7,7 +7,7 @@
 		</header>
 
 		<div class='flt half thinpads'>
-			<h3 class="triptych-italick uppercase">Past</h3>
+			<h4 class="triptych-italick uppercase">Past</h4>
 			<?php 	$pastmtgs = 
 						$page->children()
 						->listed()
@@ -20,7 +20,7 @@
 		</div>	
 		
 		<div class='flt half thinpads'>
-			<h3 class="triptych-italick uppercase">Upcoming</h3>
+			<h4 class="triptych-italick uppercase">Upcoming</h4>
 			<?php 	$upcomingmtgs = 
 						$page->children()
 						->listed()

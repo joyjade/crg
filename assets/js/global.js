@@ -1,28 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-	let titles = document.querySelectorAll('.book-title');
-	let hiddenimage = document.querySelector('.thumb-image.hidden');
-	let img = hiddenimage.querySelector('img');
-	let noimage = img.src;
+document.addEventListener("DOMContentLoaded", function() { 
+	toggleInfo();
+});
 
-	titles.forEach(title => {
-		title.onmouseover = function() {
-			if (title.dataset.src) {
-				img.src = title.dataset.src;
-			} 
-			else {
-				img.src = noimage;
-			}
+function toggleInfo() {
+	let info = document.querySelector('.info');
 
-			hiddenimage.style.opacity = '1';
-			title.style.color = 'white';
-			title.style.backgroundColor = '#D62CFF';
-			
-		};
-		title.onmouseleave = function() {
-			// hiddenimage.style.opacity = '0';
-			title.style.backgroundColor = '';
-			title.style.color = 'black';
-		};
-	})	
+	let openbtn = document.getElementById('info');
+	openbtn.onclick = function(e) {
+		e.preventDefault
+		info.classList.add('slid-open');
+	};
 
-})
+	let closebtn = document.getElementById('slide_close');
+	closebtn.onclick = function(e) {
+		e.preventDefault;
+		info.classList.remove('slid-open');
+	};
+}

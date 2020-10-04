@@ -16,8 +16,12 @@
 			<div class="triptych-italick title">
 				<a href="<?= $site->url() ?>"><?= $site->title() ?></a>
 			</div>
-			<?php foreach ($site->children()->listed() as $item):?>
-				<div class="triptych uppercase"><?=$item->title()->link()?></div>
+			<?php foreach ($site->children()->listed() as $item): ?>
+				<?php if($item == page('info')): ?>
+					<div class="triptych uppercase" id='info'><?=$item->title()?></div>
+				<?php else: ?>
+					<div class="triptych uppercase"><?=$item->title()->link()?></div>
+				<?php endif ?>
 			<?php endforeach ?>
 		</div>
 	</nav>
