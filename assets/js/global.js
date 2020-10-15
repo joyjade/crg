@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { 
-	toggleInfo();
+  toggleInfo();
+  mobileNav();
 });
 
 function toggleInfo() {
@@ -7,8 +8,8 @@ function toggleInfo() {
 
 	let openbtn = document.getElementById('info');
 	openbtn.onclick = function(e) {
-		e.preventDefault
-		info.classList.add('slid-open');
+		e.preventDefault;
+		info.classList.toggle('slid-open');
 	};
 
 	let closebtn = document.getElementById('slide_close');
@@ -16,4 +17,13 @@ function toggleInfo() {
 		e.preventDefault;
 		info.classList.remove('slid-open');
 	};
+}
+
+function mobileNav() {
+  let mnav = document.querySelector('.m-nav');
+  let navarrow = document.getElementById('nav_arrow');
+  navarrow.onclick = function(e) {
+    e.preventDefault;
+    mnav.classList.toggle('show')
+  }
 }

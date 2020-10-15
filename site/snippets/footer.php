@@ -17,7 +17,8 @@
         <div class="flex">
             <p><?= $info-> text() ?></p>
             <a href="#" id="slide_close">
-                <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted">
+                <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted m-hide">
+                <img src="<?= asset('assets/icons/x.svg')->url() ?>" class="slide-close dotted m-show">
             </a>
         </div>
         

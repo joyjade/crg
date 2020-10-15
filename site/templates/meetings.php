@@ -6,7 +6,7 @@
 			<h1 class="thinpads"><?= $page->text()->html()?></h1>
 		</header>
 
-		<div class='flt half thinpads'>
+		<div class='flt w50 thinpads'>
 			<h4 class="triptych-italick uppercase">Past</h4>
 			<?php 	$pastmtgs = 
 						$page->children()
@@ -19,7 +19,7 @@
 			<?php endif ?>
 		</div>	
 		
-		<div class='flt half thinpads'>
+		<div class='flt w50 thinpads'>
 			<h4 class="triptych-italick uppercase">Upcoming</h4>
 			<?php 	$upcomingmtgs = 
 						$page->children()

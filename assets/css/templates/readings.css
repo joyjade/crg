@@ -15,3 +15,13 @@
 .readings ul li:not(:last-of-type) {
   border-bottom: 1px dashed black;
 }
+
+
+@media screen and (max-width: 440px) {
+  .readings {
+    font-size: 1.2rem;
+  }
+  .readings li {
+    padding: 0.75rem 0.5rem;
+  }
+}

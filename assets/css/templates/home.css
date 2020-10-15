@@ -1,10 +1,13 @@
 
 .home {
-  padding: 1.75rem 3rem 1rem 1.5rem;
+  padding: 1.5rem 3rem 1rem 1.75rem;
 }
 .underline {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (max-width: 440px) {
+  .home {
+    padding: 1rem;
+  }
 }

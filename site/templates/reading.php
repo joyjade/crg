@@ -2,7 +2,7 @@
 
 <main class="reading">
 	<div class="panel triptych">
-		<div class="heading">
+		<div class="heading thinpads">
 			<h2>
 				<?= $page-> title() ?>
 				<?php if($page-> subtitle()->isNotEmpty()): ?>
@@ -11,15 +11,15 @@
 			</h2>
 			<h3 class="author triptych-italick"><?= $page-> author() ?></h3>
 		</div>
-		<div class="flex detail-body">
-			<div class="w60">
+		<div class="flex detail-body m-col">
+			<div class="w60 thinpads">
 				<h4> Notes </h4>
 				<p><?= $page->text()?></p>
 				<p><?= $page->links()?></p>
 				
 			</div>
 			
-			<div class="w40">
+			<div class="w40 thinpads">
 				<h4> Details </h4>
 				<?php if( $published = $page-> published()->isNotEmpty() or $page->publisher()->isNotEmpty() ): ?>
 					<p>

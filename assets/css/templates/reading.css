@@ -3,7 +3,7 @@
 }
 
 .panel {
-  padding: 2rem;
+  padding: 1.5rem 1rem;
 }
 
 .author {
@@ -16,10 +16,6 @@
 
 .detail-body {
   padding-top: 1rem;
-}
-
-.detail-body > div {
-  margin-right: 2rem;
 }
 
 .detail-body h4 {
@@ -43,4 +39,14 @@
 
 .next-button {
   right: 0;
+}
+
+@media screen and (max-width: 440px) {
+  .panel {
+    padding: 1.5rem 0;
+  }  
+
+  .next-button, .prev-button {
+    margin: 0;
+  }
 }

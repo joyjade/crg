@@ -1,0 +1,135 @@
+@media screen and (max-width: 440px) {
+  /* LAYOUT */
+  body {
+    min-height: 100vh;
+    padding: 0.5rem;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+      
+  .grid, footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    height: auto;
+    width: auto;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .w100, .w90, .w80, .w70, .w60, .w50, .w40, .w30, .w20, .w10 { width: 100%; }
+
+  .m-col {
+    flex-direction: column;
+  }
+
+  .thinpads {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .m-show {
+    display: block;
+  }
+
+  .m-hide {
+    display: none;
+  }
+
+  /* TYPOGRAPHY */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* NAV */
+  nav {
+    padding: 0;
+    position: sticky;
+    top: 7px;
+    z-index: 1;
+  }
+
+  nav .dotted {
+    padding: 8px 12px;
+    background-color: white;
+  }
+
+  nav .title.triptych-italick {
+    font-size: 1.35rem;
+    padding-bottom: 5px;
+  }
+
+  .m-nav {
+    max-height: 0;
+    opacity: 0;  
+    transition: all 0.25s ease-in;
+  }
+
+  .m-nav.show {
+    max-height: 192px;
+    opacity: 1;
+    transition: max-height 500ms ease-out, opacity 800ms ease-out;
+  }
+
+  #nav_arrow {
+    top: 0;
+    right: 2px;
+    position: absolute;
+  }
+
+  /* PAGES */
+  .meetings {
+    padding: 1rem 0.5rem;
+  }
+
+  /* FOOTER */
+  footer {
+    margin: 0;
+    position: relative;
+    height: 100vh;
+  }
+
+  .info {
+    transform: translateX(-100%);
+    position: absolute;
+    height: 100vh;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .info.slid-open {
+    transform: translateX(0);
+  }
+
+  footer section {
+    width: 100%;
+  }
+
+  footer form.subscribe-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #slide_close {
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    position: absolute;
+  }
+
+  .subscribe-form .button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+
+  .subscribe-form .field {
+    margin-right: 0;
+  }
+}

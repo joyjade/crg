@@ -2,9 +2,9 @@
 *,
 *:after,
 *:before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -69,7 +69,7 @@ main {
 	grid-column: 2;
 	grid-row: 1 / span 2;
 	height: 100vh;;
-    overflow-y: auto;
+	overflow-y: auto;
 	flex: 1;
 	position: relative;
 }
@@ -78,7 +78,7 @@ footer {
 	z-index: 10;
 	background-color: white;
 	grid-column: 1/ span 2;
-    grid-row: 2;
+	grid-row: 2;
 	display: grid;
 	grid-template-columns: 350px 1fr;
 	margin-right: 0.75rem;
@@ -99,7 +99,7 @@ footer > section:nth-child(2) {
 aside {
 	padding-bottom: 0.75rem;
 	grid-column: 1;
-    grid-row: 2;
+	grid-row: 2;
 }
 
 aside .dotted {
@@ -119,10 +119,12 @@ aside .dotted {
 .w20 { width: 20%; }
 .w10 { width: 10%; }
 
+.m-show {
+	display: none;
+}
 /* STYLES */
 
 .flt {float: left}
-.half {width: 50%}
 .flex {display: flex}
 
 .thinpads {
@@ -184,6 +186,7 @@ h4 {
 nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	font-family: triptych-grotesque;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .triptych {
@@ -201,14 +204,14 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 
 .button {
 	padding: 0.2rem 0.85rem;
-    border-radius: 0;
-    font-size: 0.9rem;
-    transform: translateY(-12px);
+	border-radius: 0;
+	font-size: 0.9rem;
+	transform: translateY(-12px);
 }
 
 .button:hover {
 	transform: translate(-7px,-14px);
-    box-shadow: 3px 3px black;
+	box-shadow: 3px 3px black;
 }
 
 .hidden {
@@ -234,11 +237,11 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 /* Pages */
 
 .meetings {
-	padding: 1rem;
+	padding: 1.5rem 1rem;
 }
 
 .meetings h4 {
-    padding-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .meetings header {
@@ -255,7 +258,7 @@ ul.calendar li {
 }
 
 ul.calendar header {
-    padding: 0.7rem;
+	padding: 0.7rem;
 }
 
 ul.calendar time {
@@ -274,6 +277,7 @@ ul.calendar time {
 .info {
 	font-size: 1.2rem;
 	transform: translateY(500px);
+	transition: transform 800ms ease;
 }
 
 .slid-open {
@@ -290,7 +294,7 @@ img.slide-close {
 
 form.subscribe-form {
 	display: flex;
-    width: 700px;
+	width: 700px;
 	margin: 2rem 0;
 }
 
@@ -304,17 +308,17 @@ form.subscribe-form {
 }
 
 input#name, input#email {
-    border: none;
-    border-bottom: 2px solid #D62CFF;
-    flex: 1 1 auto;
+	border: none;
+	border-bottom: 2px solid #D62CFF;
+	flex: 1 1 auto;
 }
 
 .field:nth-of-type(3) {
-    flex: 2;
+	flex: 2;
 }
 
 .field {
-    display: flex;
+	display: flex;
 	flex-flow: row;
 	margin-right: 1.25rem;
 }
@@ -322,11 +326,11 @@ input#name, input#email {
 .honeypot {
 	position: absolute;
 	left: -9999px;
-  }
+}
   
-  abbr[title] {
+abbr[title] {
 	text-decoration: none;
-  }
+}
 
 
 
