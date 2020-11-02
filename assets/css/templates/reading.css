@@ -42,11 +42,24 @@
 }
 
 @media screen and (max-width: 440px) {
+  .reading {
+    order: 2;
+  }
+
   .panel {
     padding: 1.5rem 0;
   }  
 
   .next-button, .prev-button {
     margin: 0;
+  }
+
+  aside {
+    display: block;
+    order: 1;
+  }
+
+  aside .dotted {
+    height: 500px;
   }
 }

@@ -233,46 +233,6 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 	max-height: 90%;
 }
 
-
-/* Pages */
-
-.meetings {
-	padding: 1.5rem 1rem;
-}
-
-.meetings h4 {
-	padding-bottom: 0.5rem;
-}
-
-.meetings header {
-	padding-bottom: 2.5rem;
-}
-
-ul.calendar * {
-	font-size: 1.25rem;
-}
-
-ul.calendar li {
-	border-bottom: 1px dashed black;
-	padding: 1rem 0;
-}
-
-ul.calendar header {
-	padding: 0.7rem;
-}
-
-ul.calendar time {
-	display: block;
-	padding-bottom: 1rem;
-}
-
-.event-line {
-	display: flex;
-}
-
-.event-line > div:nth-child(2) { flex: auto }
-
-
 /* Info */
 .info {
 	font-size: 1.2rem;

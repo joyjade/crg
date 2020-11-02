@@ -10,20 +10,30 @@ fields:
   day:
     label: Date
     type: date
-    width: 1/2
     default: today
+    width: 1/4
+  starttime:
+    width: 1/4
+    label: Start
+    type: time
+    interval: 30
+    default: 19:00
+    notation: 12
+  endtime:
+    width: 1/4
+    label: End
+    type: time
+    interval: 30
+    default: 21:00
+    notation: 12
   location:
     label: Location
     type: text
-    width: 1/2
+    width: 1/4
   reading:
     label: Reading
-    type: select
-    options: query
-    query: 
-      fetch: site.find('readings').children.published
-      title: "{{ page.title }}"
-      value: "{{ page.slug }}"
+    type: pages
+    query: site.find('readings').children.published.flip()
   assignment:
     label: Selection
     type: text

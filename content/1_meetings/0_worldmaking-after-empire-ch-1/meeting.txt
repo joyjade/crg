@@ -6,12 +6,26 @@ Day: 2020-05-10
 
 ----
 
+Starttime: 07:00 pm
+
+----
+
+Endtime: 09:00 pm
+
+----
+
 Location: Zoom
 
 ----
 
-Reading: worldmakingafterempire
+Reading:
+
+- readings/worldmakingafterempire
 
 ----
 
 Assignment: Intro & Chapter 1
+
+----
+
+Notes: 

@@ -6,13 +6,28 @@ Day: 2020-05-17
 
 ----
 
+Starttime: 07:00 pm
+
+----
+
+Endtime: 09:00 pm
+
+----
+
 Location: Zoom
 
 ----
 
-Reading: worldmakingafterempire
+Reading:
+
+- readings/worldmakingafterempire
 
 ----
 
 Assignment: Chapter 2: The Counterrevolutionary Moment
 
+----
+
+Notes: 
+
+----

@@ -6,12 +6,27 @@ Day: 2020-07-19
 
 ----
 
+Starttime: 07:00 pm
+
+----
+
+Endtime: 09:00 pm
+
+----
+
 Location: Zoom
 
 ----
 
-Reading: not-enough
+
+Reading:
+
+- readings/not-enough
 
 ----
 
 Assignment: Chapter 4: Globalizing Welfare after Empire
+
+----
+
+Notes: 

@@ -1,0 +1,57 @@
+
+.meetings {
+	padding: 1.5rem 1rem;
+}
+
+.meetings h4 {
+	padding-bottom: 0.5rem;
+}
+
+.meetings header {
+	padding-bottom: 2.5rem;
+}
+
+ul.calendar li {
+	border-bottom: 1px dashed black;
+	padding: 1rem 0;
+}
+
+ul.calendar h2 {
+  padding-bottom: 1rem;
+}
+
+ul.calendar header {
+	padding: 0.7rem;
+}
+
+ul.calendar time {
+	display: block;
+	padding-bottom: 1rem;
+}
+
+.event-line {
+  font-size: 1.25rem;
+}
+
+.event-line h3 {
+  padding-bottom: 0.75rem;
+}
+
+.event-line h3:hover {
+  font-family: triptych-italick;
+}
+.event-line img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  border: 1px black dashed;
+  padding: 0.25rem;
+  margin-top: 1rem;
+}
+
+.event-line > div:nth-child(2) { flex: auto }
+
+.past-events {
+  padding-top: 1rem;
+}
