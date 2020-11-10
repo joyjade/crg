@@ -1,6 +1,9 @@
 title: Readings
-type: pages
 icon: 📖
+type: pages
+
+options: 
+  status: false
 
 columns:
   left:

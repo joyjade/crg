@@ -1,9 +1,7 @@
 title: Info
 icon: 🖼
-
-status:
-  draft: true
-  listed: true
+options: 
+  status: false
 
 pages: false
 files: false

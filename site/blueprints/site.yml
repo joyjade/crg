@@ -6,24 +6,28 @@ columns:
     sections: 
       listed:
         extends: sections/readings 
-        headline: Recent Readings
-        status: listed
+        headline: Readings
         limit: 10
 
   right:
     width: 1/2
     sections:
       pages:
-        type: pages
-        headline: Recent Meetings
+        headline: Meetings
         info: "{{ page.day.toDate('m.d.Y') }}"
         parent: site.find("meetings")
         empty: No events yet
-        sortBy: date desc
+        sortBy: day desc
+        template: meeting
+
       info:
         type: pages
         headline: Info & Index
         status: listed
+        image: icon
+
+
       
+
     
       
