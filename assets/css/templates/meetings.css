@@ -1,23 +1,30 @@
-
-.meetings {
-	padding: 1.5rem 1rem;
-}
-
 .meetings h4 {
 	padding-bottom: 0.5rem;
 }
 
 .meetings header {
-	padding-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px dashed black;
 }
 
 ul.calendar li {
 	border-bottom: 1px dashed black;
-	padding: 1rem 0;
+  padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 30% 4fr 1fr;
+}
+
+ul.calendar.upcoming li {
+  grid-template-rows: 100px auto 80px;
 }
 
 ul.calendar h2 {
   padding-bottom: 1rem;
+}
+
+.upcoming h3 {
+  grid-row: 1;
+  grid-column: 1;
 }
 
 ul.calendar header {
@@ -26,11 +33,40 @@ ul.calendar header {
 
 ul.calendar time {
 	display: block;
-	padding-bottom: 1rem;
+}
+.upcoming .event-line {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event {
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+.event img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  border: 1px black dashed;
+  padding: 0.25rem;
+  margin: 0 30px;
 }
 
 .event-line {
   font-size: 1.25rem;
+  position: relative;
+  grid-column: 2/4;
+  grid-row: 1;
 }
 
 .event-line h3 {
@@ -40,18 +76,20 @@ ul.calendar time {
 .event-line h3:hover {
   font-family: triptych-italick;
 }
-.event-line img {
-  max-width: 200px;
-  max-height: 200px;
-  height: auto;
-  width: auto;
-  border: 1px black dashed;
-  padding: 0.25rem;
-  margin-top: 1rem;
+.event-line .location {
+  margin-bottom: 0.5rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .event-line > div:nth-child(2) { flex: auto }
 
-.past-events {
-  padding-top: 1rem;
+.past-events h2 {
+  padding: 1.5rem;
+}
+
+.past-events time {
+  white-space: nowrap;
+  width: 290px;
+  font-size: 1.25rem;
 }

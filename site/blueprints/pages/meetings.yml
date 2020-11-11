@@ -1,5 +1,5 @@
 title: Meetings
-preset: pages
+type: pages
 icon: 📅
 
 options:
@@ -7,10 +7,23 @@ options:
   status: false
   delete: false
 
-drafts:
-  extends: sections/meeting
-  headline: Drafts
+columns: 
+  left: 
+    width: 2/3
+    sections: 
+      drafts:
+        extends: sections/meeting
+        headline: Drafts
+        status: drafts
+      listed:
+        extends: sections/meeting
+        headline: Live
+        status: listed
+  right: 
+    width: 1/3
+    fields: 
+      text: 
+        type: textarea
+        
 
-listed:
-  extends: sections/meeting
-  headline: Live
+  

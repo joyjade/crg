@@ -3,10 +3,10 @@
 <main class="<?= $page ?>">
 	<div class="triptych">
 		<header>
-			<h1 class="thinpads"><?= $page->text()->html()?></h1>
+			<h1><?= $page->text()->html()?></h1>
 		</header>
 
-		<div class='w100 thinpads'>
+		<div class='w100'>
 			<?php 	$upcomingmtgs = 
               $page->children()->listed()->filter(function ($child) {
                 return $child->day()->toDate() > time();
@@ -15,14 +15,12 @@
         <?php endif ?>
     </div>
       
-    <div class='past-events thinpads'>
+    <div class='past-events'>
       <h2 class="triptych-italick ">Past</h2>
       <?php 	$pastmtgs = 
-            $page->children()
-            ->listed()
-            ->filter(function ($child) {
+            $page-> children() -> listed() -> filter(function ($child) {
               return $child->day()->toDate() < time();
-            })->limit(7);
+            }) -> sortBy('day', 'desc') -> limit(7);
           if ($pastmtgs->count() > 0): ?>
         <?php snippet('event', ['events' => $pastmtgs])?>		
       <?php endif ?>
@@ -32,4 +30,5 @@
 </main>
   
 </section>
+<?php snippet('aside', ['class' => '']) ?>
 <?php snippet('footer') ?>

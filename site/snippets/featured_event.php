@@ -1,28 +1,28 @@
 <ul class="calendar <?= $classname ?> ">
     <?php foreach ($events as $event): ?>
         <li>
-            <!-- <a href="<?= $event->url() ?>"> -->
-              <h2><?= $event->day()->toDate('F d, Y') ?></h2>
-                <div class="">
-                  <?php foreach( $event-> reading() -> toPages() as $reading): ?> 
-                    <div class="event-line">
-                        <div>
-                          <h3> 
-                            <a href="<?= $reading->url() ?>"> 
-                              <?= $reading->title()?>
-                            </a>
-                          </h3>
-                          <p> → <?= $event->assignment()?></p>
-                        </div>
-                      <div>
-                      <?= $event->location()->html()?></div>
-                      <?php if ($image = $event->image()): ?>
-                          <figure><?= $event->image() ?></figure>
-                      <?php endif ?>
-                    </div>
-                  <?php endforeach ?>
-                </div>
-            <!-- </a> -->
+            <h3><?= $event->day()->toDate('F d, Y') ?></h3>
+            <div class="event">
+              <?php if ($image = $event->image()): ?>
+                <figure>
+                  <a href="<?= $event->url() ?>"><?= $event->image() ?></a>
+                </figure>
+              <?php endif ?>
+            </div>
+            <div class="event-line">
+                <?php foreach( $event-> reading() -> toPages() as $reading): ?> 
+                  <div>
+                    <h3> 
+                      <a href="<?= $reading->url() ?>"> 
+                        <?= $reading->title()?>
+                      </a>
+                    </h3>
+                    <p> → <?= $event->assignment()?></p>
+                  </div>
+                <?php endforeach ?>
+                <p class="location"><?= $event->location()->html()?></p>
+            </div>
+            
         </li>
     <?php endforeach ?>
 </ul>
