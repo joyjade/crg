@@ -1,10 +1,11 @@
 <?php snippet('nav') ?>
+<?php $title = $page-> title(); $slug = $page -> slug() ?>
 
 <main class="reading">
 	<div class="panel triptych">
 		<div class="heading thinpads">
 			<h2>
-				<?= $page-> title() ?>
+				<?=$title?>
 				<?php if($page-> subtitle()->isNotEmpty()): ?>
 					</h2><h2><?= $page-> subtitle() ?>
 				<?php endif ?>
@@ -29,9 +30,22 @@
 						<?php endif ?>
 					</p> 
 				<?php endif ?>
-				<br />
+        <br />
+      
+        <?php $related_events = page('meetings') -> children()->filterBy("reading", '- readings/' . $slug);
+          if ($related_events-> isNotEmpty()):?>
+            <h4> Meetings </h4>
+              <ul> 
+                <?php endif; foreach ($related_events as $related_event):?>
+                  <li>    
+                    <a href="<?= $related_event -> url()?>">
+                      <?= $related_event -> title() ?>
+                    </a>
+                  </li>
+                <?php endforeach ?>
+            </ul>
 
-				<p> Tags </p>
+				<h4> Tags </h4>
 				<p><?= $page->tags()?></p>
 			
 			</div>

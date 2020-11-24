@@ -8,7 +8,7 @@
 }
 
 ul.calendar li {
-	border-bottom: 1px dashed black;
+	border-top: 1px dashed black;
   padding: 1rem 1.5rem;
   display: grid;
   grid-template-columns: 30% 4fr 1fr;

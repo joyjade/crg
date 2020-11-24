@@ -183,7 +183,7 @@ h4 {
 .title.triptych-italick:hover {
 	cursor: pointer;
 }
-nav .triptych.uppercase:hover, nav a[aria-current="page"] {
+nav .triptych.uppercase:hover, nav .active {
 	font-family: triptych-grotesque;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -237,12 +237,14 @@ nav .triptych.uppercase:hover, nav a[aria-current="page"] {
 .info {
 	font-size: 1.2rem;
 	transform: translateY(500px);
-	transition: transform 800ms ease;
+  transition: transform 800ms ease, opacity 800ms ease;
+  opacity: 0;
 }
 
 .slid-open {
 	transform: translateY(0);
-	transition: transform 800ms ease;
+  transition: transform 800ms ease, opacity 800ms ease;
+  opacity: 1;
 }
 
 img.slide-close {

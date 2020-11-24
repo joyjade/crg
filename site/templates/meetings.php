@@ -20,7 +20,7 @@
       <?php 	$pastmtgs = 
             $page-> children() -> listed() -> filter(function ($child) {
               return $child->day()->toDate() < time();
-            }) -> sortBy('day', 'desc') -> limit(7);
+            }) -> sortBy('day', 'desc') -> limit(6);
           if ($pastmtgs->count() > 0): ?>
         <?php snippet('event', ['events' => $pastmtgs])?>		
       <?php endif ?>

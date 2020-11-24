@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<?= js(['assets/js/global.js', '@auto'])?>
-	<?= css(['assets/css/global.css', 'assets/css/mobile.css', 'assets/type/typography.css', '@auto']) ?>
+  <?= css(['assets/css/global.css', 'assets/type/typography.css', '@auto', 'assets/css/mobile.css',]) ?>
+  <?= js(['assets/js/global.js', '@auto'])?>
 </head>
 
 <body class="grid">
@@ -21,7 +21,9 @@
 					<?php if($item == page('info')): ?>
 						<div class="triptych uppercase" id='info'><?=$item->title()?></div>
 					<?php else: ?>
-						<div class="triptych uppercase"><?=$item->title()->link()?></div>
+						<div class="triptych uppercase">
+              <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+            </div>
 					<?php endif ?>
 				<?php endforeach ?>
 			</div>
@@ -33,3 +35,4 @@
 		</div>
 	</nav>
 
+  <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
