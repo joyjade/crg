@@ -32,9 +32,9 @@
 				<?php endif ?>
         <br />
       
-        <?php $related_events = page('meetings') -> children()->filterBy("reading", '- readings/' . $slug);
+        <?php $related_events = page('events') -> children()->filterBy("reading", '- readings/' . $slug);
           if ($related_events-> isNotEmpty()):?>
-            <h4> Meetings </h4>
+            <h4> Events </h4>
               <ul> 
                 <?php endif; foreach ($related_events as $related_event):?>
                   <li>    

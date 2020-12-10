@@ -84,14 +84,14 @@
   }
 
   /* PAGES */
-  .meetings {
+  .events {
     padding:0;
   }
-  .meetings header, .past-events h2, .meetings ul.calendar li {
+  .events header, .past-events h2, .events ul.calendar li {
     padding: 0.75rem;
   }
 
-  .meetings ul.calendar li {
+  .events ul.calendar li {
     display: flex;
     flex-direction: column;
   }

@@ -1,7 +1,7 @@
 type: pages
-headline: Meetings
+headline: Events
 info: "{{ page.day.toDate('m.d.Y') }}"
-parent: site.find("meetings")
-template: meeting
+parent: site.find("events")
+template: event
 empty: No events yet
 sortBy: date desc

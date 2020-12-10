@@ -1,0 +1,32 @@
+Title: portelli_second
+
+----
+
+Day: 2020-12-13
+
+----
+
+Starttime: 07:00 pm
+
+----
+
+Endtime: 09:00 pm
+
+----
+
+Location: 
+
+----
+
+Reading:
+
+- >
+  readings/the-death-of-luigi-trastulli-and-other-stories
+
+----
+
+Assignment: 
+
+----
+
+Notes: 

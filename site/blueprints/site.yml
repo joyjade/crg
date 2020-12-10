@@ -13,12 +13,12 @@ columns:
     width: 1/2
     sections:
       pages:
-        headline: Meetings
+        headline: Events
         info: "{{ page.day.toDate('m.d.Y') }}"
-        parent: site.find("meetings")
+        parent: site.find("events")
         empty: No events yet
         sortBy: day desc
-        template: meeting
+        template: event
 
       info:
         type: pages

@@ -1,4 +1,4 @@
-title: Meetings
+title: Events
 type: pages
 icon: 📅
 
@@ -12,11 +12,11 @@ columns:
     width: 2/3
     sections: 
       drafts:
-        extends: sections/meeting
+        extends: sections/event
         headline: Drafts
         status: drafts
       listed:
-        extends: sections/meeting
+        extends: sections/event
         headline: Live
         status: listed
   right: 
