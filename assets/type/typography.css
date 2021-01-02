@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: triptych-grotesque;
-    src: url('./TriptychTest-Grotesque.otf');
+    src: url('./Triptych-Grotesque.woff');
 }
 
 @font-face {
     font-family: triptych-italick;
-    src: url('./TriptychTest-Italick.otf');
+    src: url('./Triptych-Italick.woff');
 }
 
 @font-face {
     font-family: triptych-roman;
-    src: url('./TriptychTest-Roman.otf');
+    src: url('./Triptych-Roman.woff');
 }

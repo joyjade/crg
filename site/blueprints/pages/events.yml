@@ -1,4 +1,4 @@
-title: Events
+title: Meetings & Events
 type: pages
 icon: 📅
 
@@ -12,18 +12,13 @@ columns:
     width: 2/3
     sections: 
       drafts:
-        extends: sections/event
+        extends: sections/events
         headline: Drafts
         status: drafts
       listed:
-        extends: sections/event
+        extends: sections/events
         headline: Live
         status: listed
-  right: 
-    width: 1/3
-    fields: 
-      text: 
-        type: textarea
         
 
   

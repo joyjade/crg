@@ -12,11 +12,11 @@
             <div class="event-line">
                 <?php foreach( $event-> reading() -> toPages() as $reading): ?> 
                   <div>
-                    <h3> 
+                    <h2> 
                       <a href="<?= $reading->url() ?>"> 
                         <?= $reading->title()?>
                       </a>
-                    </h3>
+                    </h2>
                     <p> → <?= $event->assignment()?></p>
                   </div>
                 <?php endforeach ?>

@@ -7,11 +7,9 @@
         <p>Los Angeles</p>
         <br/>
         <p>Contact</p>
-        <p>⟶ Los Angeles Contemporary Archive</p>
-        <p>709 N. Hill St</p>
-        <p>Los Angeles</p>
+        <p>⟶ <?= Html::email($info->email()) ?></p>
         <br/>
-        <p>Instagram → <a href='<?=$info->social()?>' target="_blank"><?=$info->insta()?></a></p>
+        <p>Instagram <br/> ⟶ <a href='<?=$info->social()?>' target="_blank"><?=$info->insta()?></a></p>
     </section>
     <section>
         <div class="flex">
@@ -26,7 +24,7 @@
         <br/>
         
         <br/>
-        Join the group → <?= Html::email($info->email()) ?>
+        Join the group ⟶
         <br/>
         <?php snippet('subscribe') ?>   
     </section>

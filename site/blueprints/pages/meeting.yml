@@ -1,4 +1,4 @@
-title: Event
+title: Meeting
 preset: page
 pages: false
 icon: 📅
@@ -30,6 +30,13 @@ fields:
     label: Location
     type: text
     width: 1/4
+  reading:
+    label: Reading
+    type: pages
+    query: site.find('readings').children.published.flip()
+  assignment:
+    label: Selection
+    type: text
   Notes:
     label: Notes
     type: textarea
@@ -41,8 +48,9 @@ sidebar:
       category:
         label: Type of Event
         type: select
-        default: type
+        default: meeting
         options:
           meeting: meeting
           event: event
   files: true
+  

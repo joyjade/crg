@@ -2,9 +2,9 @@
 	padding-bottom: 0.5rem;
 }
 
-.events header {
-  padding: 1.5rem;
-  border-bottom: 1px dashed black;
+.events h3.header {
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
 }
 
 ul.calendar li {
@@ -22,7 +22,7 @@ ul.calendar h2 {
   padding-bottom: 1rem;
 }
 
-.upcoming h3 {
+.upcoming h2 {
   grid-row: 1;
   grid-column: 1;
 }

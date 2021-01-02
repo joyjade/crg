@@ -1,8 +1,8 @@
-Title: Emergent Strategy—Hold the Formation
+Title: Emergent Strategy—Part 1
 
 ----
 
-Day: 2020-10-25
+Day: 2020-10-04
 
 ----
 
@@ -14,7 +14,7 @@ Endtime: 09:00 pm
 
 ----
 
-Location: Zoom
+Location: 
 
 ----
 
@@ -24,8 +24,12 @@ Reading:
 
 ----
 
-Assignment: Rest of the book!
+Assignment: pg. 6-64
 
 ----
 
 Notes: 
+
+----
+
+Category: meeting

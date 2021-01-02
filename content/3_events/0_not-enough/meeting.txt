@@ -18,7 +18,6 @@ Location: Zoom
 
 ----
 
-
 Reading:
 
 - readings/not-enough
@@ -30,3 +29,7 @@ Assignment: Chapter 4: Globalizing Welfare after Empire
 ----
 
 Notes: 
+
+----
+
+Category: meeting

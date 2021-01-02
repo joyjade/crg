@@ -2,11 +2,8 @@
 
 <main class="<?= $page ?>">
 	<div class="triptych">
-		<header>
-			<h1><?= $page->text()->html()?></h1>
-		</header>
-
-		<div class='w100'>
+		<div class='upcoming-events'>
+      <h3 class="header triptych uppercase">Upcoming</h3> 
 			<?php 	$upcomingmtgs = 
               $page->children()->listed()->filter(function ($child) {
                 return $child->day()->toDate() > time();
@@ -16,7 +13,7 @@
     </div>
       
     <div class='past-events'>
-      <h2 class="triptych-italick ">Past</h2>
+      <h3 class="header triptych uppercase">Past</h3>
       <?php 	$pastmtgs = 
             $page-> children() -> listed() -> filter(function ($child) {
               return $child->day()->toDate() < time();
