@@ -16,9 +16,9 @@ columns:
         headline: Drafts
         status: drafts
       listed:
-        extends: sections/events
         headline: Live
         status: listed
+        extends: sections/events    
         
 
   

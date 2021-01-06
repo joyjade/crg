@@ -6,15 +6,15 @@ Day: 2021-01-03
 
 ----
 
-Starttime: 07:00 pm
+Starttime: 7:00 pm
 
 ----
 
-Endtime: 09:00 pm
+Endtime: 9:00 pm
 
 ----
 
-Location: 
+Location: Zoom
 
 ----
 
@@ -24,7 +24,7 @@ Reading:
 
 ----
 
-Assignment: Introduction and Chapter 1
+Assignment: Introduction and Chapter 1: “All the World Needs a Jolt”
 
 ----
 
@@ -32,7 +32,3 @@ Notes:
 
 "I wanted to share with you and the group that my interest in these readings is based on my own dive into disability justice this year. I am immunocompromised and identify as disabled, although “invisibly.” This material / biological difference being heightened during the pandemic, I’ve been interested in readings that offer insight on our collective relationship with illness - the social control of our bodies and split between body & mind - and the necessity / possibility of community care through mutual aid (Care Work)."
 —Jean Guo
-
-----
-
-Category: meeting

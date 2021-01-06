@@ -5,6 +5,9 @@ icon: 📅
 num: "{{ page.from.toDate('Ymd') }}"
 options: 
   preview: "{{ page.parent.url }}/#{{ page.slug }}"
+  changeTemplate: 
+    - meeting
+    - event
  
 fields:
   day:
@@ -19,6 +22,7 @@ fields:
     interval: 30
     default: 19:00
     notation: 12
+    display: h:mm a
   endtime:
     width: 1/4
     label: End
@@ -26,6 +30,7 @@ fields:
     interval: 30
     default: 21:00
     notation: 12
+    display: h:mm a
   location:
     label: Location
     type: text
@@ -35,14 +40,4 @@ fields:
     type: textarea
   
 sidebar:
-  meta:
-    type: fields
-    fields:    
-      category:
-        label: Type of Event
-        type: select
-        default: type
-        options:
-          meeting: meeting
-          event: event
   files: true

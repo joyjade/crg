@@ -6,5 +6,6 @@ templates:
   - meeting
   - event
 empty: No events yet
-sortBy: date desc
+sortBy: day desc
+
 

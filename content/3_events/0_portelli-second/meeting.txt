@@ -1,4 +1,4 @@
-Title: portelli_second
+Title: portelli-second
 
 ----
 
@@ -25,7 +25,7 @@ Reading:
 
 ----
 
-Assignment: Chapter 6: Uchronic Dreams: Working-Class Memory and Possible Worlds
+Assignment: Chapter 6: “Uchronic Dreams: Working-Class Memory and Possible Worlds”
 
 ----
 

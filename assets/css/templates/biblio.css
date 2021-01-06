@@ -1,0 +1,28 @@
+.biblio {
+  padding: 1rem 3rem 1rem 1.75rem;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+ol {
+  margin: 0.5rem 2rem;
+}
+
+ol li {
+  padding-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.title {
+  padding-bottom: 0.5rem;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+img.slide-close {
+  transform: rotate(90deg);
+}

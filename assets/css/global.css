@@ -1,4 +1,8 @@
 /* GLOBAL */
+body {
+  --main-color: #D62CFF;
+}
+
 *,
 *:after,
 *:before {
@@ -8,7 +12,7 @@
 }
 
 ::selection {
-	background-color: #D62CFF;
+	background-color: var(--main-color);
 	color: white;
   }
 
@@ -32,6 +36,7 @@ strong, b {
 img {
   width: 100%;
 }
+
 
 
 /* LAYOUT */
@@ -140,7 +145,7 @@ aside .dotted {
 }
 
 .arrow:hover {
-	background-color: #D62CFF;
+	background-color: var(--main-color);
 }
 
 .dotted {
@@ -269,7 +274,7 @@ form.subscribe-form {
 
 input#name, input#email {
 	border: none;
-	border-bottom: 2px solid #D62CFF;
+	border-bottom: 2px solid var(--main-color);
 	flex: 1 1 auto;
 }
 

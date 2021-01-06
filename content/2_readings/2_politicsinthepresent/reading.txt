@@ -1,4 +1,4 @@
-Title: "Politics in the Present" 
+Title: “Politics in the Present”
 
 ----
 
@@ -10,4 +10,4 @@ Text:
 
 ----
 
-currently-reading: true
+Currently-reading: true

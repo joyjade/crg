@@ -1,4 +1,4 @@
-Title: The Social Life of Things Ch.2
+Title: appadurai-second
 
 ----
 
@@ -18,9 +18,7 @@ Location: Interwebs
 
 ----
 
-Reading:
-
-- readings/the-social-life-of-things
+Reading: - readings/the-social-life-of-things
 
 ----
 
