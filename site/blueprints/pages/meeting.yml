@@ -36,7 +36,7 @@ fields:
   reading:
     label: Reading
     type: pages
-    query: site.find('readings').children.published.flip()
+    query: site.find('readings').children.listed.flip()
   assignment:
     label: Selection
     type: text

@@ -19,6 +19,7 @@
                   <h2> 
                     <a href="<?= $event-> url() ?>"><?= $event-> title() ?></a>
                   </h2>
+                  <p> <?= $event->notes()?></p>
                   <?php else: ?>
                     <?php foreach( $event-> reading() -> toPages() as $reading): ?> 
                       <h2> 
