@@ -23,6 +23,21 @@ ol li {
   right: 10px;
 }
 
-img.slide-close {
+.back-button  img.slide-close {
   transform: rotate(90deg);
+}
+
+@media screen and (max-width: 440px) {
+  .biblio {
+    padding: 0.75rem;
+  }
+  ol {
+    margin: 0.5rem 0 0 2rem;
+  }
+  .back-button {
+    display: none;
+  }
+  .biblio h1 {
+    font-size: 1.75rem;
+  }
 }

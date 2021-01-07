@@ -67,14 +67,15 @@
 
   .m-nav {
     max-height: 0;
-    opacity: 0;  
     transition: all 0.25s ease-in;
+    transform: scaleY(0);
+    transform-origin: top;
   }
 
   .m-nav.show {
     max-height: 192px;
-    opacity: 1;
-    transition: max-height 500ms ease-out, opacity 800ms ease-out;
+    transform: scaleY(1);
+    transition: all 500ms ease-out;
   }
 
   #nav_arrow {
@@ -82,39 +83,6 @@
     right: 2px;
     position: absolute;
   }
-
-  /* PAGES */
-  .events {
-    padding:0;
-  }
-  .events header, .past-events h2, .events ul.calendar li {
-    padding: 0.75rem;
-  }
-
-  .events ul.calendar li {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .past-events time {
-    font-size: 1.5rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .past-events h2 {
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'triptych-grotesque';
-    padding-left: 1rem;
-  }
-
-  
-  
-
-
 
   /* FOOTER */
   footer {

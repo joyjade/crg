@@ -22,17 +22,15 @@
 						<div class="triptych uppercase" id='info'><?=$item->title()?></div>
 					<?php else: ?>
 						<div class="triptych uppercase">
-              <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+              <a <?php e($item->isOpen(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
             </div>
 					<?php endif ?>
 				<?php endforeach ?>
 			</div>
       <div class="m-show">
         <a href="#" id="nav_arrow">
-                  <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close">
-              </a>
+          <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close">
+        </a>
       </div>
 		</div>
 	</nav>
-
-  <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
