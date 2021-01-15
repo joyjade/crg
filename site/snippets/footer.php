@@ -24,7 +24,7 @@
         <br/>
         
         <br/>
-        Join the group ⟶
+        <span>Join the group ⟶</span>
         <br/>
         <?php snippet('subscribe') ?>   
     </section>

@@ -13,14 +13,14 @@
 			<h3 class="author triptych-italick"><?= $page-> author() ?></h3>
 		</div>
 		<div class="flex detail-body m-col">
-			<div class="w60 thinpads">
+			<div class="w70 thinpads">
 				<h4> Notes </h4>
 				<p><?= $page->text()?></p>
 				<p><?= $page->links()?></p>
 				
 			</div>
 			
-			<div class="w40 thinpads">
+			<div class="w30 thinpads">
 				<h4> Details </h4>
 				<?php if( $published = $page-> published()->isNotEmpty() or $page->publisher()->isNotEmpty() ): ?>
 					<p>
@@ -32,18 +32,20 @@
 				<?php endif ?>
         <br />
       
-        <?php $related_events = page('events') -> children()->filterBy("reading", '- readings/' . $slug);
+        <?php $related_events = page('events') -> children()->filterBy("reading", '- readings/' . $slug)->sortBy("day");
           if ($related_events-> isNotEmpty()):?>
-            <h4> Events </h4>
-              <ul> 
+            <h4> Meetings </h4>
+              <ul class="related"> 
                 <?php endif; foreach ($related_events as $related_event):?>
                   <li>    
                     <a href="<?= $related_event -> url()?>">
-                      <?= $related_event -> title() ?>
+                      <?= $related_event -> day() -> toDate('F d, Y') ?>
+                      <p><?= $related_event -> assignment() ?></p>
                     </a>
                   </li>
                 <?php endforeach ?>
             </ul>
+        </br>
 
 				<h4> Tags </h4>
 				<p><?= $page->tags()?></p>

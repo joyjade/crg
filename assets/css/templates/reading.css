@@ -20,8 +20,8 @@
 
 .detail-body h4 {
   padding-bottom: 1rem;
-  border-bottom: 2px solid #D62CFF;
-  margin-bottom: 1rem;
+  border-top: var(--color-border);
+  padding-top: 1rem;
 }
 
 .next-button, .prev-button {

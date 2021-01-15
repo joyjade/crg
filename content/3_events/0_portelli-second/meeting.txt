@@ -20,8 +20,7 @@ Location:
 
 Reading:
 
-- >
-  readings/the-death-of-luigi-trastulli-and-other-stories
+- readings/the-death-of-luigi-trastulli-and-other-stories
 
 ----
 

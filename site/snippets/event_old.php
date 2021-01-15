@@ -4,26 +4,27 @@
 
 <main class="event triptych">
   <div>
-    <div class="header">
+    <h3 class="header triptych uppercase">
+      <?php if( $date->toDate() > time()) : ?> Upcoming <?php else :?> Past <?php endif ?>
+      <?= Str::upper($page->intendedTemplate()->name())?>    
+      <a class="back-button" href='<?=$page->parent()->url()?>'>
+        <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close"> Back
+      </a>
+    </h3> 
+    <div class="content">
       <div class="w70">
         <h3>
           <?= $date ->toDate('F d, Y') ?>  |
           <?= $page->starttime()?>-<?= $page->endtime()?>
         </h3>
         <?php if( $type == 'meeting' ): 
-        $reading = $page -> reading() -> first() -> toPage()?>
-        <h2>
-          <a href="<?=$reading->url()?>"><?= $reading->title()?></a><?php if($reading-> subtitle()->isNotEmpty()): ?>: 
-            <?= $reading-> subtitle() ?><?php endif ?>
-        </h2>
+          $reading = $page -> reading() -> first() -> toPage()?>
+          <h2><a href="<?=$reading->url()?>"><?= $reading->title()?></a></h2>
+          <p><span class="grotesque">Selection</span> ⟶ <?= $page-> assignment() ?></p>
+          </br>
         <?php else: ?>
           <h1><?= $page->title()->html() ?></h1>
         <?php endif ?>
-      </div>
-    </div>
-    <div class="content">
-      <div class="w70 thinpads">
-        <h4><span class="grotesque">Selection</span> ⟶ <?= $page-> assignment() ?></h4>
         <p><?= $page-> notes() ?></p></br>
         <?php if ($page->location()->isNotEmpty()): ?> 
           <p>
@@ -38,12 +39,14 @@
           <?php endif ?>
         </div>
       </div>
-      <div class="w30 thinpads">
-        <h4>*</h4>
+      <div class="w30">
+        <h3>
+          RELATED
+        </h3>
         <ul class="related"> 
           <?php if( $type == 'meeting' ): 
             $reading = $page -> reading() -> first() -> toPage();
-            $slug = $reading -> slug();
+            $slug = $reading -> slug(); dump($slug);
             $related_events = page('events') -> children()->filterBy("reading", '- readings/' . $slug)->sortBy("day");?>
             <li> 
               <a href="<?= $reading -> url()?>">

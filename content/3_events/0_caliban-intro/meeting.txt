@@ -6,11 +6,11 @@ Day: 2021-01-03
 
 ----
 
-Starttime: 7:00 pm
+Starttime: 07:00 pm
 
 ----
 
-Endtime: 9:00 pm
+Endtime: 09:00 pm
 
 ----
 

@@ -11,7 +11,7 @@
 			We meet on Sundays, <span class="underline">the only way we can.</span> 
 				We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
 					<?=$currently_reading-> title()-> link()?>,</span> 
-					by <?=$currently_reading->author()?>.
+          by <?=$currently_reading->author()?>. 
 		</h1>	
 		<br/><br/>
 
