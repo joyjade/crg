@@ -30,8 +30,7 @@
   }
 
   .thinpads {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding: 0;
   }
 
   .m-show {
@@ -58,6 +57,8 @@
   nav .dotted {
     padding: 8px 12px;
     background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   nav .title.triptych-italick {
@@ -68,14 +69,17 @@
   .m-nav {
     max-height: 0;
     transition: all 0.25s ease-in;
-    transform: scaleY(0);
+    /* transform: scaleY(0); */
+    transform: translateY(-200px);
     transform-origin: top;
   }
 
   .m-nav.show {
     max-height: 192px;
-    transform: scaleY(1);
+    /* transform: scaleY(1); */
+    transform: translateY(0);
     transition: all 500ms ease-out;
+    padding-bottom: 10px;
   }
 
   #nav_arrow {
@@ -168,7 +172,7 @@
 
   /* Event */
   .event .header {
-    padding: 0;
+    padding: 0.75rem 0 0 0;
   }
   .event .content {
     flex-flow: column;
