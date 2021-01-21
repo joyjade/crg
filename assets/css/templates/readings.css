@@ -1,9 +1,9 @@
 .readings {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .readings li {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.25rem;
   position: relative;
 }
 
