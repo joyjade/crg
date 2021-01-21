@@ -21,6 +21,8 @@
 	</ul>
 </main>
 
-<?php snippet('aside', ['class' => 'hidden']) ?>
-
-<?php snippet('footer') ?>
+<?php 
+  $image = $page->image()->isNotEmpty() ? $page->image() : '';
+  snippet('aside', ['class' => 'hidden', 'image' => $image]); 
+  snippet('footer');
+?>

@@ -160,13 +160,17 @@
     padding: 0.5rem;
   }
 
-  .event-01 {
-    align-self: flex-start;
-  }
-
-  .upcoming .event-01 img {
+  .upcoming .image img {
     margin: 15px 0;
     max-width: 100%;
     max-height: 100vh;
+  }
+
+  /* Event */
+  .event .header {
+    padding: 0;
+  }
+  .event .content {
+    flex-flow: column;
   }
 }

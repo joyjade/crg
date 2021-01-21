@@ -27,8 +27,8 @@
         <?php endif ?>
       </div>
       <p class="location">
-        <?= $event->starttime()?>-<?= $event->endtime()?><?php if ($event->location()->isNotEmpty()): ?>, 
-          <?= $event->location()->html()?> 
+        <?= $event->starttime()?>-<?= $event->endtime()?><?php if ($event->location()->isNotEmpty()): ?> 
+          <p class="type"><?= $event->location()->html()?> </p>
         <?php endif ?>
       </p>
     </div>

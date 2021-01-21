@@ -3,15 +3,21 @@
 <main class="<?= $page ?> triptych">
   <div class='upcoming-events'>
     <h3 class="header triptych uppercase">Upcoming</h3> 
-    <?php $upcomingmtgs = $kirby->collection("events/upcoming") -> sortBy('day', 'asc'); if ($upcomingmtgs->count() > 0): ?>
-      <ul class="upcoming calendar">
+    <ul class="upcoming calendar">
+      <?php $upcomingmtgs = $kirby->collection("events/upcoming") -> sortBy('day', 'asc'); if ($upcomingmtgs->count() > 0): ?>
         <?php 
           foreach ($upcomingmtgs as $event):
           snippet('featured_event', ['event' => $event]);
           endforeach;
         ?>		
-      </ul>
-    <?php endif ?>
+    <?php else :?>
+        <li class="none">
+          <h2>
+            We are likely meeting next Sunday. Hang tight for an update.
+          </h2>
+        </li>
+      <?php endif ?>
+    </ul>
   </div>
     
   <div class='past-events'>
@@ -30,5 +36,4 @@
 </main>
   
 </section>
-<?php snippet('aside', ['class' => '']) ?>
-<?php snippet('footer') ?>
+<?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>

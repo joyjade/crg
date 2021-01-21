@@ -4,5 +4,4 @@
     <h1> Stay Tuned...</h1>
   </div>
 </main>
-<?php snippet('aside', ['class' => 'hidden']) ?>
-<?php snippet('footer') ?>
+<?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>

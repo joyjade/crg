@@ -2,16 +2,23 @@
 
 <?php 
 	if ($all_readings = page('readings')->children()->listed()->flip()
-		AND $currently_reading = $all_readings->first()): 
+    AND $currently_reading = $all_readings->first()): 
 ?>
 
 <main>
 	<div class="<?= $page ?> triptych">
-		<h1>
-			We meet on Sundays, <span class="underline">the only way we can.</span> 
-				We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
-					<?=$currently_reading-> title()-> link()?>,</span> 
-          by <?=$currently_reading->author()?>. 
+		<h1>    
+      We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
+      <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>. 
+      Usually, we meet at LACA. In the meantime, join us online 
+      <?php if($upcoming_meeting = page('events') 
+                                    -> children()
+                                    -> filterBy("reading", '- readings/' . $currently_reading -> slug())
+                                    -> sortBy("day")
+                                    -> first()): ?>
+      <a href="<?= $upcoming_meeting -> url() ?>" class="underline">this upcoming Sunday.</a> 
+      <?php endif ?>
+
 		</h1>	
 		<br/><br/>
 
@@ -38,7 +45,11 @@
 	</div>
 </main>
 
-<?php snippet('aside', ['class' => 'hidden']) ?>
+
+<?php 
+  $image = $page->image()->isNotEmpty() ? $page->image() : '';
+  snippet('aside', ['class' => 'hidden', 'image' => $image]); 
+?>
 
 <?php endif ?>
 

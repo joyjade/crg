@@ -26,6 +26,4 @@
   </div>
 </main>
 
-<?php snippet('aside', ['class' => '']) ?>
-
-<?php snippet('footer') ?>
+<?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>
