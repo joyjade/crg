@@ -28,17 +28,20 @@
 				$selected_readings = $all_readings-> not($currently_reading)-> shuffle()-> limit(3);
 				$last = $selected_readings-> last();
 				foreach($selected_readings as $reading): 
-			?>
-				<span class="triptych-italick book-title" 
-					<?php if($reading_image = $reading-> image()): ?> 
-						data-src="<?=$reading_image-> url()?>"
-					<?php endif ?>>
-					<?php if ($reading !== $last): ?>
-						<?= $reading-> title() -> link()?>,</span>	
+      ?>
+        <?php if ($reading == $last): ?>
+          <span class="triptych"> and </span> 
+        <?php endif ?>
+        <span class="triptych-italick book-title" 
+          <?php if($reading_image = $reading-> image()): ?> 
+            data-src="<?=$reading_image-> url()?>"
+          <?php endif ?>>
+
+          <?php if ($reading !== $last): ?>
+					  <?= $reading-> title() -> link()?>,</span>	
 					<?php else: ?>
-						<span class="triptych"> and </span> 
-						<?= $reading-> title() -> link()?> </span>
-	        		<?php endif ?>
+            <?= $reading-> title() -> link()?> </span>
+          <?php endif ?>
 			<?php endforeach ?>	
 		</h1>
 

@@ -246,7 +246,7 @@ nav .triptych.uppercase:hover, nav .active {
 
 .thumb-image img {
 	width: auto;
-	height: inherit;
+	height: auto;
   max-height: 85%;
   max-width: 100%;
   padding: 15px;

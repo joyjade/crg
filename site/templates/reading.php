@@ -65,7 +65,7 @@
 </main>
 
 <?php 
-  $image = $page->image()->isNotEmpty() ? $page->image() : '';
+  $image = $page->image() ? $page->image() : '';
   snippet('aside', ['class' => '', 'image' => $image ]) ?>
 
 <?php snippet('footer') ?>
