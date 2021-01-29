@@ -4,7 +4,8 @@
 <head>
 	<title><?= $site->title()?> | <?= $page->title() ?></title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="crg.ico" type="image/x-icon">
 	
   <?= css(['assets/css/global.css', 'assets/type/typography.css', '@auto', 'assets/css/mobile.css',]) ?>
   <?= js(['assets/js/global.js', '@auto'])?>
