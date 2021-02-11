@@ -324,16 +324,16 @@ abbr[title] {
 	text-decoration: none;
 }
 
-/* Events */
+/* Readings */
 
-.events .upcoming-events {
+.readings .upcoming-events {
   margin-top: 0.75rem;
 }
-.events .upcoming-events {
+.readings .upcoming-events {
   border-top: var(--dotted-border);
 }
 
-.events h3.header, .event h3.header {
+.readings h3.header, .event h3.header {
   padding: 0.5rem 1.5rem;
 }
 

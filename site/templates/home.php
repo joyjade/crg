@@ -10,13 +10,7 @@
 		<h1>    
       We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
       <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>. 
-      Usually, we meet at LACA. In the meantime, join us online 
-      <?php if($upcoming_meeting = page('events') 
-                                    -> children()
-                                    -> filterBy("reading", '- readings/' . $currently_reading -> slug())
-                                    -> sortBy("day")
-                                    -> first()): ?>
-      <a href="<?= $upcoming_meeting -> url() ?>" class="underline">this upcoming Sunday.</a> 
+      Usually, we meet at LACA. In the meantime, join us online <span class="underline">this upcoming Sunday.</span> 
       <?php endif ?>
 
 		</h1>	
@@ -53,7 +47,5 @@
   $image = $page->image()->isNotEmpty() ? $page->image() : '';
   snippet('aside', ['class' => 'hidden', 'image' => $image]); 
 ?>
-
-<?php endif ?>
 
 <?php snippet('footer') ?>

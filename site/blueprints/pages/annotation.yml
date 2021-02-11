@@ -1,0 +1,20 @@
+title: Annotation
+preset: page
+pages: false
+icon: 
+# num: "{{ page.from.toDate('Ymd') }}"
+# options: 
+#   preview: "{{ page.parent.url }}/#{{ page.slug }}"
+ 
+fields:
+  reading:
+    label: Reading
+    type: pages
+    query: site.find('readings').children.listed.flip()
+  
+  text:
+    label: Annotation
+    type: textarea
+  
+sidebar:
+  files: true

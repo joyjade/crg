@@ -1,0 +1,27 @@
+.annotations {
+  font-size: 1.8rem;
+}
+
+.annotations li {
+  padding: 1rem 1.25rem;
+  position: relative;
+}
+
+.annotations ul li:hover {
+  background: #D62CFF;
+  color: white;
+}
+
+.annotations ul li:not(:last-of-type) {
+  border-bottom: 1px dashed black;
+}
+
+
+@media screen and (max-width: 440px) {
+  .annotations {
+    font-size: 1.2rem;
+  }
+  .annotations li {
+    padding: 0.75rem 0.5rem;
+  }
+}

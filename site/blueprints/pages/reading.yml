@@ -26,16 +26,16 @@ columns:
       publisher: 
         type: text
         width: 1/2
-      links:
-        type: structure
-        label: Links
-        fields: 
-          url: 
-            label: URL
-            type: url
+      # links:
+      #   type: structure
+      #   label: Links
+      #   fields: 
+      #     url: 
+      #       label: URL
+      #       type: url
 
-      text:
-        label: Notes
+      note:
+        label: Intro
         type: textarea
   sidebar:
     width: 1/3
@@ -52,19 +52,14 @@ columns:
       meta: 
         type: fields
         fields:
-          currently-reading:
-            type: toggle
-            label: Currently Reading
+          date:
+            label: Month
+            type: date
+            default: today
+            step: month
             width: 1/3
-          categories: 
-            label: Type of Reading
-            type: multiselect
-            width: 2/3
-            options: 
-              theory: Theory/Philosophy
-              history: History
-              article: Essay/Article
-              fiction: Fiction
-              poetry: Poetry
-          tags: 
-            type: tags
+            display: MMM YYYY
+          location:
+            label: Location
+            type: text
+            width: 1/3

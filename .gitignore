@@ -16,6 +16,14 @@ Icon
 # ---------------
 .lock
 
+# Editors
+# ---------------
+*.sublime-project
+*.sublime-workspace
+/.vscode
+/.idea
+
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
