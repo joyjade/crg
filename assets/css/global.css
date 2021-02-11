@@ -6,6 +6,7 @@ body {
   --body-text: 1.1rem;
   --columns: 325px 1fr;
   --rows: 280px 1fr;
+  --margin: 0.75rem;
 }
 
 *,
@@ -52,7 +53,7 @@ p {
 body {
 	-webkit-text-size-adjust: 100%;
 	overflow: hidden;
-	margin-left: 0.75rem;
+	margin-left: var(--margin);
 }
 
 .grid {
@@ -91,7 +92,7 @@ footer {
 	grid-row: 2;
 	display: grid;
 	grid-template-columns: var(--columns);
-	margin-right: 0.75rem;
+	margin-right: var(--margin);;
 	margin-top: 5px;
 }
 
@@ -254,11 +255,12 @@ nav .triptych.uppercase:hover, nav .active {
 
 .back-button {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
   display: flex;
   align-items: center;
-  font-size: var(--body-text);
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .back-button  img.slide-close {
@@ -327,7 +329,7 @@ abbr[title] {
 /* Readings */
 
 .readings .upcoming-events {
-  margin-top: 0.75rem;
+  margin-top: var(--margin);;
 }
 .readings .upcoming-events {
   border-top: var(--dotted-border);
@@ -450,10 +452,6 @@ ul.calendar header {
   padding: 1rem;
 }
 
-.event .back-button {
-  top: 0;
-}
-
 .event .content {
   display: flex;
   padding-top: 1rem;
@@ -505,5 +503,26 @@ ul.calendar header {
 }
 
 
+/* Annotation, s */
+.annotations {
+  font-size: 1.8rem;
+}
 
+.annotations ul li:hover {
+  background: #D62CFF;
+  color: white;
+}
+
+.book-title * {
+  font-size: 1.8rem;
+}
+
+.annotations li, .annotation .heading {
+  padding: 1rem 1.25rem;
+  position: relative;
+}
+
+.annotations ul li:not(:last-of-type), .annotation .heading {
+  border-bottom: var(--dotted-border);
+}
 

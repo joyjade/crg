@@ -8,7 +8,7 @@
 				data-src="<?=$reading_image-> url()?>"
 			  <?php endif ?>>
           <?php 
-          $annotation = page('annotations')->children()->findBy("reading", $reading->id());
+          $annotation = page('annotations')->children()->findBy("reading", "- " . $reading->id());
           
           
           ?>

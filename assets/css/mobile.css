@@ -177,4 +177,33 @@
   .event .content {
     flex-flow: column;
   }
+
+  /* Annotations */
+
+  .annotations, .annotation {
+    font-size: 1.2rem;
+  }
+  .annotations li, .annotation .heading, .annotation .details {
+    padding: 0.75rem 0.5rem;
+  }
+
+
+  /* Reading */
+  .reading {
+    order: 2;
+    padding: 0 1rem;
+  }
+  
+  .next-button, .prev-button {
+    margin: 0;
+  }
+
+  .reading aside {
+    display: block;
+    order: 1;
+  }
+
+  aside .dotted {
+    height: 500px;
+  }
 }
