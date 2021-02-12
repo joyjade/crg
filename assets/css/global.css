@@ -504,17 +504,13 @@ ul.calendar header {
 
 
 /* Annotation, s */
-.annotations {
+.annotations, .annotation .book-title {
   font-size: 1.8rem;
 }
 
 .annotations ul li:hover {
   background: #D62CFF;
   color: white;
-}
-
-.book-title * {
-  font-size: 1.8rem;
 }
 
 .annotations li, .annotation .heading {

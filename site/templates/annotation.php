@@ -3,7 +3,7 @@
 
 <main class="annotation triptych">
 	<div class="heading">
-			<div class="book-title">
+			<div class="book-title" data-src="<?=$reading ->image() -> url()?>>
         <h3>
           <span class="uppercase">
             <?= $page-> title() ?><?php if($reading->subtitle()->isNotEmpty()): ?>: <?= $reading->subtitle(); ?><?php endif ?>,
@@ -34,7 +34,7 @@
 
 </main>
 <?php 
-  // $image = $page->image()->isNotEmpty() ? $page->image() : '';
-  snippet('aside', ['class' => 'hidden', 'image' => '']); 
+  $image = $reading->image() ? $reading->image() : '';
+  snippet('aside', ['class' => '', 'image' => $image]); 
   snippet('footer');
 ?>
