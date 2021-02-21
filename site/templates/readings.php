@@ -25,17 +25,14 @@
     
   <div class='past-events'>
     <h3 class="header triptych uppercase">Past</h3>
-      <ul class="calendar">
-        <?php 
-          if ($pasts = $readings->flip()->filter(function($past) {
-            return $past->date()->toDate() < time() || $past->date()->isEmpty();
-          })) : 
-            foreach ($pasts->limit(5) as $past):
-              snippet('past_reading', ['reading' => $past]);
-            endforeach;
-          endif;
-        ?>		   
-      </ul>
+    <ul class="calendar past-readings" data-page="<?= $pagination->nextPage() ?>">
+      <?php 
+        foreach ($past_readings as $past):
+          snippet('past_reading', ['reading' => $past]);
+        endforeach;
+      ?>		   
+    </ul>
+    <button class="load-more" accesskey="m">Load more</button>
   </div>	
     
 </main>
