@@ -13,7 +13,9 @@
     </section>
     <section>
         <div class="flex">
-            <p><?= $info-> text() ?></p>
+            <div>
+              <?= $info-> text()-> markdown()?>
+            </div>
             <a href="#" id="slide_close">
                 <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted m-hide">
                 <img src="<?= asset('assets/icons/x.svg')->url() ?>" class="slide-close dotted m-show">

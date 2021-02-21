@@ -105,7 +105,12 @@ footer > section:nth-child(1) {
   overflow-wrap: break-word;
 }
 footer > section:nth-child(2) {
-	grid-column: 2 / 3
+  grid-column: 2 / 3;
+  overflow-y: auto;
+}
+
+footer > section:nth-child(2) p {
+  margin-bottom: 1rem;
 }
 
 aside {
