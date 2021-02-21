@@ -27,9 +27,13 @@
     <h3 class="header triptych uppercase">Past</h3>
       <ul class="calendar">
         <?php 
-          foreach ($readings as $reading):
-          snippet('past_reading', ['reading' => $reading]);
-          endforeach;
+          if ($pasts = $readings->flip()->filter(function($past) {
+            return $past->date()->toDate() < time() || $past->date()->isEmpty();
+          })) : 
+            foreach ($pasts->limit(5) as $past):
+              snippet('past_reading', ['reading' => $past]);
+            endforeach;
+          endif;
         ?>		   
       </ul>
   </div>	
