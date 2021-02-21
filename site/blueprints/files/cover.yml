@@ -1,0 +1,4 @@
+title: Book Cover
+accept: 
+    extension: jpg, png, jpeg
+    orientation: portrait

@@ -3,9 +3,9 @@
       <span class="type"><?=$reading->current()->bool() ? 'currently reading' : ''?></span>
     </h3>
     <div class="image">
-      <?php if ($image = $reading->image()): ?>
+      <?php if ($meme = $reading->meme()): ?>
         <figure>
-          <a href="<?= $reading->url() ?>"><?= $reading->image() ?></a>
+          <a href="<?= $reading->url() ?>"><?= $meme ?></a>
         </figure>
       <?php endif ?>
     </div>

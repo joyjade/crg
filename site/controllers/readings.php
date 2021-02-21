@@ -7,7 +7,7 @@ return function($page) {
     return $rdg->date()->toDate() < time() || $rdg->date()->isEmpty();
   })->paginate($limit);
   $upcoming_readings = $readings->filter(function($rdg) {
-    return $rdg->date()->toDate() > time();
+    return $rdg->date()->toDate() > time() || $rdg->current()->bool();
   });
 
   return [

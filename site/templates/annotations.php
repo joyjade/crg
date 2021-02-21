@@ -10,7 +10,7 @@
 	<ul>
     <?php foreach ($page->children()->listed()->flip() as $annotation): ?>
       <?php $reading = $annotation->reading()->toPage();?>
-			<li class="book-title" data-src="<?= $reading-> image() ? $reading-> image()-> url() : '' ?>">
+			<li class="book-title" data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
         <a href="<?= $annotation->url()?>" class="triptych uppercase">
           <?= $reading-> title() ?><?php if($reading->subtitle()->isNotEmpty()): ?>: <?= $reading->subtitle() ?><?php endif ?>,
         </a>

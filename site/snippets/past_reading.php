@@ -20,9 +20,9 @@
       <?php endforeach ?> 
     <?php endif ?>
     <div class="event-01">
-      <?php if ($image = $reading->image()): ?>
+      <?php if ($image = $reading->meme()): ?>
         <figure>
-          <a href="<?= $reading->url() ?>"><?= $reading->image() ?></a>
+          <a href="<?= $reading->url() ?>"><?= $reading->meme() ?></a>
         </figure>
       <?php endif ?>
     </div>

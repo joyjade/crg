@@ -2,7 +2,7 @@
 
 <main class="<?= $page ?> triptych">
   <div class='upcoming-events'>
-    <h3 class="header triptych uppercase">Current & Upcoming</h3> 
+    <h3 class="header triptych uppercase">Upcoming</h3> 
     <ul class="upcoming calendar">
       <?php if ($upcoming_readings) :  
           foreach ($upcoming_readings as $upcoming):
@@ -33,4 +33,7 @@
 </main>
   
 </section>
-<?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>
+<?php 
+  snippet('aside', ['class' => 'hidden', 'image' => $page->image()]); 
+  snippet('footer'); 
+?>

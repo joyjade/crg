@@ -35,3 +35,11 @@ Location: LACA
 ----
 
 Current: false
+
+----
+
+Categories:
+
+- 
+  text: Essay/Article
+  value: article
