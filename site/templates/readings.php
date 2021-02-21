@@ -1,16 +1,11 @@
 <?php snippet('nav') ?>
 
-<?php $readings = $page->children()->listed() ?>
-
 <main class="<?= $page ?> triptych">
   <div class='upcoming-events'>
     <h3 class="header triptych uppercase">Current & Upcoming</h3> 
     <ul class="upcoming calendar">
-      <?php 
-        if ($upcomings = $readings -> filter(function($upcoming) {
-          return $upcoming->date()->toDate() > time();
-        })) :  
-          foreach ($upcomings as $upcoming):
+      <?php if ($upcoming_readings) :  
+          foreach ($upcoming_readings as $upcoming):
             snippet('featured_reading', ['reading' => $upcoming]);
           endforeach;		
         else :?>
