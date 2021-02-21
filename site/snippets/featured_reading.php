@@ -1,4 +1,7 @@
 <li>
+    <h3>
+      <span class="type"><?=$reading->current()->bool() ? 'currently reading' : ''?></span>
+    </h3>
     <div class="image">
       <?php if ($image = $reading->image()): ?>
         <figure>

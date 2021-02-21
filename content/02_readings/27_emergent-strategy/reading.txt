@@ -22,12 +22,16 @@ Publisher: AK Press
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-10
+Date: 2020-10-20
 
 ----
 
 Location: Zoom
+
+----
+
+Current: false

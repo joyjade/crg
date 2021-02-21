@@ -6,7 +6,7 @@ Author: Roberto Esposito
 
 ----
 
-Translator: Timothy C. Campbell
+Published: 2009
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: The Origin and Destiny of Community
 
 ----
 
-Published: 2009
+Translator: Timothy C. Campbell
 
 ----
 
@@ -26,9 +26,12 @@ Note:
 
 ----
 
-Date: 2020-11-15
+Date: 2019-12-31
 
 ----
 
-
 Location: 
+
+----
+
+Current: false

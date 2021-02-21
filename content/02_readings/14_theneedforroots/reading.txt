@@ -6,7 +6,7 @@ Author: Simone Veil
 
 ----
 
-Translator: Arthur Wills
+Published: 1949
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: Prelude to a Declaration of Duties toward Mankind
 
 ----
 
-Published: 1949
+Translator: Arthur Wills
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2019-09
+Date: 2019-09-15
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

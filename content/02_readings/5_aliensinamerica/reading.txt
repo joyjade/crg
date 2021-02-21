@@ -30,8 +30,8 @@ Date:
 
 ----
 
-Enddate: 
+Location: LACA
 
 ----
 
-Location: LACA
+Current: false

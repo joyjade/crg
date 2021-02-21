@@ -22,12 +22,16 @@ Publisher: The Belknap Press of Harvard University Press
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-06
+Date: 2020-06-14
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

@@ -1,14 +1,19 @@
 <?php snippet('nav') ?>
 
+<?php $readings = $page->children()->listed() ?>
+
 <main class="<?= $page ?> triptych">
   <div class='upcoming-events'>
-    <h3 class="header triptych uppercase">Upcoming</h3> 
+    <h3 class="header triptych uppercase">Current & Upcoming</h3> 
     <ul class="upcoming calendar">
       <?php 
-        	if ($all_readings = page('readings')->children()->listed()->flip()
-          AND $currently_reading = $all_readings->first()): ?>
-        <?php snippet('featured_reading', ['reading' => $currently_reading]);?>		
-    <?php else :?>
+        if ($upcomings = $readings -> filter(function($upcoming) {
+          return $upcoming->date()->toDate() > time();
+        })) :  
+          foreach ($upcomings as $upcoming):
+            snippet('featured_reading', ['reading' => $upcoming]);
+          endforeach;		
+        else :?>
         <li class="none">
           <h2>
             We are likely meeting next Sunday. Hang tight for an update.
@@ -22,7 +27,7 @@
     <h3 class="header triptych uppercase">Past</h3>
       <ul class="calendar">
         <?php 
-          foreach ($all_readings as $reading):
+          foreach ($readings as $reading):
           snippet('past_reading', ['reading' => $reading]);
           endforeach;
         ?>		   

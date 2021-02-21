@@ -22,12 +22,16 @@ Publisher: Cambridge University Press
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-11
+Date: 2020-11-20
 
 ----
 
 Location: Zoom
+
+----
+
+Current: false

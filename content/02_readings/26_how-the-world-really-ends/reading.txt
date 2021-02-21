@@ -22,12 +22,16 @@ Publisher: University of Minnesota Press
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-09
+Date: 2020-09-24
 
 ----
 
 Location: Zoom
+
+----
+
+Current: false

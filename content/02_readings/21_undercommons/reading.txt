@@ -6,7 +6,7 @@ Author: Stefano Harney and Fred Moten
 
 ----
 
-Translator: 
+Published: 2013
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: Fugitive Planning and Black Study
 
 ----
 
-Published: 2013
+Translator: 
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2020-04
+Date: 2020-04-01
 
 ----
 
 Location: Zoom
+
+----
+
+Current: false

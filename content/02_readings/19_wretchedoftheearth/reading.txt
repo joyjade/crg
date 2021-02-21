@@ -6,7 +6,7 @@ Author: Frantz Fanon
 
 ----
 
-Translator: Richard Philcox
+Published: 1963
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle:
 
 ----
 
-Published: 1963
+Translator: Richard Philcox
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2020-01
+Date: 2020-01-12
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

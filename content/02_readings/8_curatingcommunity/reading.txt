@@ -26,12 +26,12 @@ Note:
 
 ----
 
-Date:
-
-----
-
-Enddate: 
+Date: 
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

@@ -30,8 +30,8 @@ Date:
 
 ----
 
-Enddate: 
+Location: 
 
 ----
 
-Location: 
+Current: false

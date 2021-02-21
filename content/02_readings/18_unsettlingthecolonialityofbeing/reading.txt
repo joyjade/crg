@@ -6,7 +6,7 @@ Author: Sylvia Wynter
 
 ----
 
-Translator: 
+Published: 2003
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: Towards the Human, After Man, Its Overrepresentation—An Argument
 
 ----
 
-Published: 2003
+Translator: 
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2019-12
+Date: 2019-12-12
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

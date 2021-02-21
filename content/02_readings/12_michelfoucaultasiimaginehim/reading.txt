@@ -6,7 +6,7 @@ Author: Maurice Blanchot
 
 ----
 
-Translator: Jeffrey Mehlman
+Published: 1987
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle:
 
 ----
 
-Published: 1987
+Translator: Jeffrey Mehlman
 
 ----
 
@@ -30,8 +30,8 @@ Date:
 
 ----
 
-Enddate:
+Location: LACA
 
 ----
 
-Location: LACA
+Current: false

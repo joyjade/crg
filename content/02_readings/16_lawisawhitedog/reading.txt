@@ -6,7 +6,7 @@ Author: Colin Dayan
 
 ----
 
-Translator: 
+Published: 2011
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: How Legal Rituals Make and Unmake Persons
 
 ----
 
-Published: 2011
+Translator: 
 
 ----
 
@@ -26,9 +26,12 @@ Note:
 
 ----
 
-Date: 2019-10
+Date: 2019-10-12
 
 ----
 
-
 Location: LACA
+
+----
+
+Current: false

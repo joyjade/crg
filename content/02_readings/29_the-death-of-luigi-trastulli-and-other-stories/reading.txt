@@ -22,12 +22,16 @@ Publisher: State University of New York Press
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-12
+Date: 2020-12-12
 
 ----
 
 Location: Zoom
+
+----
+
+Current: false

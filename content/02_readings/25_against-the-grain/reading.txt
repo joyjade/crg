@@ -22,12 +22,16 @@ Publisher: Yale University
 
 ----
 
-Note:
+Note: 
 
 ----
 
-Date: 2020-08
+Date: 2020-08-30
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

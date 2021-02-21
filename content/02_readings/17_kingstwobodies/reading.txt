@@ -6,7 +6,7 @@ Author: Ernst Kantorowicz
 
 ----
 
-Translator: 
+Published: 1957
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle: A Study in Medieval Political Theology
 
 ----
 
-Published: 1957
+Translator: 
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2019-11
+Date: 2019-11-30
 
 ----
 
 Location: LACA
+
+----
+
+Current: false

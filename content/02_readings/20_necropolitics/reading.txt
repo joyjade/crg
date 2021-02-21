@@ -6,7 +6,7 @@ Author: Achilles Mbembe
 
 ----
 
-Translator: 
+Published: 2019
 
 ----
 
@@ -14,7 +14,7 @@ Subtitle:
 
 ----
 
-Published: 2019
+Translator: 
 
 ----
 
@@ -26,8 +26,12 @@ Note:
 
 ----
 
-Date: 2020-02
+Date: 2019-03-31
 
 ----
 
 Location: LACA
+
+----
+
+Current: false
