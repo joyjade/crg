@@ -1,6 +1,6 @@
 <li data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
     <h3>
-      <span class="type"><?=$reading->current()->bool() ? 'currently reading' : ''?></span>
+      <?= $reading->date()->toDate('F Y')?>
     </h3>
     <div class="image">
       <?php if ($meme = $reading->meme()): ?>
@@ -11,23 +11,17 @@
     </div>
     <div class="event-line">
       <div>
-        <?php if( $reading->reading()->isEmpty()): ?>
-          <h2> 
-            <a href="<?= $reading-> url() ?>"><?= $reading-> title() ?></a>
-          </h2>
-          <p> <?= $reading->notes()?></p>
-        <?php else: ?>
-          <?php foreach( $reading-> reading() -> toPages() as $reading): ?> 
-            <a href="<?= $reading->url() ?>">
-              <h2><?= $reading->title()?></h2>
-            </a>
-          <?php endforeach ?>
+        <?php if ($reading->current()->bool()) :?>
+          <span class="type">currently reading</span>
         <?php endif ?>
+        <h2> 
+          <a href="<?= $reading-> url() ?>"><?= $reading-> title() ?></a><?= $reading->subtitle()->isNotEmpty() ? $reading->subtitle() : '' ?>,
+          <span class="triptych-italick"><?= $reading-> author()?></span>
+        </h2>
       </div>
       <p class="location">
-        <?= $reading->date()?><?php if ($reading->location()->isNotEmpty()): ?> 
-          <p class="type"><?= $reading->location()->html()?> </p>
-        <?php endif ?>
+        On <?= $reading->location()->isNotEmpty() ?  $reading->location()->html() : ''?>, 
+        Email/DM to join 
       </p>
     </div>
     

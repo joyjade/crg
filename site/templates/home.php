@@ -1,22 +1,26 @@
 <?php snippet('nav') ?>
 
 <?php 
-	if ($readings = page('readings')->children()->listed()
-    AND $currently_reading = $readings->findBy('current', 'true')
-    ): 
+	if ($readings = page('readings')->children()->listed()): 
 ?>
 
 <main>
-	<div class="<?= $page ?> triptych">
-		<h1>    
-      We're currently reading 
-      <span class="triptych-italick book-title" 
-            data-src="<?=$currently_reading ->cover() ? $currently_reading ->cover() -> url() : ''?>">
-            <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>. 
-      Usually, we meet at LACA. In the meantime, join us online <span class="underline">this upcoming Sunday.</span> 
+  <div class="<?= $page ?> triptych">
+    <h1>    
+      <?php if ($currently_reading = $readings->findBy('current', 'true')): ?>  
+        We're currently reading 
+        <span class="triptych-italick book-title" 
+              data-src="<?=$currently_reading ->cover() ? $currently_reading ->cover() -> url() : ''?>">
+              <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>.
+      <?php else: ?>
+        We're about to read
+        <span class="triptych-italick book-title" 
+              data-src="<?=$readings->last()->cover() ? $readings->last()->cover() -> url() : ''?>">
+              <?=$readings->last()-> title()-> link()?>,</span> by <?=$readings->last()->author()?>. 
       <?php endif ?>
-
-		</h1>	
+        Usually, we meet at LACA. In the meantime, join us <span class="underline">online every Sunday,</span> 
+          7-9PM PST.
+    </h1>
 		<br/><br/>
 
 		<h1>
@@ -45,7 +49,7 @@
 
 	</div>
 </main>
-
+<?php endif ?>
 
 <?php 
   $image = $page->image()->isNotEmpty() ? $page->image() : '';

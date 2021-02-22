@@ -2,7 +2,7 @@
 
 return function ($page) {
 
-  $limit          = 5;
+  $limit          = 8;
   $past_readings  = $page->children()->listed()->flip()->filter(function($rdg) {
     return $rdg->date()->toDate() < time() && !$rdg->current()->bool() || $rdg->date()->isEmpty();
   })->paginate($limit);

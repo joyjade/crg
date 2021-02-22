@@ -1,7 +1,7 @@
 <?php
 
 return function($page) {
-  $limit = 5;
+  $limit = 8;
   $readings = $page->children()->listed();
   $past_readings = $readings->flip()->filter(function($rdg) {
     return $rdg->date()->toDate() < time() && !$rdg->current()->bool()|| $rdg->date()->isEmpty();
