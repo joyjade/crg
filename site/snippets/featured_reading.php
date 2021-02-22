@@ -1,4 +1,4 @@
-<li>
+<li data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
     <h3>
       <span class="type"><?=$reading->current()->bool() ? 'currently reading' : ''?></span>
     </h3>

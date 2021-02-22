@@ -29,3 +29,30 @@ function mobileNav() {
     mnav.classList.toggle('show')
   }
 }
+
+function hoverReveal(selector) {
+	let titles = document.querySelectorAll(selector);
+	let hiddenimage = document.querySelector('.thumb-image.hidden');
+	let img = hiddenimage.querySelector('img');
+	let noimage = img.src;
+
+	titles.forEach(title => {
+		title.onmouseover = function() {
+			if (title.dataset.src) {
+				img.src = title.dataset.src;
+			} 
+			else {
+				img.src = noimage;
+			}
+
+			hiddenimage.style.opacity = '1';
+			// title.style.color = 'white';
+			// title.style.backgroundColor = '#D62CFF';
+			
+		};
+		// title.onmouseleave = function() {
+		// 	title.style.backgroundColor = '';
+		// 	title.style.color = 'black';
+		// };
+	})	
+}

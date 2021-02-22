@@ -22,9 +22,9 @@
           </p>
         <?php endif ?>
         <div class="image">
-          <?php if ($image = $page->image()): ?>
+          <?php if ($image = $page->meme()): ?>
             <figure>
-              <?= $page->image() ?>
+              <?= $page->meme() ?>
             </figure>
           <?php endif ?>
         </div>
@@ -36,4 +36,7 @@
   </div>
 </main>
 
-<?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>
+<?php 
+  snippet('aside', ['class' => '', 'image' => $page->cover() ? $page->cover() : '']); 
+  snippet('footer'); 
+?>

@@ -4,7 +4,7 @@ return function ($page) {
 
   $limit          = 5;
   $past_readings  = $page->children()->listed()->flip()->filter(function($rdg) {
-    return $rdg->date()->toDate() < time() || $rdg->date()->isEmpty();
+    return $rdg->date()->toDate() < time() && !$rdg->current()->bool() || $rdg->date()->isEmpty();
   })->paginate($limit);
   $pagination     = $past_readings->pagination();
   $more           = $pagination->hasNextPage();

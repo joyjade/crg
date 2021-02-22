@@ -1,4 +1,4 @@
-<li>
+<li data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
   <div>
     <time><?= $reading->date()->toDate('F Y') ?></time>
   </div>

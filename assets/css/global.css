@@ -1,6 +1,7 @@
 /* GLOBAL */
 body {
   --main-color: #D62CFF;
+  --secondary-color: #FFAF00;
   --dotted-border: 1px dashed black;
   --color-border: 2px solid var(--main-color);
   --body-text: 1.1rem;
@@ -18,7 +19,7 @@ body {
 }
 
 ::selection {
-	background-color: var(--main-color);
+	background-color: var(--secondary-color);
 	color: white;
   }
 
@@ -221,6 +222,10 @@ nav .triptych.uppercase:hover, nav .active {
 	letter-spacing: 0.2px;
 }
 
+.book-title:hover {
+  background-color: var(--main-color);
+  color: white;
+}
 
 /* COMPONENTS */
 
@@ -511,11 +516,6 @@ ul.calendar header {
 /* Annotation, s */
 .annotations, .annotation .book-title {
   font-size: 1.8rem;
-}
-
-.annotations ul li:hover {
-  background: #D62CFF;
-  color: white;
 }
 
 .annotations li, .annotation .heading {

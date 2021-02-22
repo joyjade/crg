@@ -18,5 +18,5 @@ const fetchProjects = async () => {
 
 button.addEventListener('click', fetchProjects);
 document.addEventListener("DOMContentLoaded", function() { 
-	hoverReveal();
+	hoverReveal('.calendar li');
 });
