@@ -17,6 +17,7 @@ columns:
         info: "{{ page.day.toDate('m.d.Y') }}"
         parent: site.find("annotations")
         empty: No annotations
+        flip: true
 
       info:
         type: pages
