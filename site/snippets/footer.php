@@ -11,7 +11,7 @@
         <br/>
         <p>Instagram <br/> ⟶ <a href='<?=$info->social()?>' target="_blank"><?=$info->insta()?></a></p>
     </section>
-    <section>
+    <section class="content">
         <div class="flex">
             <div>
               <?= $info-> text()-> markdown()?>
@@ -21,13 +21,8 @@
                 <img src="<?= asset('assets/icons/x.svg')->url() ?>" class="slide-close dotted m-show">
             </a>
         </div>
-        
-        <br/>
-        <br/>
-        
         <br/>
         <span>Join the group ⟶</span>
-        <br/>
         <?php snippet('subscribe') ?>   
     </section>
 

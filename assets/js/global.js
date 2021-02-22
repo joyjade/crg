@@ -5,19 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function toggleInfo() {
 	let info = document.querySelector('.info');
+  let openbtn = document.getElementById('info');
+  const mainPanel = document.querySelector('main');
 
-	let openbtn = document.getElementById('info');
 	openbtn.onclick = function(e) {
     e.preventDefault;
     openbtn.classList.toggle('active');
-		info.classList.toggle('slid-open');
+    info.classList.toggle('slid-open');
+    mainPanel.style.overflow = 'hidden';
 	};
 
 	let closebtn = document.getElementById('slide_close');
 	closebtn.onclick = function(e) {
     e.preventDefault;
     openbtn.classList.remove('active');
-		info.classList.remove('slid-open');
+    info.classList.remove('slid-open');
+    mainPanel.style.overflow = 'auto';
 	};
 }
 
@@ -44,15 +47,7 @@ function hoverReveal(selector) {
 			else {
 				img.src = noimage;
 			}
-
 			hiddenimage.style.opacity = '1';
-			// title.style.color = 'white';
-			// title.style.backgroundColor = '#D62CFF';
-			
 		};
-		// title.onmouseleave = function() {
-		// 	title.style.backgroundColor = '';
-		// 	title.style.color = 'black';
-		// };
 	})	
 }
