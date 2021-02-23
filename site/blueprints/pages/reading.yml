@@ -76,3 +76,8 @@ columns:
             text: 
               - "no"
               - "yes"
+          category:
+            label: Special
+            type: select
+            options:
+              guest scholar: Guest Scholar

@@ -1,7 +1,12 @@
 <li data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
-    <h3>
-      <?= $reading->date()->toDate('F Y')?>
-    </h3>
+    <div class="head-line">
+      <h3>
+        <?= $reading->date()->toDate('F Y')?>
+        <?php if ($reading->current()->bool()) :?>
+          <span class="label subheader">currently reading</span>
+        <?php endif ?>
+      </h3>
+    </div>
     <div class="image">
       <?php if ($meme = $reading->meme()): ?>
         <figure>
@@ -11,8 +16,8 @@
     </div>
     <div class="event-line">
       <div>
-        <?php if ($reading->current()->bool()) :?>
-          <span class="type">currently reading</span>
+        <?php if ($reading->category()->isNotEmpty()) :?>
+          <span class="subheader"><?=$reading->category()?></span>
         <?php endif ?>
         <h2> 
           <a href="<?= $reading-> url() ?>"><?= $reading-> title() ?></a><?= $reading->subtitle()->isNotEmpty() ? $reading->subtitle() : '' ?>,

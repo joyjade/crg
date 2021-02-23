@@ -396,19 +396,34 @@ ul.calendar.upcoming li {
   grid-column: 1/3;
 }
 
-.upcoming h3, .event h1 {
+.upcoming .head-line, .event h1 {
   grid-column: 1/3;
 }
 
-.type {
+.upcoming h3 {
+  display: flex;
+}
+
+.upcoming .label {
+  margin-left: 1rem;
+}
+
+.upcoming .event-line .subheader {
+  padding-bottom: 0.75rem;
+}
+
+.subheader {
   font-size: 0.8rem;
+  color: var(--main-color);
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  display: inline-block;
+}
+
+.label {
   background-color: var(--main-color);
   color: white;
   padding: 0.25rem 0.5rem;
-  display: inline-block;
-  margin-bottom: 0.75rem;
 }
 
 ul.calendar header {
