@@ -18,7 +18,22 @@ Over time our numbers ebbed and flowed; nevertheless, a steady stream of new arr
 
 ----
 
-Partner: 
+Partner:
+
+- 
+  name: Critical Index Theory
+  description: >
+    CTI catalogues texts fundamental to the
+    framework of the art world. A collection
+    ever-expanding with current dialogues
+    around contemporary art, culture, and
+    society, the index allows for the public
+    to engage with critical research and
+    inquiry outside of formal academic
+    institutions through its presentation as
+    an online library and open forum
+    inviting submissions.
+  url: http://criticaltheoryindex.org/
 
 ----
 
@@ -57,5 +72,3 @@ Seotitle:
 ----
 
 Seodescription: 
-
-----

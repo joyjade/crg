@@ -51,3 +51,67 @@ function hoverReveal(selector) {
 		};
 	})	
 }
+
+// ABOUT---------- //
+const INFO = document.querySelector('.info');
+const ABOUT_CONTENT = INFO.querySelector('.content');
+let menu_items = document.querySelectorAll('.menu-item');
+let menu_item; 
+let height_gap = 29;
+let sections = ABOUT_CONTENT.querySelectorAll('h5');
+
+// ABOUT---- (e)
+INFO.addEventListener('click', event => {
+  menu_item = event.target.closest('.menu-item');
+  if (!menu_item) return;
+
+  menuHighlight(menu_item);
+  matchScroll(menu_item.id.split('_')[1]);  
+});
+
+ABOUT_CONTENT.addEventListener('scroll', scrolling);
+let lastKnownScrollPosition = 0;
+
+// ABOUT---- (fxns)
+function menuHighlight(item) {
+  menu_items.forEach(item => item.classList.remove('active'));
+  item.classList.add('active');
+}
+
+function matchScroll(id) {
+  let match = document.getElementById(id);
+  let scrollPosition = match.getBoundingClientRect().y - height_gap;
+
+  ABOUT_CONTENT.scrollBy({
+    top: scrollPosition,
+    behavior: 'smooth'
+  });
+}
+
+function scrolling() {
+  var posObj = {};
+  var count = 0;
+
+  sections.forEach(section => {
+    posObj[count] = section.getBoundingClientRect().y - height_gap;
+    count++;
+  })
+
+  scrollMatch(posObj);
+}
+
+function scrollMatch(posObj) {
+  let last_element;
+  for (key in posObj) {
+    let offset = posObj[key]; 
+    if (offset <= 0) {
+      last_element = sections[key];
+    }
+  }
+  
+  let reference_id = 'item_' + last_element.id;
+  menu_item = document.getElementById(reference_id);
+  console.log(reference_id, menu_item);
+
+  menuHighlight(menu_item);
+}

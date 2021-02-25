@@ -3,13 +3,11 @@
 
 <main class="annotation triptych">
 	<div class="heading">
-			<div class="book-title" data-src="<?=$reading ->image() -> url()?>>
-        <h3>
-          <span class="uppercase">
-            <?= $page-> title() ?><?php if($reading->subtitle()->isNotEmpty()): ?>: <?= $reading->subtitle(); ?><?php endif ?>,
-          </span> 
-          <span class="triptych-italick"><?= $reading-> author()?></span>
-        </h3>
+			<div class="book-title" data-src="<?=$reading ->image() -> url()?>">
+        <span class="uppercase">
+          <?= $reading-> fullTitle() ?>,
+        </span> 
+        <span class="triptych-italick"><?= $reading-> author()?></span>
       </div>
       <div class="back-button dotted uppercase">
         <a href="<?= $page->parent()->url() ?>">⟵ Back </a>

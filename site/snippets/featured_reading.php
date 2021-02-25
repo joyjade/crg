@@ -20,8 +20,8 @@
           <span class="subheader"><?=$reading->category()?></span>
         <?php endif ?>
         <h2> 
-          <a href="<?= $reading-> url() ?>"><?= $reading-> title() ?></a><?= $reading->subtitle()->isNotEmpty() ? $reading->subtitle() : '' ?>,
-          <span class="triptych-italick"><?= $reading-> author()?></span>
+          <a href="<?= $reading-> url() ?>"><?= $reading-> fullTitle() ?>,</a>
+          <span class="triptych-italick"><?= $reading-> author()?></span>  
         </h2>
       </div>
       <p class="location">

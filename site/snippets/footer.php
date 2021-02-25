@@ -1,9 +1,15 @@
 <footer class="info triptych dotted">
     <?php $info = page('info'); $sections = $info->blueprint()->fields()?>
-    <section>
-      <?php foreach( $sections as $section):?>
-        <h5><?= $section['label'] ?></h5>
-      <?php endforeach ?>
+    <section class="menu">
+        <a href="#" id="item_first" class="menu-item active">
+          <h5>Mission</h5>
+        </a>
+        <a href="#" id="item_second" class="menu-item">
+          <h5>History</h5>
+        </a>
+        <a href="#" id="item_third" class="menu-item">
+          <h5>Partners</h5>
+        </a>
       <a href="#" id="slide_close">
         <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted m-hide">
         <img src="<?= asset('assets/icons/x.svg')->url() ?>" class="slide-close dotted m-show">
@@ -18,7 +24,8 @@
             <?= $info-> history() -> markdown()?>
 
           <h5 id="third">Partners</h5> 
-            <?= $info-> partners() ?>
+            <?= $info-> partners() -> toStructure() -> kirbytext()?>
+            <?= $info-> history() -> markdown()?>
           
           <h5 id="fourth">FAQ</h5> 
             <?= $info-> faq() ?>
@@ -36,6 +43,7 @@
             <?= $info-> donate() ?>
           <p>About this site</p>
             <?= $info-> credits() ?>
+            <?= $info-> history() -> markdown()?>
         </div>
         <br/>
     </section>

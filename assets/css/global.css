@@ -270,7 +270,7 @@ nav .triptych.uppercase:hover, nav .active {
 /* Info */
 .info {
 	font-size: var(--body-text);
-	transform: translateY(100vh);
+	/* transform: translateY(100vh); */
   transition: transform 800ms ease;
   max-height: calc(100vh - var(--margin) * 2);
   z-index: 10;
@@ -291,9 +291,12 @@ nav .triptych.uppercase:hover, nav .active {
   margin-bottom: 1rem;
 }
 
+.info .active {
+  font-family: "triptych-grotesque";
+}
+
 .info h5 {
   font-size: var(--body-text);
-  /* font-family: "triptych-grotesque"; */
   text-transform: uppercase;
 }
 
@@ -396,15 +399,15 @@ ul.calendar.upcoming li {
   grid-column: 1/3;
 }
 
-.upcoming .head-line, .event h1 {
+.upcoming .head-line {
   grid-column: 1/3;
 }
 
-.upcoming h3 {
+.upcoming h3, .reading .header h3 {
   display: flex;
 }
 
-.upcoming .label {
+.upcoming .label, .reading .header .label {
   margin-left: 1rem;
 }
 
@@ -506,43 +509,43 @@ ul.calendar header {
 }
 
 /* Event */
-.event {
+.reading {
   padding: 1rem;
 }
 
-.event .content {
+.reading .content {
   display: flex;
   padding-top: 1rem;
 }
 
-.event .header {
+.reading .header {
   padding: 0.75rem 1rem 0;
 }
 
-.event .header h3 {
+.reading .header h3 {
   padding-top: 0.5rem;
 }
 
-.event .header h2 {
+.reading .header h2 {
   padding: 1.5rem 0 1rem;
 }
 
-.event .content h4 {
+.reading .content h4 {
   border-top: var(--color-border);
   padding: 1rem 0;
 }
 
-.event .content > div:nth-child(2) {
+.reading .content > div:nth-child(2) {
   height: calc(100vh - 60px);
 }
 
-.event {
+.reading {
   padding: 0 1rem;
 }
 
 /* Related Sidebar */
 
-.related li {
+/* .related li {
   margin-bottom: 1.5rem;
 }
 
@@ -558,7 +561,7 @@ ul.calendar header {
   color: var(--main-color);
   padding-bottom: 0.25rem;
   display: inline-block;
-}
+} */
 
 
 /* Annotation, s */

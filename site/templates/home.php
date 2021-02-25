@@ -1,25 +1,19 @@
 <?php snippet('nav') ?>
 
 <?php 
-	if ($readings = page('readings')->children()->listed()): 
+  $reading_list = page('readings'); 
+  if ($readings = page('readings')->children()->listed()): 
 ?>
 
 <main>
   <div class="<?= $page ?> triptych">
     <h1>    
-      <?php if ($currently_reading = $readings->findBy('current', 'true')): ?>  
-        We're currently reading 
-        <span class="triptych-italick book-title" 
-              data-src="<?=$currently_reading ->cover() ? $currently_reading ->cover() -> url() : ''?>">
-              <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>.
+      <?php if ($currently_reading = $readings->currentlyReading()): ?>  
+        We're currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
       <?php else: ?>
-        We're about to read
-        <span class="triptych-italick book-title" 
-              data-src="<?=$readings->last()->cover() ? $readings->last()->cover() -> url() : ''?>">
-              <?=$readings->last()-> title()-> link()?>,</span> by <?=$readings->last()->author()?>. 
+        We're about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
-        Usually, we meet at LACA. In the meantime, join us <span class="underline">online every Sunday,</span> 
-          7-9PM PST.
+        Usually, we meet at LACA. In the meantime, join us <span class="underline">online every Sunday, 7-9PM PST.
     </h1>
 		<br/><br/>
 

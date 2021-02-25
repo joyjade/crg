@@ -26,17 +26,21 @@ columns:
       publisher: 
         type: text
         width: 1/2
-      # links:
-      #   type: structure
-      #   label: Links
-      #   fields: 
-      #     url: 
-      #       label: URL
-      #       type: url
-
       note:
         label: Intro
         type: textarea
+      links: 
+        type: structure
+        label: Links
+        fields: 
+          description:
+            type: text
+          url: 
+            label: URL
+            type: url
+      files:
+        type: files
+        label: Attachments
   sidebar:
     width: 1/3
     sections: 

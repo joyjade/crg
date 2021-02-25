@@ -10,4 +10,11 @@ class ReadingPage extends Page
     return $this->images()->findBy("template", "meme");
   }
 
+  public function fullTitle() {
+    $title = $this-> title();
+    $subtitle = $this->subtitle()->isNotEmpty() ? ': ' . $this->subtitle() : '';
+
+    return $title . $subtitle;
+  }
+
 }
