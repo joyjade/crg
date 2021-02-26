@@ -55,7 +55,23 @@ Email: communityreadinggroup@gmail.com
 
 ----
 
-Faq: 
+Faq:
+
+*This is a question*
+
+And maybe this is a longer answer to that is an answer to that question
+
+*An example question is: When do we meet?*
+
+We are currently meeting on Zoom. If you would like to join: email us at communityreadinggroup@gmail.com. We send out Zoom info every Sunday morning. 
+
+*How do we get readings?*
+
+The readings are made available graciously by Critical Theory Index. You can find our current reading (and so much more) on that site. 
+
+*I didn't finish the reading...*
+
+Not a problem. Join us anyway!
 
 ----
 
@@ -63,7 +79,7 @@ Donate:
 
 ----
 
-Credits: 
+Credits: Designed and developed by Joy / Jade. Made with Kirby. Special thanks to Michael Appuhn.
 
 ----
 

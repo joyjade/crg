@@ -59,6 +59,7 @@ let menu_items = document.querySelectorAll('.menu-item');
 let menu_item; 
 let height_gap = 29;
 let sections = ABOUT_CONTENT.querySelectorAll('h5');
+let scrollLock = false;
 
 // ABOUT---- (e)
 INFO.addEventListener('click', event => {
@@ -66,10 +67,12 @@ INFO.addEventListener('click', event => {
   if (!menu_item) return;
 
   menuHighlight(menu_item);
-  matchScroll(menu_item.id.split('_')[1]);  
+  matchScroll(menu_item.id.split('_')[1]);
+
+
 });
 
-ABOUT_CONTENT.addEventListener('scroll', scrolling);
+ABOUT_CONTENT.addEventListener('scroll',  scrolling);
 let lastKnownScrollPosition = 0;
 
 // ABOUT---- (fxns)

@@ -36,8 +36,8 @@ ul {
 	list-style-type: none;
 }
 
-strong, b {
-  font-weight: 500;
+strong, b, .grotesque {
+  font-family: "triptych-grotesque";
 }
 
 img {
@@ -46,6 +46,15 @@ img {
 
 p {
   font-size: var(--body-text);
+}
+
+i, em, .triptych-italick {
+  font-family: "triptych-italick";
+  letter-spacing: -0.5px;
+}
+
+.triptych-italick {
+  letter-spacing: -0.75px;
 }
 
 
@@ -181,11 +190,6 @@ h4 {
 	font-size: 1.15rem;
 }
 
-.triptych-italick {
-	font-family: triptych-italick;
-	letter-spacing: -0.75px;
-}
-
 .title.triptych-italick {font-size: 2rem; padding-bottom: 1.25rem;}
 
 .title.triptych-italick:hover {
@@ -215,6 +219,10 @@ nav .triptych.uppercase:hover, nav .active {
 .book-title:hover {
   background-color: var(--main-color);
   color: white;
+}
+
+.content p {
+  margin-bottom: 1rem;
 }
 
 /* COMPONENTS */
@@ -270,7 +278,7 @@ nav .triptych.uppercase:hover, nav .active {
 /* Info */
 .info {
 	font-size: var(--body-text);
-	/* transform: translateY(100vh); */
+	transform: translateY(100vh);
   transition: transform 800ms ease;
   max-height: calc(100vh - var(--margin) * 2);
   z-index: 10;
@@ -287,10 +295,6 @@ nav .triptych.uppercase:hover, nav .active {
   overflow-y: auto;
 }
 
-.info .content p {
-  margin-bottom: 1rem;
-}
-
 .info .active {
   font-family: "triptych-grotesque";
 }
@@ -298,6 +302,12 @@ nav .triptych.uppercase:hover, nav .active {
 .info h5 {
   font-size: var(--body-text);
   text-transform: uppercase;
+}
+
+.info h5:not(:first-of-type) {
+  border-top: var(--dotted-border);
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .info .content h5 {

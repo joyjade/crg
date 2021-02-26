@@ -20,7 +20,7 @@
     <div class="content">
       <div class="w70 thinpads">
         <h4></h4>
-        <p><?= $page-> note()-> markdown() ?></p>
+        <p><?= $page-> note()-> kirbytext() ?></p>
         </br>
         <div class="image">
           <?php if ($image = $page->meme()): ?>
