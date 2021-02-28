@@ -1,71 +1,58 @@
+<?php $date = $page->date(); ?>
 <?php snippet('nav') ?>
-<?php $title = $page-> title(); $slug = $page -> slug() ?>
 
-<main class="reading">
-	<div class="panel triptych">
-		<div class="heading thinpads">
-			<h2>
-				<?=$title?>
-				<?php if($page-> subtitle()->isNotEmpty()): ?>
-					</h2><h2><?= $page-> subtitle() ?>
-				<?php endif ?>
-			</h2>
-			<h3 class="author triptych-italick"><?= $page-> author() ?></h3>
-		</div>
-		<div class="flex detail-body m-col">
-			<div class="w70 thinpads">
-        <h4> Notes </h4>
-        <?php if( $published = $page-> published()->isNotEmpty() or $page->publisher()->isNotEmpty() ): ?>
-          <p>
-            Published: <?= $page-> published() ?>
-            <?php if( $page->publisher()->isNotEmpty() ): ?>
-              by <?= $page-> publisher() ?>
-            <?php endif ?>
-          </p> 
-        <?php endif ?>
-				<p><?= $page->text()?></p>
-				<p><?= $page->links()?></p>
-				
-			</div>
-			
-			<div class="w30 thinpads">
-        <?php $related_events = page('events') -> children()->filterBy("reading", '- readings/' . $slug)->sortBy("day");
-          if ($related_events-> isNotEmpty()):?>
-            <h4 class="grotesque"> Meetings ⟶</h4>
-            <ul class="related"> 
-              <?php snippet('related', ['related_events' => $related_events]); ?>
-            </ul>
-        <?php endif; ?>
-				<h4> Tags </h4>
-				<p><?= $page->tags()?></p>
-			
-			</div>
-		</div>
-		
-			<!-- <?php if($pdf = $page-> documents() -> first()): ?>
-				<a class="arrow dotted" href="<?= $pdf-> url()?>" target="_blank">
-					<?php snippet('download_arrow') ?>
-				</a>		
-			<?php endif ?> -->
-	</div>
-
-
-
-	<?php if ($page->hasPrevListed()): ?>
-		<div class="prev-button dotted">
-			<a href="<?= $page->prevListed()->url() ?>">⟵</a>
-		</div>
-	<?php endif ?>
-
-	<?php if ($page->hasNextListed()): ?>
-		<div class="next-button dotted">
-			<a href="<?= $page->nextListed()->url() ?>">⟶</a>
-		</div>
-	<?php endif ?>
+<main class="reading triptych">
+  <div>
+    <div class="header">
+      <div class="w70">
+        <h4 class="uppercase">
+          <?= $date ->toDate('F Y') ?>
+        </h4>
+        <h2>
+          <a href="<?= $page-> url() ?>"><?= $page-> fullTitle() ?>,</a>
+          <span class="triptych-italick"><?= $page-> author()?></span>  
+        </h2>
+        <div class="back-button dotted">
+          <h6><a href="<?= $page->parent()->url() ?>">⟵ Back </a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="w70 thinpads">
+        <h4></h4>
+        <?= $page-> note()-> kirbytext() ?>
+        </br>
+        <div class="image">
+          <?php if ($image = $page->meme()): ?>
+            <figure>
+              <?= $page->meme() ?>
+            </figure>
+          <?php endif ?>
+        </div>
+      </div>
+      <div class="w30 thinpads">
+        <ul class="dotted details">
+          <?php if($page->current()->bool()) :?>
+            <li><span class="label"><strong>Currently Reading</strong></span></li>
+          <?php endif ?>
+          <li><span>Sunday, 7-9PM</span></li>
+          <?php if ($page->category()->isNotEmpty()) :?>
+            <li><span class="subheader"><?=$page->category()?><span></li>
+          <?php endif ?>
+          <?php if ($page->location()->isNotEmpty()): ?> 
+            <li><span><?= $page->location()->html()?>, email to join</span></li>
+          <?php endif ?>
+          <?php if(true) :?>
+            <li><a href="" class="oval">Link to Reading*</a></li>
+          <?php endif?>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
 </main>
 
 <?php 
-  $image = $page->image() ? $page->image() : '';
-  snippet('aside', ['class' => '', 'image' => $image ]) ?>
-
-<?php snippet('footer') ?>
+  snippet('aside', ['class' => '', 'image' => $page->cover() ? $page->cover() : '']); 
+  snippet('footer'); 
+?>

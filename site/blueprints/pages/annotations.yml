@@ -1,0 +1,24 @@
+title: Annotations
+type: pages
+icon: 📅
+
+options:
+  url: false
+  status: false
+  delete: false
+
+columns: 
+  left: 
+    width: 2/3
+    sections: 
+      drafts:
+        extends: sections/annotations
+        headline: Drafts
+        status: drafts
+      listed:
+        headline: Live
+        status: listed
+        extends: sections/annotations    
+        
+
+  

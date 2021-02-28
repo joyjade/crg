@@ -1,31 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() { 
-	hoverReveal();
-});
+const pastrdgs = document.querySelector('.past-readings');
+const button  = document.querySelector('.load-more');
+let page      = parseInt(pastrdgs.getAttribute('data-page'));
 
-function hoverReveal() {
-	let titles = document.querySelectorAll('.book-title');
-	let hiddenimage = document.querySelector('.thumb-image.hidden');
-	let img = hiddenimage.querySelector('img');
-	let noimage = img.src;
-
-	titles.forEach(title => {
-		title.onmouseover = function() {
-			if (title.dataset.src) {
-				img.src = title.dataset.src;
-			} 
-			else {
-				img.src = noimage;
-			}
-
-			hiddenimage.style.opacity = '1';
-			title.style.color = 'white';
-			title.style.backgroundColor = '#D62CFF';
-			
-		};
-		title.onmouseleave = function() {
-			// hiddenimage.style.opacity = '0';
-			title.style.backgroundColor = '';
-			title.style.color = 'black';
-		};
-	})	
+const fetchProjects = async () => {
+  // url to the next page (using pagination)
+  let url = `${window.location.href}.json/page:${page}`;
+  try {
+    const response       = await fetch(url); // hits the url and grabs the contents
+    const { html, more } = await response.json(); // initializes the JSON keys into the variables
+    button.hidden        = !more; // hides the button if there is no more
+    pastrdgs.innerHTML    += html; // adds the html to the current html
+    page++; // then increases the page number
+  } catch (error) {
+    console.log('Fetch error: ', error);
+  }
 }
+
+button.addEventListener('click', fetchProjects);
+document.addEventListener("DOMContentLoaded", function() { 
+	hoverReveal('.calendar li');
+});

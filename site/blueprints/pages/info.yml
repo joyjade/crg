@@ -1,24 +1,91 @@
 title: Info
 icon: 🖼
-options: 
-  status: false
 
-pages: false
-files: false
+tabs:
 
-fields:
-  text:
-    label: Info
-    type: textarea
-  email:
-    label: Community Email
-    type: email
-    width: 1/3
-  insta:
-    label: Instagram
-    type: text
-    width: 1/3
-  social:
-    label: Link
-    type: url
-    width: 1/3
+  about:
+    label: About
+    icon: ♠️
+    sections:
+      about: 
+        type: fields
+        fields:
+          mission: 
+            label: Mission
+            type: textarea
+          history: 
+            label: History
+            type: textarea
+              
+
+  contact: 
+    label: Contact
+    icon: ♣️
+    columns:
+      - width: 2/3
+        sections:
+          left: 
+            type: fields
+            fields:
+              partner:
+                label: Partners
+                type: structure
+                fields:
+                  name:
+                    label: Name
+                    type: text
+                  description:
+                    label: Description
+                    type: text
+                  url:
+                    label: Link
+                    type: url
+              links: 
+                label: Links
+                type: structure
+                fields:
+                  name:
+                    label: Name
+                    type: text
+                  url:
+                    label: Link
+                    type: url
+                  alias:
+                    label: alias
+                    type: text
+          
+      - width: 1/3
+        sections:
+          right:
+            label: Location
+            type: fields
+            fields:
+              location:
+                label: Location
+                type: writer 
+              email: 
+                label: Community Email
+                type: email
+  
+             
+  faq:
+    label: faq
+    icon: ♥️
+    fields:
+      faq:
+        label: FAQ
+        type: textarea
+  
+  extra:
+    label: extra
+    icon: ♦️
+    columns:
+      - width: 1/2
+      - width: 1/2
+    fields:
+      donate:
+        label: Donate
+        type: url
+      credits:
+        label: About this site
+        type: text

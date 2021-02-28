@@ -1,31 +1,26 @@
 <?php snippet('nav') ?>
 
 <?php 
-	if ($all_readings = page('readings')->children()->listed()->flip()
-    AND $currently_reading = $all_readings->first()): 
+  $reading_list = page('readings'); 
+  if ($readings = page('readings')->children()->listed()): 
 ?>
 
 <main>
-	<div class="<?= $page ?> triptych">
-		<h1>    
-      We're currently reading <span class="triptych-italick book-title" data-src="<?=$currently_reading ->image() -> url()?>">
-      <?=$currently_reading-> title()-> link()?>,</span> by <?=$currently_reading->author()?>. 
-      Usually, we meet at LACA. In the meantime, join us online 
-      <?php if($upcoming_meeting = page('events') 
-                                    -> children()
-                                    -> filterBy("reading", '- readings/' . $currently_reading -> slug())
-                                    -> sortBy("day")
-                                    -> first()): ?>
-      <a href="<?= $upcoming_meeting -> url() ?>" class="underline">this upcoming Sunday.</a> 
+  <div class="<?= $page ?> triptych">
+    <h1>    
+      <?php if ($currently_reading = $reading_list->currentlyReading()): ?>  
+        We're currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
+      <?php else: ?>
+        We're about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
-
-		</h1>	
+        Usually, we meet at LACA. In the meantime, join us <span class="underline">online every Sunday, 7-9PM PST.
+    </h1>
 		<br/><br/>
 
 		<h1>
 			A few things we’ve read in the past is 
 			<?php 
-				$selected_readings = $all_readings-> not($currently_reading)-> shuffle()-> limit(3);
+				$selected_readings = $readings-> not($currently_reading)-> shuffle()-> limit(3);
 				$last = $selected_readings-> last();
 				foreach($selected_readings as $reading): 
       ?>
@@ -40,20 +35,19 @@
           <?php if ($reading !== $last): ?>
 					  <?= $reading-> title() -> link()?>,</span>	
 					<?php else: ?>
-            <?= $reading-> title() -> link()?> </span>
+            <?= $reading-> title() -> link()?>.</span>
           <?php endif ?>
 			<?php endforeach ?>	
-		</h1>
+    </h1>
+    <br/><br/>
 
 	</div>
 </main>
-
+<?php endif ?>
 
 <?php 
   $image = $page->image()->isNotEmpty() ? $page->image() : '';
   snippet('aside', ['class' => 'hidden', 'image' => $image]); 
 ?>
-
-<?php endif ?>
 
 <?php snippet('footer') ?>

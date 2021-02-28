@@ -1,0 +1,35 @@
+.annotation .heading {
+  margin-bottom: 1rem;
+}
+
+.annotation p {
+  margin-bottom: 1rem;
+}
+
+.next-button, .prev-button {
+  bottom: 0;
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  margin: var(--margin);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+@media screen and (min-width: 1180px) {
+  .annotation .heading {
+    margin-top: var(--margin);
+    border-top: var(--dotted-border);
+  }
+  .annotation .details {
+    padding: 0 3rem 1rem 1.25rem;
+    position: relative;
+  }
+
+}

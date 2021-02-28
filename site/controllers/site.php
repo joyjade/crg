@@ -1,5 +1,5 @@
 <?php
-return function($kirby, $pages, $page) {
+return function($page, $pages, $site, $kirby) {
 
     $alert = null;
 

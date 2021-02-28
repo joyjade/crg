@@ -1,28 +1,39 @@
 <?php snippet('nav') ?>
 
-<main class="<?= $page ?>">
-	<ul>
-		<?php foreach ($page->children()->listed()->flip() as $reading): ?>
-			<li class="book-title"
-			  <?php if($reading_image = $reading-> image()): ?> 
-				data-src="<?=$reading_image-> url()?>"
-			  <?php endif ?>>
-		      <a href="<?= $reading->url() ?>" class="triptych uppercase">
-		        <?= $reading-> title() ?><?php if($reading->subtitle()->isNotEmpty()): ?>: <?= $reading->subtitle() ?><?php endif ?>,
-		      </a>
-		      <span class="triptych-italick"><?= $reading-> author()?></span>
-		    </li>
-		<?php endforeach ?>	
-    <li>
-      <a href="<?= $page-> find('biblio')-> url()?>" class="triptych-italick">
-        Annotated Bibliography
-      </a>
-    </li>
-	</ul>
+<main class="<?= $page ?> triptych">
+  <div class='upcoming-events'>
+    <h3 class="header triptych uppercase">Upcoming</h3> 
+    <ul class="upcoming calendar">
+      <?php if ($upcoming_readings) :  
+          foreach ($upcoming_readings as $upcoming):
+            snippet('featured_reading', ['reading' => $upcoming]);
+          endforeach;		
+        else :?>
+        <li class="none">
+          <h2>
+            We are likely meeting next Sunday. Hang tight for an update.
+          </h2>
+        </li>
+      <?php endif ?>
+    </ul>
+  </div>
+    
+  <div class='past-events'>
+    <h3 class="header triptych uppercase">Past</h3>
+    <ul class="calendar past-readings" data-page="<?= $pagination->nextPage() ?>">
+      <?php 
+        foreach ($past_readings as $past):
+          snippet('past_reading', ['reading' => $past]);
+        endforeach;
+      ?>		   
+    </ul>
+    <button class="load-more" accesskey="m">Load more</button>
+  </div>	
+    
 </main>
-
+  
+</section>
 <?php 
-  $image = $page->image()->isNotEmpty() ? $page->image() : '';
-  snippet('aside', ['class' => 'hidden', 'image' => $image]); 
-  snippet('footer');
+  snippet('aside', ['class' => 'hidden', 'image' => $page->image()]); 
+  snippet('footer'); 
 ?>
