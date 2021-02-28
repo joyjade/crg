@@ -8,7 +8,7 @@
 <main>
   <div class="<?= $page ?> triptych">
     <h1>    
-      <?php if ($currently_reading = $readings->currentlyReading()): ?>  
+      <?php if ($currently_reading = $reading_list->currentlyReading()): ?>  
         We're currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
       <?php else: ?>
         We're about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.

@@ -3,14 +3,14 @@
 
 <main class="annotation triptych">
 	<div class="heading">
-			<div class="book-title" data-src="<?=$reading ->image() -> url()?>">
+			<div class="book-title" data-src="<?=$reading ->image() ? $reading ->image()-> url() : '#'?>">
         <span class="uppercase">
           <?= $reading-> fullTitle() ?>,
         </span> 
         <span class="triptych-italick"><?= $reading-> author()?></span>
       </div>
-      <div class="back-button dotted uppercase">
-        <a href="<?= $page->parent()->url() ?>">⟵ Back </a>
+      <div class="back-button dotted">
+        <h6><a href="<?= $page->parent()->url() ?>">⟵ Back </a></h6>
       </div>
   </div>
   <div class="details">
@@ -20,13 +20,13 @@
 
   <?php if ($page->hasPrevListed()): ?>
 		<div class="prev-button dotted triptych uppercase">
-			<a href="<?= $page->prevListed()->url() ?>">⟵ <?=$page->prevListed()->title() ?></a>
+			<h6><a href="<?= $page->prevListed()->url() ?>">⟵ <?=$page->prevListed()->title() ?></a></h6>
 		</div>
 	<?php endif ?>
 
 	<?php if ($page->hasNextListed()): ?>
 		<div class="next-button dotted triptych uppercase">
-			<a href="<?= $page->nextListed()->url() ?>"><?=$page->nextListed()->title() ?> ⟶</a>
+			<h6><a href="<?= $page->nextListed()->url() ?>"><?=$page->nextListed()->title() ?> ⟶</a></h6>
 		</div>
 	<?php endif ?>
 

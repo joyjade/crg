@@ -1,0 +1,82 @@
+.reading {
+  padding: 1rem;
+}
+
+.reading .header {
+  position: relative;
+}
+
+.reading .content {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.reading .header {
+  padding: 0.75rem 1rem 0;
+}
+
+.reading .header h4 {
+  padding-top: 0.5rem;
+}
+
+.reading .header h2 {
+  padding: 3rem 0 0;
+}
+
+.reading .content h4 {
+  border-top: var(--color-border);
+  padding: 1rem 0;
+}
+
+.reading .content > div:nth-child(2) {
+  height: calc(100vh - 60px);
+}
+
+.reading {
+  padding: 0 1rem;
+}
+
+.reading .back-button {
+  bottom: 0;
+}
+
+
+.details ul {
+  display: flex;
+  flex-direction: column;
+}
+.details li {
+  padding: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+.details li:not(:last-of-type) {
+  border-bottom: var(--dotted-border);
+}
+
+.details li > * {
+  width: 100%;
+}
+
+.details .label {
+  letter-spacing: 1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.details li span {
+  padding: 0.25rem 0.75rem;
+}
+
+.details li:last-of-type {
+  justify-content: center;
+}
+
+.details .oval {
+  border: var(--dotted-border);
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 65%;
+}

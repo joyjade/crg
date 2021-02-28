@@ -29,6 +29,11 @@ columns:
       note:
         label: Intro
         type: textarea
+      download_reading:
+        type: url
+        help: Hosted at Critical Index Theory 
+        label: Link to Reading
+
       links: 
         type: structure
         label: Links

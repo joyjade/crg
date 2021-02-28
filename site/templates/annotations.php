@@ -11,7 +11,7 @@
     <?php foreach ($page->children()->listed()->flip() as $annotation): ?>
       <?php $reading = $annotation->reading()->toPage();?>
 			<li class="book-title" data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
-        <a href="<?= $annotation->url()?>" class="triptych uppercase">
+        <a href="<?=$annotation->text()->isNotEmpty() ? $annotation->url() : ''?>" class="triptych uppercase">
           <?= $reading-> fullTitle() ?>,</a>
         </a>
         <span class="triptych-italick"><?= $reading-> author()?></span>
