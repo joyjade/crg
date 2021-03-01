@@ -38,9 +38,18 @@
 
 .reading .back-button {
   bottom: 0;
+  right: 15px;
 }
 
+.reading .cti {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
 
+.content .w30 {
+  position: relative;
+}
 .details ul {
   display: flex;
   flex-direction: column;
@@ -79,4 +88,5 @@
   padding: 15px 20px;
   text-align: center;
   border-radius: 65%;
+  cursor: alias;
 }
