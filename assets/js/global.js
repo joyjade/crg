@@ -57,8 +57,8 @@ const INFO = document.querySelector('.info');
 const ABOUT_CONTENT = INFO.querySelector('.content');
 let menu_items = document.querySelectorAll('.menu-item');
 let menu_item; 
-let height_gap = 29;
-let sections = ABOUT_CONTENT.querySelectorAll('h5');
+let height_gap = 10;
+let sections = ABOUT_CONTENT.querySelectorAll('.content > div');
 let scrollLock = false;
 
 // ABOUT---- (e)
@@ -68,8 +68,6 @@ INFO.addEventListener('click', event => {
 
   menuHighlight(menu_item);
   matchScroll(menu_item.id.split('_')[1]);
-
-
 });
 
 ABOUT_CONTENT.addEventListener('scroll',  scrolling);
@@ -114,7 +112,6 @@ function scrollMatch(posObj) {
   
   let reference_id = 'item_' + last_element.id;
   menu_item = document.getElementById(reference_id);
-  console.log(reference_id, menu_item);
 
   menuHighlight(menu_item);
 }

@@ -18,6 +18,7 @@ columns:
         parent: site.find("annotations")
         empty: No annotations
         flip: true
+        limit: 10
 
       info:
         type: pages

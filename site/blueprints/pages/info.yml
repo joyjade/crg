@@ -27,7 +27,7 @@ tabs:
           left: 
             type: fields
             fields:
-              partner:
+              partners:
                 label: Partners
                 type: structure
                 fields:
@@ -36,7 +36,7 @@ tabs:
                     type: text
                   description:
                     label: Description
-                    type: text
+                    type: textarea
                   url:
                     label: Link
                     type: url

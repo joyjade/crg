@@ -36,8 +36,9 @@ ul {
 	list-style-type: none;
 }
 
-strong, b, .grotesque {
-  font-family: "triptych-grotesque";
+strong, b {
+  text-decoration: underline;
+  font-weight: 100;
 }
 
 img {
@@ -55,6 +56,10 @@ i, em, .triptych-italick {
 
 .triptych-italick {
   letter-spacing: -0.75px;
+}
+
+.grotesque {
+  font-family: "triptych-grotesque";
 }
 
 
@@ -292,8 +297,15 @@ nav .triptych.uppercase:hover, nav .active {
   border-right: none;
 }
 
-.info section {
-	padding: 1rem;
+.info .menu {
+  border-right: var(--dotted-border);
+}
+
+.info .menu-item {
+  padding: 0.5rem 0.75rem;
+  border-bottom: var(--dotted-border);
+  display: block;
+  text-transform: uppercase;
 }
 
 .info .content {
@@ -301,22 +313,31 @@ nav .triptych.uppercase:hover, nav .active {
 }
 
 .info .active {
-  font-family: "triptych-grotesque";
+  background-color: var(--main-color);
+  color: white; 
 }
 
-.info h5 {
-  font-size: var(--body-text);
-  text-transform: uppercase;
+.info .content > div {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.info h5:not(:first-of-type) {
+.info .content > div:not(:first-of-type) {
   border-top: var(--dotted-border);
-  padding-top: 2rem;
-  margin-top: 2rem;
 }
 
-.info .content h5 {
-  padding-bottom: 1rem;
+.info .content h3 {
+  padding-bottom: 2rem;
+}
+
+.info .table {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto;
+
+}
+.info .table p:first-child {
+  grid-column: 1/2
 }
 
 .slid-open {
@@ -331,9 +352,10 @@ nav .triptych.uppercase:hover, nav .active {
 img.slide-close {
   position: absolute;
   top: 10px;
-  right: 5px;
+  right: 10px;
 	width: min-content;
 	height: min-content;
+  background-color: white;
 }
 
 /*Email and Signup Form*/
@@ -441,7 +463,7 @@ ul.calendar.upcoming li {
 .label {
   background-color: var(--main-color);
   color: white;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
 }
 
 ul.calendar header {

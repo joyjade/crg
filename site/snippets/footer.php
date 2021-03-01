@@ -2,25 +2,25 @@
     <?php $info = page('info'); $sections = $info->blueprint()->fields()?>
     <section class="menu">
         <a href="#" id="item_first" class="menu-item active">
-          <h5>Mission</h5>
+          <h4>Mission</h4>
         </a>
         <a href="#" id="item_second" class="menu-item">
-          <h5>History</h5>
+          <h4>History</h4>
         </a>
         <a href="#" id="item_third" class="menu-item">
-          <h5>Partners</h5>
+          <h4>Partners</h4>
         </a>
         <a href="#" id="item_fourth" class="menu-item">
-          <h5>FAQ</h5>
+          <h4>FAQ</h4>
         </a>
         <a href="#" id="item_fifth" class="menu-item">
-          <h5>Contact</h5>
+          <h4>Contact</h4>
         </a>
         <a href="#" id="item_sixth" class="menu-item">
-          <h5>Donate</h5>
+          <h4>Donate</h4>
         </a>
         <a href="#" id="item_seventh" class="menu-item">
-          <h5>Site</h5>
+          <h4>Site</h4>
         </a>
 
       <a href="#" id="slide_close">
@@ -29,36 +29,50 @@
       </a>
     </section>
     <section class="content">
-        <div class="">
-          <h5 id="first">Mission</h5>             
+        <div id="first">
+          <h3 >Mission</h3>             
           <?= $info-> mission() -> kirbytext()?>
-          
-          <h5 id="second">History</h5>   
-            <?= $info-> history() -> kirbytext()?>
-
-          <h5 id="third">Partners</h5> 
-            <?= $info-> partners() -> toStructure() -> kirbytext()?>
-            <?= $info-> history() -> markdown()?>
-          
-          <h5 id="fourth">FAQ</h5> 
-            <?= $info-> faq()-> kirbytext() ?>
-
-          <h5 id="fifth">Contact</h5>   
-            <p>Join the group ⟶ <?= Html::email($info->email()) ?></p>
-            <?php foreach($info->links()->toStructure() as $link): ?>
-              <p><?=$link->name()?> ⟶ <a href='<?=$link->url()?>' target="_blank"><?=$link->alias()?></a></p> 
-            <?php endforeach ?>
-            <p>Location ⟶</p>
-            <p> <?= $info-> location() ?></p>
-            <?php snippet('subscribe') ?> 
-            
-          <h5 id="sixth">Donate</p>
-            <?= $info-> donate() ?>
-
-          <h5 id="seventh">Site</h5>
-            <?= $info-> credits() ?>
-            <?= $info-> history() -> markdown()?>
         </div>
+        <div id="second">
+          <h3 >History</h3>   
+          <?= $info-> history() -> kirbytext()?>
+        </div>
+        <div id="third">
+          <h3 >Partners</h3> 
+          <?php foreach( $info-> partners() -> toStructure() as $partner ): ?> 
+            <div class="flex table">
+              <p><a href="<?=$partner -> url() ?>"><?= $partner -> name()?></a> ⟶</p>
+              <p><?=$partner -> description() ?></p>
+            </div>
+          <?php endforeach ?>
+        </div>
+        <div  id="fourth">
+          <h3>FAQ</h3> 
+          <?= $info-> faq()-> kirbytext() ?>
+        </div>
+        <div id="fifth">
+          <h3>Contact</h3>   
+          <div class="flex table">
+            <div><p>Join the group ⟶</p></div>
+            <div><p><?= Html::email($info->email()) ?></p></div>
+            <div><p>Location ⟶</p></div>
+            <div><?= $info-> location() ?></div>
+            <?php foreach($info->links()->toStructure() as $link): ?>
+              <div><p><?=$link->name()?> ⟶ </div>
+              <div><a href='<?=$link->url()?>' target="_blank"><?=$link->alias()?></a></p> </div>
+              
+            <?php endforeach ?>
+          </div>
+          <?php snippet('subscribe') ?> 
+        </div>
+        <div id="sixth">
+          <h3 >Donate</h3>
+          <p> We are graciously housed under LACA. Donate <strong><a href="<?= $info-> donate()->url() ?>">here</a></strong> to contribute...</p>
+        </div>
+        <div id="seventh">
+          <h3>Site</h3>
+          <?= $info-> credits() ?>
+        </div>  
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </section>
 
