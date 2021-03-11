@@ -27,7 +27,9 @@
         endforeach;
       ?>		   
     </ul>
-    <button class="load-more" accesskey="m">Load more</button>
+    <button class="load-more" accesskey="m">
+      <h6>Load more<span class="ellipses-loader">…</span></h6>
+    </button>
   </div>	
     
 </main>

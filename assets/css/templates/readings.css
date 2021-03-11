@@ -1,0 +1,17 @@
+.readings .upcoming-events {
+  margin-top: var(--margin);;
+}
+.readings .upcoming-events {
+  border-top: var(--dotted-border);
+}
+
+.readings h3.header, .event h3.header {
+  padding: 0.5rem 1.5rem;
+}
+
+.readings button.load-more {
+  font-family: inherit;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
