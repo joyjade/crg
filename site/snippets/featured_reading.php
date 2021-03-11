@@ -26,7 +26,7 @@
       </div>
       <p class="location">
         On <?= $reading->location()->isNotEmpty() ?  $reading->location()->html() : ''?>, 
-        Email/DM to join 
+        <span class="tint"><?= Html::email(page('info')->email(), 'Email to Join') ?></span> 
       </p>
     </div>
     

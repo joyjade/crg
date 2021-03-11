@@ -33,7 +33,7 @@
       <div class="w30 thinpads">
         <ul class="dotted details">
           <?php if($page->current()->bool()) :?>
-            <li><span class="label"><strong>Currently Reading</strong></span></li>
+            <li><span class="label">Currently Reading</span></li>
           <?php endif ?>
           <li><span>Sunday, 7-9PM</span></li>
           <?php if ($page->category()->isNotEmpty()) :?>
@@ -41,7 +41,8 @@
           <?php endif ?>
           <?php if ($page->location()->isNotEmpty()): ?> 
             <li><span>
-              <?= $page->location()->html()?><?= $page->current()->bool() ? ', email to join' : ''?>
+              <?= $page->location()->html()?><?php if($page->current()->bool()): ?>,<span class="tint"><?= Html::email(page('info')->email(), 'Email to Join') ?><span> 
+              <?php endif ?>
             </span></li>   
           <?php endif ?>
           <?php if($page->download_reading()->isNotEmpty()) :?>
