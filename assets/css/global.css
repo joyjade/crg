@@ -180,6 +180,10 @@ aside .dotted {
   color: var(--main-color);
 }
 
+.error {
+  padding: 1rem;
+}
+
 
 /* TYPOGRAPHY */
 
