@@ -1,27 +1,27 @@
 <footer class="info triptych dotted">
     <?php $info = page('info'); $sections = $info->blueprint()->fields()?>
     <section class="menu">
-        <a href="#" id="item_first" class="menu-item active">
-          <h4>Mission</h4>
-        </a>
-        <a href="#" id="item_second" class="menu-item">
-          <h4>History</h4>
-        </a>
-        <a href="#" id="item_third" class="menu-item">
-          <h4>Partners</h4>
-        </a>
-        <a href="#" id="item_fourth" class="menu-item">
-          <h4>FAQ</h4>
-        </a>
-        <a href="#" id="item_fifth" class="menu-item">
-          <h4>Contact</h4>
-        </a>
-        <a href="#" id="item_sixth" class="menu-item">
-          <h4>Donate</h4>
-        </a>
-        <a href="#" id="item_seventh" class="menu-item">
-          <h4>Site</h4>
-        </a>
+      <a href="#" id="item_first" class="menu-item active">
+        <h4>Mission</h4>
+      </a>
+      <a href="#" id="item_second" class="menu-item">
+        <h4>History</h4>
+      </a>
+      <a href="#" id="item_third" class="menu-item">
+        <h4>Partners</h4>
+      </a>
+      <a href="#" id="item_fourth" class="menu-item">
+        <h4>FAQ</h4>
+      </a>
+      <a href="#" id="item_fifth" class="menu-item">
+        <h4>Contact</h4>
+      </a>
+      <a href="#" id="item_sixth" class="menu-item">
+        <h4>Donate</h4>
+      </a>
+      <a href="#" id="item_seventh" class="menu-item last">
+        <h4>Advisory Council</h4>
+      </a>
 
       <a href="#" id="slide_close">
         <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted m-hide">
@@ -70,8 +70,13 @@
           <p> We are graciously housed under LACA. Donate <strong><a href="<?= $info-> donate()->url() ?>">here</a></strong> to contribute...</p>
         </div>
         <div id="seventh">
-          <h3>Site</h3>
-          <?= $info-> credits() ?>
+          <h3>Advisory Council</h3>
+          <?php foreach( $info-> people() -> toStructure() as $person ): ?> 
+            <div class="flex table">
+              <p><?= $person -> name()?>⟶</p>
+              <p><?= $person -> role() ?></p>
+            </div>
+          <?php endforeach ?>
         </div>  
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </section>

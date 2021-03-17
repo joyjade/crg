@@ -66,6 +66,9 @@ tabs:
               email: 
                 label: Community Email
                 type: email
+              donate:
+                label: Donate
+                type: url
   
              
   faq:
@@ -76,16 +79,26 @@ tabs:
         label: FAQ
         type: textarea
   
-  extra:
-    label: extra
+  people:
+    label: People
     icon: ♦️
     columns:
       - width: 1/2
       - width: 1/2
     fields:
-      donate:
-        label: Donate
-        type: url
-      credits:
-        label: About this site
-        type: text
+      people:
+        label: Advisory Council
+        type: structure
+        fields:
+          name:
+            label: Name
+            type: text
+          role:
+            label: Description
+            type: text
+            help: optional
+          url:
+            label: Link
+            type: url
+            help: optional
+          

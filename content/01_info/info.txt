@@ -77,27 +77,74 @@ Email: communityreadinggroup@gmail.com
 
 ----
 
-Faq:
-
-*This is a question*
-
-And maybe this is a longer answer to that is an answer to that question
-
-*An example question is: When do we meet?*
-
-We are currently meeting on Zoom. If you would like to join: email us at communityreadinggroup@gmail.com. We send out Zoom info every Sunday morning. 
-
-*How do we get readings?*
-
-The readings are made available graciously by Critical Theory Index. You can find our current reading (and so much more) on that site. 
-
-*I didn't finish the reading...*
-
-Not a problem. Join us anyway!
+Donate: https://lacarchive.com/section/donate
 
 ----
 
-Donate: https://lacarchive.com/section/donate
+Faq:
+
+*When does the Community Reading Group (CRG) meet? *
+
+We meet every Sunday from 7 p.m. to 9 p.m. either online or in-person or both. Instructions for upcoming meetings will be sent out by email on Tuesdays with a reminder sent Sunday mornings.  
+
+*Do I have to read the current book to participate in CRG? *
+
+CRG members are committed to joint study—genuine engagement with the interests of others is core to our mission. However, “engagement” may take other forms than reading, and we regularly share working notes so anyone can follow along. Please be mindful, however, to make space for those who have read. That being said, we encourage you to join us as you are. We are always thrilled for new faces and perspectives. 
+
+*What does CRG do that other reading groups do not already provide? *
+
+CRG is both a reading group and a reflexive space in which we try to enact the questions we ask. Our central questions are the following:
+How does community signify commonness?
+How does invoking community further democracy?
+How might we comprehend community more expansively?
+How might we commit our community activism to this expanse?
+
+*How is LACA different from CRG and vice versa? *
+
+LACA is an art archive and library that hosts CRG in person in its reading room and online. CRG is an experimental study group whose focus informs and enhances the social commitments of LACA. 
+
+*I missed a few books but want to jump into the new reading. Is that okay? And is it okay to participate here and there? Sometimes I can be consistent. *
+
+CRG is open to join at any time. We do not have expectations regarding your bandwidth and are just happy when you can join us. 
+
+*How does the book selection process work? *
+
+Our course of study is collective, which means that we vote on the books we read. After each book is finished, the organizer nominates someone to propose several books to be subject to a vote. Once the winner is decided, members have one to two weeks to procure a physical copy of the book, although digital copies will always be made available. The intervening week(s) between each member’s turn is dedicated to CRG programming, namely guest speakers or presentations by participants (e.g., group crits or workshops). 
+
+*When do I get to pick a book?*
+
+Participants who commit themselves to reading and discussing at least two books in succession are given priority for book selection. (Selections do not necessarily need to be a book; they may also take the form of an article, a film, an exhibition, or music [provided that all are accessible online].) 
+
+*I am interested in starting a CRG in my neck of the woods. Would this be supported by CRG?*
+
+
+
+Absolutely! And, in fact, our ultimate goal is to help others build their own CRG gatherings. We are especially interested in supporting a Spanish language branch of this project. So, if our vision for the collective study of political language speaks to you, then please reach out to us. We will help you grow it.
+
+----
+
+People:
+
+- 
+  name: Andrew McNeely
+  role: 'Role Name? '
+  url: ""
+- 
+  name: Hailey Loman
+  role: ""
+  url: ""
+- 
+  name: Olivia Leiter
+  role: ""
+  url: ""
+- 
+  name: Michael Berlin
+  role: ""
+  url: ""
+- 
+  name: Joy Park
+  role: ""
+  url: ""
 
 ----
 

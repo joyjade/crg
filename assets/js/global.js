@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function toggleInfo() {
 	let info = document.querySelector('.info');
   let openbtn = document.getElementById('info');
-  const mainPanel = document.querySelector('main');
+  const mainPanel = document.querySelector('body');
 
 	openbtn.onclick = function(e) {
     e.preventDefault;

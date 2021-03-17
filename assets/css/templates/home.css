@@ -1,14 +1,38 @@
 
 .home {
-  padding: 1.5rem 3rem 1rem 1.75rem;
+  display: flex;
+  flex-direction: column;
 }
+
+.home > div:first-of-type {
+  padding: 1.5rem 3rem 1rem 1.75rem;
+  flex-grow: 1;
+}
+
 .underline {
   text-decoration: underline;
 }
 
-.underline:hover {
+/* .underline:hover {
   background-color: var(--main-color);
   color: white;
+} */
+
+.notice {
+  border-top: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+  display: flex;
+  margin-bottom: var(--margin);
+}
+
+.notice > div {
+  padding: 0.5rem 1.75rem 0.75rem;
+}
+.notice > div:first-of-type {
+  flex-grow: 1;
+}
+.notice > div:last-of-type {
+ border-left: var(--dotted-border);
 }
 
 @media screen and (max-width: 440px) {

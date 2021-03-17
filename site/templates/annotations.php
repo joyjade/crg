@@ -5,7 +5,6 @@
   // $site->find('readings')->children()->listed()->flip();
 ?>
 
-
 <main class="<?= $page ?>">
 	<ul>
     <?php foreach ($page->children()->listed()->flip() as $annotation): ?>

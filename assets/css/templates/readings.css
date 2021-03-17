@@ -1,8 +1,5 @@
 .readings .upcoming-events {
-  margin-top: var(--margin);;
-}
-.readings .upcoming-events {
-  border-top: var(--dotted-border);
+  margin-top: var(--margin);
 }
 
 .readings h3.header, .event h3.header {
@@ -46,10 +43,6 @@ ul.calendar.upcoming li {
 
 .upcoming h3, .reading .header h3 {
   display: flex;
-}
-
-.upcoming .label, .reading .header .label {
-  margin-left: 1rem;
 }
 
 .upcoming .event-line .subheader {
@@ -126,3 +119,56 @@ ul.calendar header {
 .calendar li:hover img {
   background-color: var(--main-color);
 }
+
+@media screen and (max-width: 440px) {
+  .readings h3.header {
+    padding: 0.5rem 1rem;
+  }
+
+  ul.calendar li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .past-events time {
+    padding-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .head-line h3 {
+    justify-content: space-between;
+  }
+
+  .past-events h2 {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'triptych-grotesque';
+    padding-left: 1rem;
+  }
+
+  .upcoming .image img {
+    margin: 15px 0;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .readings button.load-more {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .readings .upcoming-events {
+    border-top: var(--dotted-border);
+  }
+  .upcoming .label, .reading .header .label {
+    margin-left: 1rem;
+  }
+}
+
