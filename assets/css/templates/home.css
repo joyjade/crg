@@ -19,20 +19,7 @@
 } */
 
 .notice {
-  border-top: var(--dotted-border);
-  border-bottom: var(--dotted-border);
-  display: flex;
   margin-bottom: var(--margin);
-}
-
-.notice > div {
-  padding: 0.5rem 1.75rem 0.75rem;
-}
-.notice > div:first-of-type {
-  flex-grow: 1;
-}
-.notice > div:last-of-type {
- border-left: var(--dotted-border);
 }
 
 @media screen and (max-width: 440px) {

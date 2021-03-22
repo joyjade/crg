@@ -5,9 +5,9 @@
 
 <main>
   <div class="biblio triptych">
-    <a class="back-button" href=<?=$readings -> url()?>> 
-      <img src="<?= asset('assets/icons/arrow-down.svg')->url() ?>" class="slide-close dotted">
-    </a>
+    <div class="back-button dotted ">
+      <h6><a href="<?= $page->parent()->url() ?>">⟵ Back </a></h6>
+    </div>
     <h1 class="triptych-italick">
       <?= $title ?>
     </h1>

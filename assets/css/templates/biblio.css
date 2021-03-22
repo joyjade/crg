@@ -17,6 +17,13 @@ ol li {
   padding-bottom: 0.5rem;
 }
 
+.biblio .back-button {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  bottom: unset;
+}
+
 @media screen and (max-width: 440px) {
   .biblio {
     padding: 0.75rem;

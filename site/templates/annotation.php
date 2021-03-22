@@ -14,11 +14,11 @@
       </div>
   </div>
   <div class="details">
-    <?= $page-> text() -> markdown() ?>
+    <?= $page-> text() -> kirbytext() ?>
   </div>
 
 
-  <?php if ($page->hasPrevListed()): ?>
+  <!-- <?php if ($page->hasPrevListed()): ?>
 		<div class="prev-button dotted triptych uppercase">
 			<h6><a href="<?= $page->prevListed()->url() ?>">⟵ <?=$page->prevListed()->title() ?></a></h6>
 		</div>
@@ -28,7 +28,7 @@
 		<div class="next-button dotted triptych uppercase">
 			<h6><a href="<?= $page->nextListed()->url() ?>"><?=$page->nextListed()->title() ?> ⟶</a></h6>
 		</div>
-	<?php endif ?>
+	<?php endif ?> -->
 
 </main>
 <?php 

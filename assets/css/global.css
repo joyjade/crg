@@ -240,13 +240,17 @@ nav .triptych.uppercase:hover, nav .active {
 	letter-spacing: 0.2px;
 }
 
-.book-title:hover {
+.highlight:hover {
   background-color: var(--main-color);
   color: white;
 }
 
-.content p {
-  margin-bottom: 1rem;
+.content p, .details p {
+  margin-bottom: 1.4rem;
+}
+
+.default-cursor {
+  cursor: auto;
 }
 
 /* COMPONENTS */
@@ -297,6 +301,24 @@ nav .triptych.uppercase:hover, nav .active {
 .back-button  img.slide-close {
   transform: rotate(90deg);
 } 
+
+.notice {
+  display: flex;
+  border-top: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+}
+
+.notice > div:last-of-type {
+  border-left: var(--dotted-border);
+ }
+
+.notice > div {
+  padding: 0.5rem 1.75rem 0.75rem;
+}
+
+.notice > div:first-of-type {
+  flex-grow: 1;
+}
 
 /* Info */
 .info {
@@ -453,11 +475,6 @@ abbr[title] {
   font-size: 1.8rem;
 }
 
-.annotation .book-title {
-  pointer-events: none;
-}
-
-
 .annotations li, .annotation .heading {
   padding: 1rem 1.25rem;
   position: relative;
@@ -465,6 +482,15 @@ abbr[title] {
 
 .annotations ul li:not(:last-of-type), .annotation .heading {
   border-bottom: var(--dotted-border);
+}
+
+.annotations .notice {
+  padding: 0;
+  margin-top: var(--margin);
+}
+
+.annotations .notice > div:first-of-type {
+  padding-left: 1.25rem;
 }
 
 /* Ellipses Loader, from Jon Gacnik */ 

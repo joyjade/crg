@@ -27,7 +27,7 @@
         <?php if ($reading == $last): ?>
           <span class="triptych"> and </span> 
         <?php endif ?>
-        <span class="triptych-italick book-title" 
+        <span class="triptych-italick book-title highlight" 
           <?php if($reading_image = $reading-> image()): ?> 
             data-src="<?=$reading_image-> url()?>"
           <?php endif ?>>
