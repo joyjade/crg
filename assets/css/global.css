@@ -289,6 +289,10 @@ nav .triptych.uppercase:hover, nav .active {
   padding: 15px;
 }
 
+h3.header {
+  padding: 0.5rem 1.5rem;
+}
+
 .back-button {
   position: absolute;
   bottom: 10px;
@@ -491,6 +495,67 @@ abbr[title] {
 
 .annotations .notice > div:first-of-type {
   padding-left: 1.25rem;
+}
+
+/* Bookmark, s */
+h3.header {
+  margin-top: var(--margin);
+  border-bottom: var(--dotted-border);;
+  border-top: var(--dotted-border);
+}
+
+ul.gallery {
+  display: flex;
+}
+
+.gallery li {
+  width: 25%;
+  border-right: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+  text-align: center;
+}
+
+.gallery li:nth-of-type(4n) {
+  border-right: none;
+}
+
+.gallery img {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.gallery h6 {
+  padding: 1rem 0;
+}
+
+.gallery .empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmarks .content, .bookmark .content {
+  padding: 1rem 1.5rem;
+}
+
+.photo-wrapper {
+  position: relative;
+  height: 250px;
+}
+
+.photo-wrapper .photo {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.photo.reveal {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out 0s;
+}
+
+.photo.reveal:hover {
+  opacity: 1; 
 }
 
 /* Ellipses Loader, from Jon Gacnik */ 

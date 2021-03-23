@@ -117,8 +117,6 @@ Participants who commit themselves to reading and discussing at least two books 
 
 *I am interested in starting a CRG in my neck of the woods. Would this be supported by CRG?*
 
-
-
 Absolutely! And, in fact, our ultimate goal is to help others build their own CRG gatherings. We are especially interested in supporting a Spanish language branch of this project. So, if our vision for the collective study of political language speaks to you, then please reach out to us. We will help you grow it.
 
 ----
@@ -127,22 +125,22 @@ People:
 
 - 
   name: Andrew McNeely
-  role: 'Role Name? '
-  url: ""
-- 
-  name: Hailey Loman
-  role: ""
+  role: Co-founder
   url: ""
 - 
   name: Olivia Leiter
-  role: ""
+  role: Curator (Community Bookmarks)
   url: ""
 - 
   name: Michael Berlin
-  role: ""
+  role: Editor
   url: ""
 - 
   name: Joy Park
+  role: 'Designer & Programmer'
+  url: ""
+- 
+  name: Hailey Loman
   role: ""
   url: ""
 

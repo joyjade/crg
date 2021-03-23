@@ -42,10 +42,10 @@
   </div>
   <div class="notice">
     <div>
-      <h3>Support CRG Programming with a <a href="#" class="triptych-italick">Community Bookmark.</a></h3>
+      <h3>Support CRG Programming with a <a href="<?= $site->find('bookmarks')->url()?>" class="triptych-italick highlight">Community Bookmark.</a></h3>
     </div>
     <div>
-      <h3>Or <a href="#">donate now!</a></div></h3>
+      <h3>Or <a href="<?= page('info')->donate()->url()?>" target="_blank">donate now!</a></div></h3>
   </div>
 </main>
 <?php endif ?>
