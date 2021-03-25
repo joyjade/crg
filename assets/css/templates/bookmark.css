@@ -1,0 +1,25 @@
+h3.header {
+  position: relative;
+} 
+
+.back-button {
+  bottom: 9px;
+}
+
+.bookmark .pay span {
+  font-size: var(--body-text);
+}
+
+.bookmark .pay span:first-of-type {
+  width: 200px;
+}
+
+.bookmark .pay {
+  padding-bottom: 2rem;
+}
+
+.bookmark .bio {
+  border-top: var(--dotted-border);
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
