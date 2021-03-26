@@ -15,6 +15,6 @@
     </li>
   <?php endforeach ?>	
   <li class="empty">*</li>
-  <li class="empty">*</li>
-  <li class="empty">*</li>
+  <li class="empty m-hide">*</li>
+  <li class="empty m-hide">*</li>
 </ul>

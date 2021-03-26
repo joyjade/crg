@@ -4,11 +4,6 @@
   flex-direction: column;
 }
 
-.home > div:first-of-type {
-  padding: 1.5rem 3rem 1rem 1.75rem;
-  flex-grow: 1;
-}
-
 .underline {
   text-decoration: underline;
 }
@@ -23,7 +18,18 @@
 }
 
 @media screen and (max-width: 440px) {
-  .home {
+  .home > div:first-of-type {
     padding: 1rem;
+    padding-bottom: 3rem;
+  }
+  .home .notice > div {
+    padding: 0.5rem 1rem 0.75rem;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .home > div:first-of-type {
+    padding: 1.5rem 3rem 1rem 1.75rem;
+    flex-grow: 1;
   }
 }

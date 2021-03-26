@@ -2,12 +2,12 @@
 
 <?php $backurl = $page->parent()->url() ?>
 <main>
-  <div class="bookmark triptych">
+  <div class="bookmark triptych"> 
     <h3 class="header triptych uppercase">
       <a href="<?= $backurl ?>">
         <?= $page->parent()-> title() ?>
       </a>
-      <div class="back-button dotted">
+      <div class="back-button dotted m-hide">
         <h6><a href="<?= $backurl ?>">⟵ Back </a></h6>
       </div>
     </h3>

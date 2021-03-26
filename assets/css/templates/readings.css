@@ -116,14 +116,14 @@ ul.calendar header {
 }
 
 @media screen and (max-width: 440px) {
-  .readings h3.header {
-    padding: 0.5rem 1rem;
-  }
-
   ul.calendar li {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.75rem;
+  }
+  .readings .past-events .header {
+    border-top: var(--dotted-border);
+    margin-top: 4rem;
   }
 
   .past-events time {
