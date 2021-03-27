@@ -392,7 +392,6 @@ img.slide-close {
   right: 10px;
 	width: min-content;
 	height: min-content;
-  background-color: white;
 }
 
 @media screen and (min-width: 440px) {

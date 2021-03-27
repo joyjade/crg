@@ -27,9 +27,11 @@ function toggleInfo() {
 function mobileNav() {
   let mnav = document.querySelector('.m-nav');
   let navarrow = document.getElementById('nav_arrow');
+  let img = navarrow.querySelector('.slide-close');
   navarrow.onclick = function(e) {
     e.preventDefault;
-    mnav.classList.toggle('show')
+    mnav.classList.toggle('show');
+    img.classList.toggle('rotate');
   }
 }
 

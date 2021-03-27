@@ -9,7 +9,7 @@
 	<ul>
     <li class="notice">
       <div>
-        <h3>Annotations are rolling, and highlight pink when they are out!</h3> 
+        <h3>Full annotations coming soon...</h3> 
       </div>
       <div>
         <h3><a href="<?= $page-> find('biblio')-> url()?>" class="triptych-italick">
