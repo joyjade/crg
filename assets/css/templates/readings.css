@@ -153,9 +153,16 @@ ul.calendar header {
     max-height: 100vh;
   }
 
+  .upcoming .image {
+    width: 80%;
+    align-self: flex-start;
+  }
+
   .readings button.load-more {
     padding: 1.5rem 1rem;
   }
+
+  
 }
 
 @media screen and (min-width: 440px) {

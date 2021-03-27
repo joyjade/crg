@@ -51,6 +51,10 @@
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1.2rem;
+  }
+
   h3.header {
     border-top: none;
     padding: 0.5rem 1rem;
@@ -116,8 +120,7 @@
   .info .menu {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    position: fixed;
-    bottom: 0;
+    position: sticky;
     z-index: 2;
     background: white;
   }
@@ -132,7 +135,7 @@
   }
 
   .info .menu .menu-item {
-    border-top: var(--dotted-border);
+    border-bottom: var(--dotted-border);
   }
 
   .info .menu .menu-item h4 {
@@ -157,8 +160,10 @@
   }
 
   #slide_close {
-    top: 5px;
+    top: 100px;
     right: 5px;
+    width: 42px;
+    height: 42px;
     background-color: white;
     position: fixed;
   }
@@ -210,5 +215,15 @@
 
   .gallery li:nth-of-type(2n) {
     border-right: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav .title.triptych-italick {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 }
