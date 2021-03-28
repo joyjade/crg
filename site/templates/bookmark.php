@@ -14,21 +14,23 @@
     <?php snippet('bookmark_gallery', ['bookmarks' => $page->siblings()->listed()]) ?>
     <div class="content flex">
       <div class="w25">
-        <h1>$6</h1>
-        <h4  class="uppercase">Community <br/> Bookmark #1</h4>
+        <h1>$<?=$page-> price() ?></h1>
+        <h4  class="uppercase"><?=$page-> title() ?></h4>
       </div>
       <div class="w75">
         <h1>&nbsp</h1>
-        <?= $page-> details()->markdown() ?>
+        <?= $page-> description()->markdown() ?>
         <ul class="pay">
-          <li class=" flex">
-            <span>Venmo</span>
-            <span>@Olivia-Leiter</span>
-          </li>
-          <li class="flex">
-            <span>Cash App</span>
-            <span>$CommunityReading</span>
-          </li>
+          <?php foreach( $page-> payment() -> toStructure() as $payment ): ?> 
+            <li class=" flex">
+              <span><?= $payment -> method()?></span>
+              <span>
+                <a href="<?=$payment -> url() ? $payment -> url() : '#'?>">
+                  <?= $payment -> handle()?>
+                </a>
+              </span>
+            </li>
+          <?php endforeach ?>
         </ul>
         <?= $page->footnotes()->markdown() ?>
 

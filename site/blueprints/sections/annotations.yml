@@ -1,5 +1,6 @@
 type: pages
 headline: Annotations
 parent: site.find("annotations")
+info: "{{ page.day.toDate('m.d.Y') }}"
 
 

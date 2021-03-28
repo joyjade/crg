@@ -1,30 +1,96 @@
-title: Site
+title: CRG
 
-columns:
-  left:
-    width: 1/2
-    sections: 
-      listed:
-        extends: sections/readings 
-        headline: Readings
-        limit: 10
+tabs:
+  home:
+    label: Home
+    icon: circle-filled
+    columns: 
+      left: 
+        width: 1/2
+        sections: 
+          featured_readings:
+            extends: sections/readings 
+            headline: Recent Readings
+            limit: 4
+            status: listed
 
-  right:
-    width: 1/2
-    sections:
-      pages:
-        headline: Annotations
-        info: "{{ page.day.toDate('m.d.Y') }}"
-        parent: site.find("annotations")
-        empty: No annotations
-        flip: true
-        limit: 10
+      right: 
+        width: 1/2
+        sections: 
+          info: 
+            type: pages
+            headline: Info & Index
+          
 
-      info:
-        type: pages
-        headline: Info & Index
-        status: listed
-        image: icon
+  readings:
+    label: Readings
+    icon: book
+    columns:
+      left:
+        width: 2/3
+        sections: 
+          readings:
+            extends: sections/readings 
+            headline: Live
+            limit: 15
+            status: listed
+      right: 
+        width: 1/3
+        sections: 
+          readings_drafts:
+            extends: sections/readings 
+            headline: Drafts
+            status: draft
+
+          readings_unlisted:
+            extends: sections/readings 
+            headline: Hidden
+            status: unlisted
+
+  annotations:
+    label: Annotations
+    icon: bookmark
+    columns:
+      left:
+        width: 2/3
+        sections:
+          annotations:
+            extends: sections/annotations 
+            empty: No annotations
+            flip: true
+            limit: 15
+            status: listed
+      right: 
+        width: 1/3
+        sections: 
+          annotations_drafts: 
+            extends: sections/annotations 
+            headline: Drafts
+            status: draft
+
+          annotations_unlisted: 
+            extends: sections/annotations 
+            headline: Bibliography
+            status: unlisted
+
+  review: 
+    label: Review
+    icon: file-document
+    columns: 
+      left: 
+        width: 1/2
+        sections: 
+          pages: 
+            type: pages
+            headline: Review
+            parent: site.find("review")
+      
+
+  
+
+  
+
+      
 
 
       

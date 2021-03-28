@@ -1,0 +1,27 @@
+title: Community Bookmarks
+icon: 🔖
+
+options:
+  status: false
+
+columns: 
+  left: 
+    width: 2/3
+    sections:
+      listed:
+        type: pages
+        headline: Published
+        parent: site.find("bookmarks")
+        layout: cards
+        image:
+          query: page.image('front.jpg')
+          back: white
+  right:
+    width: 1/3
+    sections: 
+      drafts:
+        type: pages
+        headline: Drafts 
+        parent: site.find("bookmarks")
+        status: draft
+  

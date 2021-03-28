@@ -11,7 +11,7 @@
           </div>
         </div>  
       </a>
-      <h6><?= $bookmark-> designer() ?></h6>
+      <h6><?= $bookmark-> artist() ?></h6>
     </li>
   <?php endforeach ?>	
   <li class="empty">*</li>

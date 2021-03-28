@@ -1,0 +1,51 @@
+title: Reading
+icon: 📖
+
+columns: 
+  main: 
+    width: 1/4
+    sections:
+      images:
+        headline: Images
+        type: files
+        layout: cards
+        image: 
+          back: white
+          ratio:  1/1
+  
+  sidebar:
+    width: 3/4
+    fields:
+      title:
+        type: text
+      artist:
+        type: text
+        required: true
+      price: 
+        width: 1/4
+        type: number
+        before: $
+        min: 0
+        step: .01
+      description:
+        width: 3/4
+        type: textarea
+      payment: 
+        label: Payment Method
+        type: structure
+        fields:
+          method:
+            label: App
+            type: text
+          handle:
+            label: Handle
+            type: text
+          url:
+            label: Link
+            type: url
+      footnotes:
+        type: textarea
+      bio:
+        label: Artist's Bio
+        type: textarea
+
