@@ -26,11 +26,35 @@ Note:
 
 ----
 
+Download-reading: http://criticaltheoryindex.org/assets/frantz-fanon-the-wretched-of-the-earth-translated-by-richard-philcox.pdf
+
+----
+
+Links:
+
+- 
+  description: Angela Davis Interview
+  url: >
+    https://twitter.com/zellieimani/status/1219078050995937280?s=20
+- 
+  description: Trailer to Terrors Advocate
+  url: >
+    https://www.youtube.com/watch?v=MAqhvkUr-8g
+- 
+  description: "Lecture on the subject of violence in Fanon's work"
+  url: https://vimeo.com/43036768
+
+----
+
+Files: 
+
+----
+
 Date: 2020-01-12
 
 ----
 
-Location: LACA
+Location: Los Angeles Contemporary Archive, Chinatown
 
 ----
 

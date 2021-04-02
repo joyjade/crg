@@ -8,18 +8,4 @@ Reading:
 
 ----
 
-Text:
-
-Phasellus euismod urna elit, a mollis nulla dignissim sed. Proin id convallis velit. Suspendisse potenti. Nam eget nisl eget elit bibendum dapibus. Vivamus mauris ex, tempor euismod interdum sed, sagittis ut velit. Donec sed quam eu nisl posuere dignissim. Nullam commodo egestas nulla, sed molestie purus.
-
-Vivamus pharetra interdum quam sed aliquam. Vestibulum molestie aliquam mauris, vel viverra elit tristique imperdiet. Duis porttitor massa eu vehicula dignissim. Sed hendrerit lacus eget ante semper eleifend. Ut nec rutrum quam. Aliquam eget dapibus est. Nunc ligula tellus, tempus id suscipit eu, tempus condimentum ex. Vivamus hendrerit, turpis et tempor dapibus, nisi odio consequat justo, vitae maximus odio dolor eget augue.
-
-Proin molestie tempor arcu, ut fringilla odio dictum vel. Aliquam ornare non ipsum vel aliquam. Maecenas lacinia arcu urna, sit amet ullamcorper mi rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, neque quis convallis interdum, est ante faucibus nulla, sed malesuada nulla orci vel dui. Pellentesque ac interdum arcu. Cras dapibus ex massa, sed ornare risus vehicula id. Nunc finibus dui mi, vel bibendum elit facilisis vitae. Nulla cursus orci et tincidunt commodo. Donec dapibus ipsum a eros hendrerit, a eleifend arcu viverra. Praesent consectetur dapibus ipsum, id pharetra nunc posuere sed.
-
-Suspendisse efficitur leo malesuada, vehicula lacus id, aliquet est. Integer cursus quam ipsum, non facilisis nisi eleifend ut. Proin fermentum sapien tempor dapibus rhoncus. Proin elementum molestie magna. Vivamus sit amet est convallis, rhoncus nunc in, ornare mi. Fusce in facilisis elit. Donec et ultrices felis. Sed vitae fermentum risus, sit amet accumsan velit. Praesent commodo urna vitae elit ultrices mollis placerat et nunc. Integer suscipit nisi laoreet, pellentesque augue nec, cursus tortor. Maecenas vitae elementum arcu. Maecenas ullamcorper ex ac neque efficitur pretium.
-
-In non posuere metus. Praesent velit dui, blandit dictum ipsum et, porta ultricies tortor. Sed faucibus justo at justo bibendum fermentum. Suspendisse potenti. Vestibulum tincidunt sem ac ligula interdum interdum. Etiam fringilla id ligula quis pellentesque. Mauris at eros ac tortor ultrices molestie et eget urna. Integer ac tellus vehicula, mattis massa vitae, tristique magna.
-
-Etiam eleifend elit a metus pretium, et porta odio commodo. Phasellus bibendum leo dictum magna varius, ac porta elit maximus. Donec ut mi eget orci maximus lobortis. Etiam eu sollicitudin metus. Cras eget volutpat ante, et gravida justo. Donec sollicitudin imperdiet dui eget ultricies. Suspendisse malesuada lorem non arcu finibus lacinia. Vivamus vel tristique ligula, ac egestas dui. In tempus accumsan tempus. Vestibulum sed viverra metus. Donec consequat dapibus elementum.
-
-Phasellus quis tortor justo. Nam interdum metus id venenatis consectetur. Quisque accumsan fringilla metus, non rhoncus nisi aliquam vel. Nam viverra iaculis mi, at rutrum leo tristique eget. Sed maximus libero lorem, nec vehicula tellus vulputate a. Suspendisse dignissim, tortor vitae efficitur venenatis, augue erat volutpat neque, vitae ullamcorper magna orci venenatis ex. Morbi bibendum nibh mauris, a sodales orci maximus id. Integer dictum pellentesque sem eu vulputate. Ut quis eleifend massa. Integer pretium augue eget dapibus accumsan. Nam volutpat, est elementum ultrices euismod, ipsum magna rutrum.
+Text: 

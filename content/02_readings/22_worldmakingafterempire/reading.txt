@@ -26,6 +26,79 @@ Note:
 
 ----
 
+Download-reading: http://criticaltheoryindex.org/assets/adom-getachew-worldmaking-after-empire-the-rise-and-fall-of-selfdetermination.pdf
+
+----
+
+Links:
+
+- 
+  description: >
+    Anti-Colonialists Wanted the World, An
+    Interview with Adom Getchew—Jacobin
+  url: >
+    https://jacobinmag.com/2020/05/anti-colonialism-postcolonialism-worldmaking-global-south-postwar-nkrumah-nyerere
+- 
+  description: >
+    After Year Zero, Geographies of
+    Collaboration since 1945—HKW
+    Exhibition
+  url: >
+    https://www.hkw.de/en/programm/projekte/2013/after_year_zero/start_after_year_zero.php
+- 
+  description: >
+    Interview w. Doreen Mende, Milica Tomic
+    | After Year Zero
+  url: 'https://www.youtube.com/watch?v=p8P_tdVzgLg&t=2s'
+- 
+  description: >
+    Interview with Kodwo Eshun, After Year
+    Zero
+  url: >
+    https://www.youtube.com/watch?v=Wx_BvPxYDjY
+- 
+  description: >
+    Interview with John Akomfrah | After
+    Year Zero
+  url: >
+    https://www.youtube.com/watch?v=LtXAcHorFnw
+- 
+  description: >
+    UJAMAA, The African Socialism—The Rise
+    and Fall of Socialism
+  url: >
+    https://www.youtube.com/watch?v=WXjL-HHn_a8
+- 
+  description: Michael Manley, The Reformer
+  url: >
+    https://www.youtube.com/watch?v=vsWTehl-kMQ
+- 
+  description: >
+    IMF’s Structural Adjustment Programs
+    Weaken States They Aim to Strengthen
+  url: >
+    https://www.youtube.com/watch?v=nGsJJaG6k4Y
+- 
+  description: Dependency Theory Economics
+  url: >
+    https://www.opendemocracy.net/en/oureconomy/if-we-want-tackle-global-inequality-we-need-better-economic-theories/
+- 
+  description: >
+    Politics of Protest and the Politics of
+    Policing, Podcast
+  url: >
+    https://play.acast.com/s/talkingpolitics/policestateusa
+- 
+  description: Reparations in Higher Education, FYPU
+  url: >
+    https://actionnetwork.org/events/fypu-davarian-l-baldwin-adom-getachew-reparations-in-higher-education
+
+----
+
+Files: 
+
+----
+
 Date: 2020-05-06
 
 ----

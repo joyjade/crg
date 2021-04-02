@@ -26,11 +26,39 @@ Note:
 
 ----
 
+Download-reading: http://criticaltheoryindex.org/assets/samuel-moyn-not-enough-human-rights-in-an-unequal-world.pdf
+
+----
+
+Links:
+
+- 
+  description: Ruál Prebisch and the NIEO—Wikipedia
+  url: 'https://en.wikipedia.org/wiki/Prebisch%E2%80%93Singer_hypothesis'
+- 
+  description: >
+    Why Neoliberalism Hijacked Human
+    Rights—Jacobin
+  url: >
+    https://www.jacobinmag.com/2020/01/morals-markets-human-rights-rise-neoliberalism-jessica-whyte
+- 
+  description: 'Samuel Moyn: The Problem With “Human Rights”—Jacobin Interview '
+  url: 'https://www.youtube.com/watch?v=qFeazu7PXZg&t=6s'
+
+----
+
+Files:
+
+- versteeg-review-moyn.pdf
+- cooper-review-moyn-1.pdf
+
+----
+
 Date: 2020-06-14
 
 ----
 
-Location: LACA
+Location: Zoom
 
 ----
 

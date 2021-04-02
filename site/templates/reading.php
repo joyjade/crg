@@ -21,12 +21,24 @@
       <div class="w70 thinpads">
         <h4></h4>
         <?= $page-> note()-> kirbytext() ?>
-        </br>
         <div class="image">
-          <?php if ($image = $page->meme()): ?>
+          <?php foreach ($page->memes() as $meme): ?>
             <figure>
-              <?= $page->meme() ?>
+              <?= $meme ?>
             </figure>
+          <?php endforeach ?>
+        </div>
+        <div>
+          <?php if ($page->hasPrevListed()): ?>
+            <div class="prev-button dotted triptych uppercase">
+              <h6><a href="<?= $page->prevListed()->url() ?>">⟵ <?=$page->prevListed()->title() ?></a></h6>
+            </div>
+          <?php endif ?>
+
+          <?php if ($page->hasNextListed()): ?>
+            <div class="next-button dotted triptych uppercase">
+              <h6><a href="<?= $page->nextListed()->url() ?>"><?=$page->nextListed()->title() ?> ⟶</a></h6>
+            </div>
           <?php endif ?>
         </div>
       </div>
@@ -60,6 +72,7 @@
         
       </div>
     </div>
+    
   </div>
 </main>
 

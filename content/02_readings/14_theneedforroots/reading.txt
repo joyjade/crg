@@ -22,7 +22,27 @@ Publisher: Rutledge Classics
 
 ----
 
-Note: 
+Note: *Attention* is what Simone Weil would ask of us...
+
+----
+
+Download-reading: http://criticaltheoryindex.org/assets/TheNeedforRoots
+
+----
+
+Links:
+
+- 
+  description: "Julia Haslett's documentary, An Encounter Simone Weil (2010)"
+  url: >
+    https://www.youtube.com/watch?v=QX0mAk3zI7Q
+
+----
+
+Files:
+
+- >
+  simone-viel-late-philosophical-writings.pdf
 
 ----
 
@@ -30,7 +50,7 @@ Date: 2019-09-15
 
 ----
 
-Location: LACA
+Location: Los Angeles Contemporary Archive, Chinatown
 
 ----
 

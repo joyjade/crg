@@ -26,11 +26,34 @@ Note:
 
 ----
 
+Download-reading: http://criticaltheoryindex.org/assets/james-c-scott-against-the-grain-a-deep-history-of-the-earliest-states-1.pdf
+
+----
+
+Links:
+
+- 
+  description: 'The Sumerians - Fall of the First Cities'
+  url: 'https://www.youtube.com/watch?v=d2lJUOv0hLA&feature=youtu.be'
+- 
+  description: Against the Grain, KPFA Podcast
+  url: 'https://www.google.com/url?q=https://kpfa.org/episode/letters-and-politics-january-2-2019/&source=gmail&ust=1617416193586000&usg=AFQjCNEnSFxKz0z53Dc3mXbIEWAapGrEzg'
+- 
+  description: Yoeman
+  url: >
+    http://xroads.virginia.edu/~Hyper/HNS/Yoeman/yman3.html
+
+----
+
+Files: 
+
+----
+
 Date: 2020-08-30
 
 ----
 
-Location: LACA
+Location: Zoom
 
 ----
 

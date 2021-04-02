@@ -43,7 +43,7 @@ Partners:
     prevailing, traditional structures.
   url: https://lacarchive.com/
 - 
-  name: Critical Index Theory
+  name: Critical Theory Index
   description: >
     CTI catalogues texts fundamental to the
     framework of the art world. A collection

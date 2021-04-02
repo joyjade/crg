@@ -79,6 +79,15 @@
   cursor: alias;
 }
 
+.image {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.image figure {
+  padding-right: var(--margin);
+}
+
 @media screen and (max-width: 440px) {
   .reading {
     order: 2;
@@ -128,6 +137,12 @@
 
   .reading .details {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  aside {
+    display: block;
   }
 }
 

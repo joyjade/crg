@@ -6,6 +6,10 @@ class ReadingPage extends Page
     return $this->images()->findBy("template", "cover");
   }
 
+  public function memes() {
+    return $this->images()->filter("template", "meme");
+  }
+
   public function meme() {
     return $this->images()->findBy("template", "meme");
   }

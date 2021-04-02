@@ -26,6 +26,33 @@ Note:
 
 ----
 
+Download-reading: 
+
+----
+
+Links:
+
+- 
+  description: Feeling the Feeling, Shadow
+  url: >
+    https://www.youtube.com/watch?v=435GhnT7UZo
+- 
+  description: "Dr. Moten's Sunday Preaching"
+  url: >
+    https://trinitywallstreet.org/videos/dr-fred-moten-guest-preacher?fbclid=IwAR1HWKl5HHCMmqHpJhplvG95s-Y2nvn9hpxqu-KqfPaLmglYB5jpMzLMFjg
+- 
+  description: >
+    How to Subvert the Capitalist
+    White-Supremacist University
+  url: >
+    https://www.publicbooks.org/how-to-subvert-the-capitalist-white-supremacist-university/?fbclid=IwAR22vCBkfIwLUwvTlYzBRlbMejDpyMU6DS2ZTee_CE-xgFQT1fl5H_TrRoc
+
+----
+
+Files: 
+
+----
+
 Date: 2020-04-01
 
 ----

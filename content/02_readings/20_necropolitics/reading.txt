@@ -26,11 +26,40 @@ Note:
 
 ----
 
-Date: 2019-03-31
+Download-reading: http://criticaltheoryindex.org/assets/AchilleMbembeNecropolitics.pdf
 
 ----
 
-Location: LACA
+Links:
+
+- 
+  description: "How Italians Became White"—NYT
+  url: >
+    https://www.nytimes.com/interactive/2019/10/12/opinion/columbus-day-italian-american-racism.html
+- 
+  description: "Charge the cockpit or you die"—NTY
+  url: >
+    https://www.nytimes.com/2017/02/20/arts/charge-the-cockpit-or-you-die-behind-an-incendiary-case-for-trump.html
+- 
+  description: "Adam Curtis' Hypernormalisation"
+  url: >
+    https://www.youtube.com/watch?v=fh2cDKyFdyU
+- 
+  description: The Necropolitics of Covid 19
+  url: >
+    https://africasacountry.com/2020/04/the-necropolitics-of-covid-19
+
+----
+
+Files: 
+
+----
+
+Date: 2020-03-31
+
+----
+
+Location: Los Angeles Contemporary Archive, Chinatown
 
 ----
 
