@@ -71,14 +71,8 @@
         </div>
         <div id="seventh">
           <h3>Advisory Council</h3>
-          <?php foreach( $info-> people() -> toStructure() as $person ): ?> 
-            <div class="flex table">
-              <p>
-                <?= $person -> name()?>
-                <?php if($person -> role() -> isNotEmpty()) : ?>⟶</p>
-                  <p><?= $person -> role() ?></p>
-                <?php endif ?>
-            </div>
+          <?php foreach( $info-> people() -> toStructure() as $person ): ?>
+            <?=$person -> name()?><?= $person ->isLast() ?  ' '  : ', '?>
           <?php endforeach ?>
         </div>  
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

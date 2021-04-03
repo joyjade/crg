@@ -386,6 +386,10 @@ h3.header {
   position: relative;
 }
 
+.info .slide-close {
+  background: white;
+}
+
 img.slide-close {
   position: absolute;
   top: 10px;

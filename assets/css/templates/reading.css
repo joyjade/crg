@@ -24,7 +24,16 @@
 
 .content h4 {
   border-top: var(--color-border);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.content ul.references li {
+  font-size: var(--body-text);
+  padding-bottom: 0.25rem;
+}
+
+.content ul li.heading {
+  padding-bottom: 0.75rem;
 }
 
 .cti {
@@ -98,9 +107,10 @@
   width: 26px;
   height: 24px;
   position: relative;
+  display: block;
 }
 
-.next-button a, .prev-button a {
+.inner-arrow {
   border-right: 1px solid;
   border-bottom: 1px solid;
   width: 8px;
@@ -108,13 +118,13 @@
   position: absolute;
 }
 
-.prev-button a {
+.prev-button .inner-arrow {
   top: 8px;
   right: 6px;
   transform: rotate(135deg);
 } 
 
-.next-button a {
+.next-button .inner-arrow {
   top: 8px;
   right: 10px;
   transform: rotate(315deg);

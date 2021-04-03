@@ -17,14 +17,17 @@
             <h6><a href="<?= $page->parent()->url() ?>">Back </a></h6>
           </div>
           <?php if ($page->hasPrevListed()): ?>
-            <div class="prev-button">
-              <a href="<?= $page->prevListed()->url() ?>"></a>
+            <div>
+              <a class="prev-button" href="<?= $page->prevListed()->url() ?>">
+                <div class="inner-arrow"></div>
+              </a>
             </div>
           <?php endif ?>
-
           <?php if ($page->hasNextListed()): ?>
-            <div class="next-button">
-              <a href="<?= $page->nextListed()->url() ?>"></a>
+            <div>
+              <a class="next-button" href="<?= $page->nextListed()->url() ?>">
+                <div class="inner-arrow"></div>
+              </a>
             </div>
           <?php endif ?>
         </div>
@@ -35,6 +38,18 @@
       <div class="w70 thinpads">
         <h4></h4>
         <?= $page-> note()-> kirbytext() ?>
+        
+        <?php if($page->links()->isNotEmpty()) :?>
+          <ul class="references">
+            <li class="heading"><i>Associations</i></li>
+            <?php foreach ($page->links()-> toStructure() as $link): ?>
+              <li><a class="highlight" href="<?= $link->url() ?>"><?= $link->description() ?></a></li>
+            <?php endforeach ?>
+          </ul>
+        <?php endif ?>
+        <?php foreach ($page->attachments() as $file): ?>
+          <p><?= $file ?></p>
+        <?php endforeach ?>
         <div class="image">
           <?php foreach ($page->memes() as $meme): ?>
             <figure>

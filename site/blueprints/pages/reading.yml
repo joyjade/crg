@@ -43,7 +43,7 @@ columns:
           url: 
             label: URL
             type: url
-      files:
+      attachments:
         type: files
         label: Attachments
   sidebar:
