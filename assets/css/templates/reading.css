@@ -27,11 +27,6 @@
   padding: 1rem 0;
 }
 
-.back-button {
-  bottom: 0;
-  right: 15px;
-}
-
 .cti {
   position: fixed;
   bottom: 10px;
@@ -87,6 +82,43 @@
 .image figure {
   padding-right: var(--margin);
 }
+
+
+.reading-nav {
+  bottom: 0;
+  right: 15px;
+  position: absolute;
+}
+
+.reading-nav > div:not(:last-of-type) {
+  border-right: var(--dotted-border);
+}
+
+.next-button, .prev-button {
+  width: 26px;
+  height: 24px;
+  position: relative;
+}
+
+.next-button a, .prev-button a {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+}
+
+.prev-button a {
+  top: 8px;
+  right: 6px;
+  transform: rotate(135deg);
+} 
+
+.next-button a {
+  top: 8px;
+  right: 10px;
+  transform: rotate(315deg);
+} 
 
 @media screen and (max-width: 440px) {
   .reading {
@@ -147,6 +179,10 @@
 }
 
 @media screen and (min-width: 440px) {
+  .reading .back-button {
+    position: unset; 
+  }
+
   .reading .content > div:nth-child(2) {
     height: calc(100vh - 60px);
   }

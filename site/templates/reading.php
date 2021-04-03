@@ -12,9 +12,23 @@
           <a href="<?= $page-> url() ?>"><?= $page-> fullTitle() ?>,</a>
           <span class="triptych-italick"><?= $page-> author()?></span>  
         </h2>
-        <div class="back-button dotted">
-          <h6><a href="<?= $page->parent()->url() ?>">⟵ Back </a></h6>
+        <div class="reading-nav dotted triptych flex uppercase">
+          <div class="back-button">
+            <h6><a href="<?= $page->parent()->url() ?>">Back </a></h6>
+          </div>
+          <?php if ($page->hasPrevListed()): ?>
+            <div class="prev-button">
+              <a href="<?= $page->prevListed()->url() ?>"></a>
+            </div>
+          <?php endif ?>
+
+          <?php if ($page->hasNextListed()): ?>
+            <div class="next-button">
+              <a href="<?= $page->nextListed()->url() ?>"></a>
+            </div>
+          <?php endif ?>
         </div>
+       
       </div>
     </div>
     <div class="content">
@@ -27,19 +41,6 @@
               <?= $meme ?>
             </figure>
           <?php endforeach ?>
-        </div>
-        <div>
-          <?php if ($page->hasPrevListed()): ?>
-            <div class="prev-button dotted triptych uppercase">
-              <h6><a href="<?= $page->prevListed()->url() ?>">⟵ <?=$page->prevListed()->title() ?></a></h6>
-            </div>
-          <?php endif ?>
-
-          <?php if ($page->hasNextListed()): ?>
-            <div class="next-button dotted triptych uppercase">
-              <h6><a href="<?= $page->nextListed()->url() ?>"><?=$page->nextListed()->title() ?> ⟶</a></h6>
-            </div>
-          <?php endif ?>
         </div>
       </div>
       <div class="w30 thinpads">

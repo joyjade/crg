@@ -13,6 +13,13 @@
   padding: 0.5rem 0.75rem;
   margin: var(--margin);
 }
+.prev-button h6, .next-button h5 {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+}
 
 .prev-button {
   left: 0;
