@@ -1,11 +1,4 @@
-.review {
-  padding: 1.5rem 3rem 1rem 1.75rem;
-  border-top: var(--dotted-border);
-  border-bottom: var(--dotted-border);
-  margin-top: var(--margin);
-}
-
-h1 {
+.review div {
   padding: 1.5rem 3rem 1rem 1.75rem;
 }
 

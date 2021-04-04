@@ -1,0 +1,11 @@
+title: Review
+preset: page
+pages: false
+
+fields:
+  mission:
+    label: Mission Statement
+    type: textarea
+  editor:
+    label: Editor
+    type: text

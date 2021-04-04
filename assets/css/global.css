@@ -247,7 +247,7 @@ nav .triptych.uppercase:hover, nav .active {
   color: white;
 }
 
-.content p, .details p {
+.content p, .details p, .review p {
   margin-bottom: 1.4rem;
 }
 

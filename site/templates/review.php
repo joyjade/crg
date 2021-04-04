@@ -1,15 +1,10 @@
 <?php snippet('nav') ?>
-<main>
-  <div class="<?= $page ?> triptych">
-    <div>
+<main class="<?= $page ?> triptych">
+  <h3 class="header triptych">Stay tuned...</h3> 
+  <div> 
       <h4 class="uppercase">About</h4></br>
-      <p>Our online journal is an outgrowth of the Community Reading Group. The CRG was founded  by artists, activists, and scholars who were curious about the assumptions underlying the appeals to community so prevalent in organizing spaces. Over the intervening years, the CRG has discussed texts that range from mid-century, European investigations of the origins of Facism to works-in-progress about climate change and the commodification of mental health. Throughout, the CRG has been interested in the centrality of racialization and the violent legacy of the transatlantic slave trade to collective fantasies of liberation and common life. Its work has been to dwell in the complexity that adheres to the demand for praxis and the limits of theory. 
-      </p></br>
-      <p>The CRGR seeks to build on these conversations and to give them a venue in which to assume a life of their own. Its primary objective will be to solicit responses from group members to the texts that we have read. Together, these responses will articulate a vocabulary of political struggle that is shared between our members. “The Review” will also encourage members of our wider community to submit theoretical, critically, and socially engaged writing to edited volumes of our online journal. We especially encourage those on the outside, or periphery, of the traditional academic community to contribute their work and to participate in our ongoing discussion series of works in progress.  
-      </p>
-      <p class="right">- Michael Berlin </p>
-    </div>
+      <?= $page -> mission() -> markdown() ?>
+      <p class="right">- <?= $page -> editor()?></p>
   </div>
-  <h1 class="triptych-italick"> Stay Tuned...</h1>
 </main>
 <?php snippet('aside', ['class' => '', 'image' => '']); snippet('footer'); ?>
