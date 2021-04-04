@@ -4,6 +4,7 @@ type: pages
 
 options: 
   status: false
+  read: false
 
 columns:
   left:

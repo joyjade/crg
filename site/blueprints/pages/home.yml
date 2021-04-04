@@ -1,0 +1,21 @@
+title: Home
+preset: page
+icon: 🗺️
+pages: false
+files: false
+
+options: 
+  status: false
+  read: false
+
+fields:
+  intro: 
+    label: Part I
+    type: text
+  outro: 
+    label: Part II
+    type: text
+  extra: 
+    label: Part III
+    type: text
+

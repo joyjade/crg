@@ -11,7 +11,7 @@ tabs:
           featured_readings:
             extends: sections/readings 
             headline: Recent Readings
-            limit: 4
+            limit: 5
             status: listed
 
       right: 
@@ -19,7 +19,7 @@ tabs:
         sections: 
           info: 
             type: pages
-            headline: Info & Index
+            headline: Info, Review, Bookmarks
           
 
   readings:
@@ -73,17 +73,17 @@ tabs:
             headline: Bibliography
             status: unlisted
 
-  review: 
-    label: Review
-    icon: file-document
-    columns: 
-      left: 
-        width: 1/2
-        sections: 
-          pages: 
-            type: pages
-            headline: Review
-            parent: site.find("review")
+  # review: 
+  #   label: Review
+  #   icon: file-document
+  #   columns: 
+  #     left: 
+  #       width: 1/2
+  #       sections: 
+  #         pages: 
+  #           type: pages
+  #           headline: Review
+  #           parent: site.find("review")
       
 
   
