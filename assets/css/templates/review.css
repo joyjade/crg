@@ -1,5 +1,16 @@
 .review {
   padding: 1.5rem 3rem 1rem 1.75rem;
+  border-top: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+  margin-top: var(--margin);
+}
+
+h1 {
+  padding: 1.5rem 3rem 1rem 1.75rem;
+}
+
+.right {
+  text-align: right;
 }
 
 @media screen and (max-width: 440px) {

@@ -9,16 +9,16 @@
   <div>
     <h1>    
       <?php if ($currently_reading = $reading_list->currentlyReading()): ?>  
-        We're currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
+        We’re currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
       <?php else: ?>
-        We're about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
+        We’re about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
         Usually, we meet at LACA. In the meantime, join us every <span class="underline">Sunday, 7-9PM PST.</span>
     </h1>
     <br/><br/>
 
     <h1>
-      A few things we’ve read in the past is 
+      A few things we’ve read in the past are 
       <?php 
         $selected_readings = $readings-> not($currently_reading)-> shuffle()-> limit(3);
         $last = $selected_readings-> last();

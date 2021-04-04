@@ -2,7 +2,7 @@ Title: Emergent Strategy
 
 ----
 
-Author: adrienne marie brown
+Author: adrienne maree brown
 
 ----
 
@@ -39,7 +39,7 @@ Links:
 
 ----
 
-Files: 
+Attachments: 
 
 ----
 
@@ -56,3 +56,7 @@ Current: false
 ----
 
 Category: 
+
+----
+
+Files: 

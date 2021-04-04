@@ -2,7 +2,7 @@ Title: Necropolitics
 
 ----
 
-Author: Achilles Mbembe
+Author: Achille Mbembe
 
 ----
 
@@ -51,7 +51,7 @@ Links:
 
 ----
 
-Files: 
+Attachments: 
 
 ----
 
@@ -68,3 +68,7 @@ Current: false
 ----
 
 Category: 
+
+----
+
+Files: 

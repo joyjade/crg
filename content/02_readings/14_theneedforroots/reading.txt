@@ -2,7 +2,7 @@ Title: The Need for Roots
 
 ----
 
-Author: Simone Veil
+Author: Simone Weil
 
 ----
 
@@ -39,10 +39,7 @@ Links:
 
 ----
 
-Files:
-
-- >
-  simone-viel-late-philosophical-writings.pdf
+Attachments: 
 
 ----
 
@@ -59,3 +56,10 @@ Current: false
 ----
 
 Category: 
+
+----
+
+Files:
+
+- >
+  simone-viel-late-philosophical-writings.pdf
