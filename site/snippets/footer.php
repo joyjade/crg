@@ -20,7 +20,7 @@
         <h4>Donate</h4>
       </a>
       <a href="#" id="item_seventh" class="menu-item last">
-        <h4>Governance</h4>
+        <h4><?=$info -> governance()-> key()?></h4>
       </a>
 
       <a href="#" id="slide_close">
@@ -70,19 +70,29 @@
           <p> We are graciously housed under LACA. Donate <strong><a href="<?= $info-> donate()->url() ?>">here</a></strong> to contribute.</p>
         </div>
         <div id="seventh">
-          <h3>Governance</h3>
-          <p>
-            CRG’s governance structure follows in the tradition of loosely affiliated peer-support groups or rather, to borrow from the ethos of a well-known leader in the temperance movement, a longstanding model of “benign anarchy.” At the center of CRG’s governance structure is the reading group or groups, whose health is entrusted to members of an advocacy group. Advocacy group members oversee financing initiatives, inter-group communication, and coordination of public-facing activities. At the center of each reading group is a steward, an individual who has committed him, her, or themselves to building and preserving an independent branch of the project. Stewards are entrusted with ensuring that a group’s collective study, no matter what trajectory it may take, remains in orbit with the project’s inaugural question‑the possibility and limits of community.
-          </p>
+          <h3><?=$info -> governance()-> key()?></h3>
+          <?=$info -> governance()-> kirbytext()?>
+          
           <h3>Advocacy Group</h3>
           <?php foreach( $info-> people() -> toStructure() as $person ): ?>
-            <?=$person -> name()?><?= $person ->isLast() ?  ' '  : ', '?>
+            <?php if ($person -> url() -> isNotEmpty()): ?>
+              <a href="<?=$person -> url()?>"><?=$person -> name()?><?= $person ->isLast() ?  ' '  : ', '?></a>
+            <?php else : ?>
+              <?=$person -> name()?><?= $person ->isLast() ?  ' '  : ', '?>
+            <?php endif ?>
+            
           <?php endforeach ?>
           </br></br>
           <h3>Steward</h3>
-          <p>Andrew McNeely, Chinatown Group</p>
-        </div>  
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <?php foreach( $info-> steward() -> toStructure() as $steward ): ?>
+            <?php if ($steward -> url() -> isNotEmpty()): ?>
+              <a href="<?=$steward -> url()?>"><?=$steward -> name()?>, <?=$steward -> group()?></a>
+            <?php else : ?>
+              <?=$steward -> name()?>, <?=$steward -> group()?>
+            <?php endif ?>
+          <?php endforeach ?>
+          </div>  
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </section>
 
 </footer>

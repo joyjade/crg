@@ -124,23 +124,36 @@ Absolutely! And, in fact, our ultimate goal is to help others build their own CR
 
 ----
 
+Governance: CRG’s governance structure follows in the tradition of loosely affiliated peer-support groups or rather, to borrow from the ethos of a well-known leader in the temperance movement, a longstanding model of “benign anarchy.” At the center of CRG’s governance structure is the reading group or groups, whose health is entrusted to members of an advocacy group. Advocacy group members oversee financing initiatives, inter-group communication, and coordination of public-facing activities. At the center of each reading group is a steward, an individual who has committed him, her, or themselves to building and preserving an independent branch of the project. Stewards are entrusted with ensuring that a group’s collective study, no matter what trajectory it may take, remains in orbit with the project’s inaugural question‑the possibility and limits of community.
+
+----
+
 People:
 
 - 
   name: Olivia Leiter
-  role: Curator (Community Bookmarks)
   url: ""
+  role: Curator (Community Bookmarks)
 - 
   name: Michael Berlin
-  role: Editor
   url: ""
+  role: Editor
 - 
   name: Joy Park
-  role: 'Designer & Programmer'
   url: ""
+  role: 'Designer & Programmer'
 - 
   name: Hailey Loman
+  url: ""
   role: ""
+
+----
+
+Steward:
+
+- 
+  name: Andrew McNeely
+  group: Chinatown Group
   url: ""
 
 ----

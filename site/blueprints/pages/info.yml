@@ -86,17 +86,32 @@ tabs:
       - width: 1/2
       - width: 1/2
     fields:
+      governance: 
+        label: Governance
+        type: textarea
+
       people:
-        label: Advisory Council
+        label: Advocacy Group
         type: structure
         fields:
           name:
             label: Name
             type: text
-          role:
-            label: Description
-            type: text
+          url:
+            label: Link
+            type: url
             help: optional
+      
+      steward:
+        label: Steward
+        type: structure
+        fields:
+          name:
+            label: Name
+            type: text
+          group: 
+            label: Group
+            type: text
           url:
             label: Link
             type: url
