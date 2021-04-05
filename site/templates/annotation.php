@@ -15,6 +15,9 @@
   </div>
   <div class="details">
     <?= $page-> text() -> kirbytext() ?>
+    <?php foreach($page-> byline() -> toStructure() as $byline): ?>
+      <p class="right">—<?= $byline->action()?> <?= $byline->name()?>, <?= $byline->date()->toDate('F Y')?></p>
+    <?php endforeach ?>
   </div>
 
 

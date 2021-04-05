@@ -1,20 +1,31 @@
 title: Annotation
-preset: page
-pages: false
+icon: draft
 
-# num: "{{ page.from.toDate('Ymd') }}"
-# options: 
-#   preview: "{{ page.parent.url }}/#{{ page.slug }}"
- 
-fields:
-  reading:
-    label: Reading
-    type: pages
-    query: site.find('readings').children.listed.flip()
-  
-  text:
-    label: Annotation
-    type: textarea
-  
-sidebar:
-  files: true
+columns: 
+  main:
+   width: 2/3
+   fields: 
+    text:
+      label: Annotation
+      type: textarea
+      
+  sidebar:
+    width: 1/3
+    fields: 
+      reading:
+        label: Reading
+        type: pages
+        query: site.find('readings').children.listed.flip()
+        help: Please select which Reading this Annotation covers
+      byline: 
+        type: structure
+        label: Byline
+        fields: 
+          action:
+            label: Published/Revised
+            type: text
+          name:
+            label: Name
+            type: text
+          date: 
+            type: date

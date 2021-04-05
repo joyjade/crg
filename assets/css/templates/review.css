@@ -2,10 +2,6 @@
   padding: 1.5rem 3rem 1rem 1.75rem;
 }
 
-.right {
-  text-align: right;
-}
-
 @media screen and (max-width: 440px) {
   .review {
     padding: 1rem;

@@ -2,12 +2,6 @@ Title: Unsettling the Coloniality of Being/Power/Truth/Freedom
 
 ----
 
-Reading:
-
-- readings/unsettlingthecolonialityofbeing
-
-----
-
 Text:
 
 The Argument, as Wynter calls it, remembers that “Man” is a recent category. Invented during the Renaissance, Man transformed and reoccupied the locale’s common understanding of what it was to be human. That locale was specific: European, Christian, bourgeoisie. As it was formed, Man was described as the representation for all humans, across time and space: in the 15th century as a rational and political subject (Man₁), then in the 18th and 19th century as evolved organism and economic entity (Man2). 
@@ -19,3 +13,18 @@ For instance, when Man₁ was defined by human’s capacity for reason, Christia
 And so the Argument is against Man, which Wynter describes as but *one genre, one mode of being* that has been overrepresented, and has two faces: modernity and coloniality. 
 
 Wynter credits the rise of the physical and biological sciences for introducing new forms of empirical knowledge. But the Argument traces our species’ capacity for language and self-representation as that which “enables the interests, reality, and well-being of the empirical human world to be imperatively subordinated” to our culture-specific modes of being. Humans only come to know themselves as human through processes of symbolic representation—always adapted and already foundational. These “adaptive truths-for” induce the biochemical reward/punishment systems of the human brain. Here and repeatedly, the Argument invokes Frantz Fanon, who observed the internalized, embodied, and widespread auto-phobia of Black people under French colonization. His writing pries into the governing principles of the Western, now global, conception of Man, and in doing so reveals its order as adapted, ethnocentric, and racist. It is in the vein of Fanon and the range of anti-colonial social movements of the sixties, that the Argument finds a beginning to “the struggle of our times”: towards the human, after Man.
+
+----
+
+Reading:
+
+- readings/unsettlingthecolonialityofbeing
+
+----
+
+Byline:
+
+- 
+  action: 'Written by '
+  name: Joy Park
+  date: 2021-04-11
