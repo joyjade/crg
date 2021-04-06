@@ -93,6 +93,9 @@
 </main>
 
 <?php 
-  snippet('aside', ['class' => '', 'image' => $page->cover() ? $page->cover() : '']); 
+  snippet('aside', [
+    'class' => '', 
+    'image' => $page->cover() ? $page->cover() : ''
+    ]); 
   snippet('footer'); 
 ?>

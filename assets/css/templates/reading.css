@@ -92,7 +92,6 @@
   padding-right: var(--margin);
 }
 
-
 .reading-nav {
   bottom: 0;
   right: 15px;
@@ -101,6 +100,10 @@
 
 .reading-nav > div:not(:last-of-type) {
   border-right: var(--dotted-border);
+}
+
+.back-button {
+  position: unset; 
 }
 
 .next-button, .prev-button {
@@ -152,12 +155,6 @@
   .header h2 {
     padding-top: 2rem;
   }
-
-  .back-button {
-    top: 10px;
-    right: 0;
-    bottom: unset; 
-  }
   
   .reading .content {
     flex-direction: column;
@@ -186,11 +183,18 @@
   aside {
     display: block;
   }
+
+  .reading-nav {
+    top: 15px;
+    bottom: unset;
+  }
 }
 
 @media screen and (min-width: 440px) {
   .reading .back-button {
-    position: unset; 
+    top: 10px;
+    right: 0;
+    bottom: unset; 
   }
 
   .reading .content > div:nth-child(2) {
