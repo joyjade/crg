@@ -52,6 +52,7 @@ p {
 i, em, .triptych-italick {
   font-family: "triptych-italick";
   letter-spacing: -0.5px;
+  font-style: normal;
 }
 
 .triptych-italick {
