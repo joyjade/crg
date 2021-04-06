@@ -28,9 +28,7 @@
           <span class="triptych"> and </span> 
         <?php endif ?>
         <span class="triptych-italick book-title highlight" 
-          <?php if($reading_image = $reading-> image()): ?> 
-            data-src="<?=$reading_image-> url()?>"
-          <?php endif ?>>
+          data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
 
           <?php if ($reading !== $last): ?>
             <?= $reading-> title() -> link()?>,</span>	
@@ -51,8 +49,7 @@
 <?php endif ?>
 
 <?php 
-  $image = $page->image()->isNotEmpty() ? $page->image() : '';
-  snippet('aside', ['class' => 'hidden', 'image' => $image]); 
+  snippet('aside', ['class' => 'hidden', 'image' => $page->image()]); 
 ?>
 
 <?php snippet('footer') ?>

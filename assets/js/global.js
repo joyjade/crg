@@ -61,7 +61,6 @@ const ABOUT_CONTENT = INFO.querySelector('.content');
 let menu_items = document.querySelectorAll('.menu-item');
 let menu_item; 
 let height_gap = getHeightFromWidth(); 
-
 let sections = ABOUT_CONTENT.querySelectorAll('.content > div');
 let scrollLock = false;
 

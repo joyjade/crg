@@ -11,12 +11,13 @@ const fetchProjects = async () => {
     button.hidden        = !more; // hides the button if there is no more
     pastrdgs.innerHTML    += html; // adds the html to the current html
     page++; // then increases the page number
+    hoverReveal('.calendar li');
   } catch (error) {
     console.log('Fetch error: ', error);
   }
 }
 
-button.addEventListener('click', fetchProjects);
 document.addEventListener("DOMContentLoaded", function() { 
+  button.addEventListener('click', fetchProjects);
 	hoverReveal('.calendar li');
 });

@@ -3,7 +3,8 @@
 
 <main class="annotation triptych">
 	<div class="heading">
-			<div class="book-title" data-src="<?=$reading ->image() ? $reading ->image()-> url() : '#'?>">
+			<div class="book-title" 
+        data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '#' ?>">
         <span class="uppercase">
           <?= $reading-> fullTitle() ?>,
         </span> 
@@ -35,7 +36,7 @@
 
 </main>
 <?php 
-  $image = $reading->image() ? $reading->image() : '';
+  $image = $reading->cover() ? $reading->cover() : '';
   snippet('aside', ['class' => '', 'image' => $image]); 
   snippet('footer');
 ?>
