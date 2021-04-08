@@ -16,6 +16,9 @@ tabs:
           history: 
             label: History
             type: textarea
+          author: 
+            label: Author
+            type: text
               
 
   contact: 

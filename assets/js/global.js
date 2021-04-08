@@ -12,7 +12,7 @@ function toggleInfo() {
     e.preventDefault;
     openbtn.classList.toggle('active');
     info.classList.toggle('slid-open');
-    mainPanel.style.overflow = 'hidden';
+    mainPanel.classList.toggle('overlay');
 	};
 
 	let closebtn = document.getElementById('slide_close');
@@ -20,7 +20,7 @@ function toggleInfo() {
     e.preventDefault;
     openbtn.classList.remove('active');
     info.classList.remove('slid-open');
-    mainPanel.style.overflow = 'auto';
+    mainPanel.classList.remove('overlay');
 	};
 }
 

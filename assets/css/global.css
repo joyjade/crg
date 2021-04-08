@@ -106,6 +106,15 @@ main {
 	position: relative;
 }
 
+body.overlay main, body.overlay aside, body.overlay nav {
+  opacity: 0.1; 
+  transition: opacity 800ms ease;
+}
+
+nav, main, aside {
+  transition: opacity 800ms ease;
+}
+
 footer {
 	grid-column: 1/ span 2;
 	grid-row: 1/ span 2;

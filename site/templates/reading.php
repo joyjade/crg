@@ -37,7 +37,17 @@
     <div class="content">
       <div class="w70 thinpads">
         <h4></h4>
-        <?= $page-> note()-> kirbytext() ?>
+        <div>
+          <?= $page-> note()-> kirbytext() ?>
+        </div>
+        
+        <?php if($page->blurb()->isNotEmpty()) :?>
+          <div>
+            <p><em>Selection</em><p>
+            <?= $page-> blurb()-> kirbytext() ?>
+            <p class="right">– <?= $page-> contributor()?></p>
+          </div>
+        <?php endif ?>
         
         <?php if($page->links()->isNotEmpty()) :?>
           <ul class="references">
@@ -47,6 +57,7 @@
             <?php endforeach ?>
           </ul>
         <?php endif ?>
+
         <?php foreach ($page->attachments() as $file): ?>
           <p><?= $file ?></p>
         <?php endforeach ?>

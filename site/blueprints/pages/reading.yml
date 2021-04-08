@@ -20,14 +20,35 @@ columns:
       note:
         label: Intro
         type: textarea
+      blurb: 
+        label: Blurb
+        type: textarea
+      contributor:
+        label: Contributor
+        type: text
       download_reading:
         type: url
         help: Hosted at Critical Index Theory 
         label: Link to Reading
-
+      line-a:
+        type: line
+      
+      keywords:
+        type: tags
+      interlocutors:
+        type: structure
+        help: Recommendation | Provide a link to the Stanford Encyclopedia of Philosophy
+        fields: 
+          name: 
+            type: text
+          stanford_url:
+            label: Link
+            type: url 
+      
       links: 
         type: structure
-        label: Links
+        label: Supplementary Resources
+        help: Limit to 4 per reading
         fields: 
           description:
             type: text
@@ -77,7 +98,7 @@ columns:
               - "no"
               - "yes"
           category:
-            label: Special
+            label: Guest Scholar?
             type: select
             options:
               guest scholar: Guest Scholar

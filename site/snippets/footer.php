@@ -36,6 +36,9 @@
         <div id="second">
           <h3 >History</h3>   
           <?= $info-> history() -> kirbytext()?>
+          <?php if($info -> author() -> isNotEmpty()) :?>
+            <p class="right">– <?= $info-> author()?></p>
+          <?php endif ?>
         </div>
         <div id="third">
           <h3 >Partners</h3> 
