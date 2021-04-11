@@ -66,7 +66,7 @@ let scrollLock = false;
 
 function getHeightFromWidth() {
   if (BODY.getBoundingClientRect().width < 440) {
-    return 99; 
+    return 98; 
   } else {
     return 10;
   }  
@@ -92,7 +92,10 @@ function menuHighlight(item) {
 }
 
 function matchScroll(id) {
+  // grab the element by the id that came from the menu-item clicked and passed on
   let match = document.getElementById(id);
+
+  // find the scroll position of that element
   let scrollPosition = match.getBoundingClientRect().y - height_gap;
 
   ABOUT_CONTENT.scrollBy({
@@ -116,8 +119,8 @@ function scrolling() {
 function scrollMatch(posObj) {
   let last_element;
   for (key in posObj) {
-    let offset = posObj[key]; 
-    if (offset <= 0) {
+    let offset = posObj[key];
+    if (offset <= 180) {
       last_element = sections[key];
     }
   }
