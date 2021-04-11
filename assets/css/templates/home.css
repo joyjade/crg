@@ -8,10 +8,32 @@
   text-decoration: underline;
 }
 
-/* .underline:hover {
+.tooltip-text {
+  position: absolute;
+  opacity: 0; 
+  z-index: 1;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-350px);
+  font-size: 1rem;
   background-color: var(--main-color);
   color: white;
-} */
+  width: 405px;
+  padding: 0.5rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  /* transition-delay: 0.25s; */
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1; 
+  pointer-events: auto;
+}
 
 .notice {
   margin-bottom: var(--margin);
@@ -24,6 +46,9 @@
   }
   .home .notice > div {
     padding: 0.5rem 1rem 0.75rem;
+  }
+  .home h1 {
+    word-wrap: break-word;
   }
 }
 

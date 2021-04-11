@@ -13,7 +13,15 @@
       <?php else: ?>
         We’re about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
-        Usually, we meet at LACA. In the meantime, join us every <span class="underline">Sunday, 7-9PM PST.</span>
+        Usually, we meet at LACA. 
+        In the meantime, 
+        <span  class="tooltip">
+          join us
+          <span class="tooltip-text">
+            Email communityreadinggroup@gmail.com to receive instructions for our upcoming meeting
+          </span>
+        </span> 
+        every <span class="underline">Sunday, 7-9PM PST.</span>
     </h1>
     <br/><br/>
 
