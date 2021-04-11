@@ -73,6 +73,7 @@
   nav .title.triptych-italick {
     font-size: 1.35rem;
     padding-bottom: 5px;
+    max-width: 85vw;
   }
 
   .m-nav {
@@ -149,6 +150,10 @@
       font-size: 0.8rem;
   }
 
+  .info .content {
+    overflow-x: hidden;
+  }
+  
   .info .content > div {
     padding: 1rem;
   }
