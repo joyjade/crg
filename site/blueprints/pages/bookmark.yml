@@ -27,8 +27,14 @@ columns:
         before: $
         min: 0
         step: .01
+      soldout:
+        width: 1/4
+        type: toggle
+        label: Sold Out
+        text: 
+          - available
+          - sold out
       description:
-        width: 3/4
         type: textarea
       payment: 
         label: Payment Method

@@ -38,5 +38,10 @@
     padding: 0 3rem 1rem 1.25rem;
     position: relative;
   }
+}
 
+@media screen and (max-width: 440px) {
+  .annotation .book-title {
+    word-break: break-word;
+  }
 }

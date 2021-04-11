@@ -70,7 +70,10 @@
         </div>
         <div id="sixth">
           <h3 >Donate</h3>
-          <p> We are graciously housed under LACA. Donate <strong><a href="<?= $info-> donate()->url() ?>">here</a></strong> to contribute.</p>
+          <p> 
+            We are graciously housed under LACA. 
+            Donate <strong><a href="<?= $info-> donate()->url()?>" target="_blank">here</a></strong> to contribute.
+          </p>
         </div>
         <div id="seventh">
           <h3><?=$info -> governance()-> key()?></h3>

@@ -10,7 +10,11 @@ Price: 6
 
 ----
 
-Description: Our first Community Bookmark designed by Alex Heilbron. All proceeds go towards the Community Reading Group lecture series which is free an open to the public.
+Soldout: true
+
+----
+
+Description: Our first Community Bookmark was designed by Alex Heilbron. All proceeds go towards the Community Reading Group lecture series which is free an open to the public.
 
 ----
 

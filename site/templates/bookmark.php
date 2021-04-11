@@ -20,19 +20,24 @@
       <div class="w75">
         <h1>&nbsp</h1>
         <?= $page-> description()->markdown() ?>
-        <ul class="pay">
-          <?php foreach( $page-> payment() -> toStructure() as $payment ): ?> 
-            <li class=" flex">
-              <span><?= $payment -> method()?></span>
-              <span>
-                <a href="<?=$payment -> url() ? $payment -> url() : '#'?>">
-                  <?= $payment -> handle()?>
-                </a>
-              </span>
-            </li>
-          <?php endforeach ?>
-        </ul>
-        <?= $page->footnotes()->markdown() ?>
+        <?php if( $page-> soldout()->bool()): ?>
+          <p class="label subheader">Sold Out</p>
+        <?php else : ?>
+          <ul class="pay">
+            <?php foreach( $page-> payment() -> toStructure() as $payment ): ?> 
+              <li class=" flex">
+                <span><?= $payment -> method()?></span>
+                <span>
+                  <a href="<?=$payment -> url() ? $payment -> url() : '#'?>">
+                    <?= $payment -> handle()?>
+                  </a>
+                </span>
+              </li>
+            <?php endforeach ?>
+          </ul>
+          <?= $page->footnotes()->markdown() ?>
+        <?php endif ?>
+        
 
       </div>  
     </div>
