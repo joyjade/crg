@@ -19,6 +19,10 @@ tabs:
         sections: 
           info: 
             type: pages
+            templates: 
+              - info
+              - review
+              - bookmarks
             headline: Info, Review, Bookmarks
           
 

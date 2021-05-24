@@ -6,7 +6,6 @@ options:
   url: false
   status: false
   delete: false
-  read: false
 
 columns: 
   left:
