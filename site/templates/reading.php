@@ -86,13 +86,17 @@
           <?php endif ?>
           <?php if($page->download_reading()->isNotEmpty()) :?>
             <li><a href="<?=$page->download_reading()->url()?>" target="_blank" class="oval">
-              Link to Reading*
+              Link to Reading<?= $page->hosted_elsewhere()->bool() ? '' : '*'?>
+
             </a></li>
+
+            <?php if(!$page->hosted_elsewhere()->bool()): ?>
             <h6 class="cti">
               *Hosted by <a href="http://criticaltheoryindex.org/" target="_blank">
                 Critical Theory Index
               </a>
             <h6>
+            <?php endif ?>
           <?php endif?>
 
         </ul>

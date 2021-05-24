@@ -30,6 +30,15 @@ columns:
         type: url
         help: Hosted at Critical Index Theory 
         label: Link to Reading
+        width: 2/3
+      hosted_elsewhere:
+          label: Not CTI?
+          type: toggle
+          width: 1/3
+          help: Hosted elsewhere
+          text: 
+            - "no"
+            - "yes"
       line-a:
         type: line
       

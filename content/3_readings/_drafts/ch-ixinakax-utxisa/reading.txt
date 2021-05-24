@@ -6,7 +6,7 @@ Author: Silvia Rivera Cusicanqui
 
 ----
 
-Subtitle: A reflection on the practices and discourses of decolonization
+Subtitle: A Reflection on the Practices and Discourses of Decolonization
 
 ----
 
@@ -22,7 +22,11 @@ Contributor: Carmen Amengual
 
 ----
 
-Download-reading: 
+Download-reading: http://www.adivasiresurgence.com/wp-content/uploads/2016/02/Silvia-Rivera-Cusicanqui-Chixinakax-Eng1.pdf
+
+----
+
+Hosted-elsewhere: true
 
 ----
 

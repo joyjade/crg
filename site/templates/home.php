@@ -8,8 +8,17 @@
 <main class="<?= $page ?> triptych">
   <div>
     <h1>    
-      <?php if ($currently_reading = $reading_list->currentlyReading()): ?>  
-        We’re currently reading <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
+      <?php if ($currently_readings = $reading_list->currentlyReading()): ?>  
+        We’re currently reading 
+        <?php foreach($currently_readings as $currently_reading): ?>
+          <?php if($currently_readings->count() > 1 && $currently_reading == $currently_readings->last()): ?>
+            and <?= snippet('book_title', ['rdg'=> $currently_reading])?>. 
+          <?php elseif($currently_readings->count() > 1 && $currently_reading != $currently_readings->last()): ?>
+            <?= snippet('book_title', ['rdg'=> $currently_reading])?>
+          <?php else: ?>
+            <?= snippet('book_title', ['rdg'=> $currently_reading])?>.
+          <?php endif ?>
+        <?php endforeach ?>
       <?php else: ?>
         We’re about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
@@ -28,7 +37,7 @@
     <h1>
       A few things we’ve read in the past are 
       <?php 
-        $selected_readings = $readings-> not($currently_reading)-> shuffle()-> limit(3);
+        $selected_readings = $readings-> not($currently_readings)-> shuffle()-> limit(3);
         $last = $selected_readings-> last();
         foreach($selected_readings as $reading): 
       ?>

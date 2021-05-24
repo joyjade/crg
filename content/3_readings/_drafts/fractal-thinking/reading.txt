@@ -26,6 +26,10 @@ Download-reading: https://accessions.org/article2/fractal-thinking/
 
 ----
 
+Hosted-elsewhere: true
+
+----
+
 Keywords: 
 
 ----

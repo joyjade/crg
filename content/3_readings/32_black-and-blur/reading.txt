@@ -26,6 +26,10 @@ Download-reading: http://criticaltheoryindex.org/assets/fred-moten-black-and-blu
 
 ----
 
+Hosted-elsewhere: false
+
+----
+
 Keywords: 
 
 ----
