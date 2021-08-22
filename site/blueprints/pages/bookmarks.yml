@@ -13,6 +13,7 @@ columns:
         headline: Published
         parent: site.find("bookmarks")
         layout: cards
+        template: bookmark
         image:
           query: page.image('front.jpg')
           back: white
@@ -24,4 +25,6 @@ columns:
         headline: Drafts 
         parent: site.find("bookmarks")
         status: draft
+        template: bookmark
+
   

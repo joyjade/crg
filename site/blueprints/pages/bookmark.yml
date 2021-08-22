@@ -1,4 +1,4 @@
-title: Reading
+title: Bookmark
 icon: 📖
 
 columns: 
@@ -9,6 +9,7 @@ columns:
         headline: Images
         type: files
         layout: cards
+        help: In order to work, please upload two jpgs named 'front.jpg' and 'back.jpg'
         image: 
           back: white
           ratio:  1/1
