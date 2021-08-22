@@ -2,7 +2,7 @@
 <main>
   <div class="<?= $page ?> triptych">
     <h3 class="header triptych uppercase"><?= $page-> title() ?></h3>
-    <?php snippet('bookmark_gallery', ['bookmarks' => $page->children()->listed()]) ?>
+    <?php snippet('bookmark_gallery', ['bookmarks' => $page->children()->listed(), 'bookmark' => '']) ?>
     <div class="content">
       <!-- <h4 class="uppercase">About </h4></br> -->
       <?= $page-> about()->kirbytext() ?>

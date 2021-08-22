@@ -11,11 +11,11 @@
         <h6><a href="<?= $backurl ?>">⟵ Back </a></h6>
       </div>
     </h3>
-    <?php snippet('bookmark_gallery', ['bookmarks' => $page->siblings()->listed()]) ?>
+    <?php snippet('bookmark_gallery', ['bookmarks' => $page->siblings()->listed(), 'bookmark' => $page]) ?>
     <div class="content flex">
       <div class="w25">
         <h1>$<?=$page-> price() ?></h1>
-        <h4  class="uppercase"><?=$page-> title() ?></h4>
+        <h4  class="uppercase">Minimum Donation</h4>
       </div>
       <div class="w75">
         <h1>&nbsp</h1>
