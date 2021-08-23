@@ -14,7 +14,7 @@ Soldout: false
 
 ----
 
-Description: We are pleased to continue the second installment of “Community Bookmarks” designed by Alex Delapena (laminated, archival print, 2021). All proceeds go towards the Community Reading Group lecture series which is free an open to the public.
+Description: We are pleased to continue the second installment of “Community Bookmarks” designed by Alex Delapena. All proceeds go towards the Community Reading Group lecture series which is free and open to the public.
 
 ----
 
@@ -24,10 +24,6 @@ Payment:
   method: Venmo
   handle: @Olivia-Leiter
   url: https://venmo.com/Olivia-Leiter
-- 
-  method: Cash App
-  handle: $CommunityReading
-  url: ""
 
 ----
 
@@ -41,6 +37,6 @@ Footnotes:
 
 Bio:
 
-Alex Delapena’s work focuses on scuffs, imprints and smears, material traces of movement in the built environment. Hues of gray blur into each other and coalesce into a tactile field, describing the experience of coming to understand the world through sensory engagement. 
+Alex Delapena’s work focuses on scuffs, imprints, and smears, material traces of movement in the built environment. Hues of gray blur into each other and coalesce into a tactile field, describing the experience of coming to understand the world through sensory engagement. 
 
-Delapena’s most recent exhibitions include After Afterlife at The Fulcrum Press, Los Angeles, Escape, Photographic Exploration Project at Tête Gallery, Berlin, Germany and Boundary Artifacts at 3331 Arts Chioyoda, Tokyo, Japan. Delapena lives and works in Los Angeles.
+Delapena’s most recent exhibitions include *After Afterlife* at The Fulcrum Press, Los Angeles, *Escape, Photographic Exploration Project* at Tête Gallery, Berlin, Germany, and *Boundary Artifacts* at 3331 Arts Chioyoda, Tokyo, Japan. Delapena lives and works in Los Angeles.
