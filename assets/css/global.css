@@ -261,7 +261,7 @@ nav .triptych.uppercase:hover, nav .active {
   color: white;
 }
 
-.content p, .details p, .review p {
+.content p, .details p, .reviews p {
   margin-bottom: 1.4rem;
 }
 
@@ -575,6 +575,20 @@ ul.gallery {
 
 .photo.reveal:hover {
   opacity: 1; 
+}
+
+
+/* Review, s */
+.reviews .notice {
+  margin-top: var(--margin);
+}
+
+.reviews .notice > div:first-of-type {
+  padding-top: 0.6rem;
+}
+
+.reviews .content {
+  padding: 1.5rem 3rem 1rem 1.75rem;
 }
 
 /* Ellipses Loader, from Jon Gacnik */ 
