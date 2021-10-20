@@ -21,7 +21,7 @@ tabs:
             type: pages
             templates: 
               - info
-              - review
+              - reviews
               - bookmarks
             headline: Info, Review, Bookmarks
           

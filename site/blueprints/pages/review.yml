@@ -1,11 +1,46 @@
-title: Review
-preset: page
-icon: ⛳
+title: Article
+type: page
 
-fields:
-  mission:
-    label: Mission Statement
-    type: textarea
-  editor:
-    label: Editor
-    type: text
+columns: 
+  main: 
+    width: 3/3
+    fields: 
+      author: 
+        width: 1/2
+        type: text
+        required: true
+      date:
+        width: 1/2
+        label: Date
+        type: date
+        default: today
+        display: MM-DD-YYYY
+      subtitle:
+        label: Intro
+        help: Subtitle or intro text before the article
+        type: textarea
+      
+      article: 
+        type: blocks
+        fieldsets:
+          text:
+            label: Text
+            type: group
+            fieldsets:
+              - heading
+              - text
+              - list
+          media:
+            label: Media
+            type: group
+            fieldsets:
+              - image
+              - video
+          code:
+            label: Code
+            type: group
+            open: false
+            fieldsets:
+              - code
+              - markdown
+      

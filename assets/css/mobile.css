@@ -240,6 +240,12 @@
   .gallery li:nth-of-type(2n) {
     border-right: none;
   }
+
+  /* Reviews */
+  .reviews div {
+    padding: 0.75rem;
+  }
+
 }
 
 @media screen and (max-width: 360px) {

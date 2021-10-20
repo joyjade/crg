@@ -1,0 +1,6 @@
+
+/* FOR ARTICLES */
+
+.article .content {
+  padding: var(--content-padding);
+}

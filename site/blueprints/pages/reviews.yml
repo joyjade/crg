@@ -1,0 +1,30 @@
+title: Counter
+icon: 
+type: pages
+
+options: 
+  status: false
+
+columns:
+  left:
+    width: 2/3
+    sections: 
+      drafts:
+        extends: sections/reviews 
+        headline: Drafts
+        status: draft
+      listed:
+        extends: sections/reviews 
+        headline: Live
+        status: listed
+
+  right:
+    width: 1/3
+    sections:
+      unlisted:
+        type: pages
+        headline: Other
+        status: unlisted
+        layout: list
+        parent: site.find("reviews")
+        template: mast
