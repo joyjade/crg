@@ -1,6 +1,35 @@
 
 /* FOR ARTICLES */
+.article {
+  --header-pdg: 1.7rem; 
+  --paragraph-pdg: 1.6rem; 
+}
 
 .article .content {
   padding: var(--content-padding);
+}
+
+.article-header {
+  padding-bottom: var(--header-pdg);
+}
+
+.article .subtitle {
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+.article .content .block-type-heading {
+  padding-top: var(--paragraph-pdg);
+}
+
+.article .content h4 { 
+  text-transform: uppercase;
+  margin-bottom: var(--header-pdg);
+  letter-spacing: 0.5px;
+  font-family: 'triptych-grotesque';
+}
+.article .content p { 
+  margin-bottom: var(--paragraph-pdg);
+  font-size: 1.25rem;
+  line-height: 1.25;
 }
