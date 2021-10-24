@@ -202,6 +202,44 @@
     margin-right: 0;
   }
 
+  /* Readings */
+  
+  ul.calendar li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+  .readings .past-events .header {
+    border-top: var(--dotted-border);
+    margin-top: 4rem;
+  }
+
+  .past-events time {
+    padding-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .head-line h3 {
+    justify-content: space-between;
+  }
+
+  .upcoming .image img {
+    margin: 15px 0;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .upcoming .image {
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  .readings button.load-more {
+    padding: 1.5rem 1rem;
+  }
+
   /* Annotations */
 
   .annotations, .annotation {

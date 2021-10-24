@@ -3,12 +3,28 @@
   <?php snippet('review_header', ['review' => $page]) ?>
   <div class="content">
     <?php foreach($page->children()->listed() as $article):?>
-      <div>
-        <h2>
-          <a href="<?=$article->url()?>">
-          <?= $article->title()?> by <?= $article->author()?>
-          </a>
-        </h2>
+      <div class="post">
+        <div class="head-line">
+          <h3><?= $article->date()->toDate('F d, Y')?></h3>
+        </div>
+        <div class="image">
+          <?php if ($cover = $article->cover()): ?>
+            <figure>
+              <a href="<?=$article->url()?>">
+                <?= $article->cover()->toFile()?>
+              </a>
+            </figure>
+          <?php endif ?>
+        </div>
+        <div class="event-line">
+          <div>
+            <!-- <span class="subheader">NEW</span> -->
+            <h2><a href="<?= $article-> url() ?>"><?= $article-> title() ?></a></h2>
+          </div>
+          <p class="location">
+            <span class="triptych-italick">By <?= $article->author()?></span>
+          </p>
+        </div>
       </div>
     <?php endforeach ?>
 

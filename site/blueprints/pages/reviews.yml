@@ -1,11 +1,22 @@
 title: Counter
-icon: 
+icon: 📰
 type: pages
+info: Journal about organizing, art, and why we invoke community
 
 options: 
   status: false
 
 columns:
+  top:
+    width: 3/3
+    sections:
+      info:
+        type: info
+        headline: Counter
+        theme: positive 
+        text: 
+          A journal on organizing, art, and why we invoke community
+
   left:
     width: 2/3
     sections: 
