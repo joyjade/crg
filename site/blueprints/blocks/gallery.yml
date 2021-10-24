@@ -1,0 +1,23 @@
+name: field.blocks.gallery.name
+icon: dashboard
+preview: gallery
+fields:
+  images:
+    label: field.blocks.gallery.images.label
+    type: files
+    multiple: true
+    layout: cards
+    size: tiny
+    empty: field.blocks.gallery.images.empty
+    uploads:
+      template: blocks/image
+    image:
+      ratio: 1/1
+  group_caption:
+    label: Group caption 
+    type: text
+    help: Don't forget to hide individual caption
+  hide_single_caption:
+    label: Hide Individual Caption
+    type: toggle
+    default: false

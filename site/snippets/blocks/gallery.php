@@ -4,8 +4,15 @@
     <?php foreach ($block->images()->toFiles() as $image): ?>
     <li>
       <?= $image ?>
-      <em><?= $image->caption() ?></em>
+      <?php if(! $block->hide_single_caption()->bool()): ?>  
+        <figcaption>
+          <?= $image->caption() ?>
+        </figcapion>
+      <?php endif ?>
     </li>
     <?php endforeach ?>
   </ul>
+  <figcaption>
+    <?= $block -> group_caption() -> toString() ?>
+  </figcaption>
 </figure>

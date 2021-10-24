@@ -9,6 +9,7 @@ body {
   --rows: 280px 1fr;
   --margin: 0.75rem;
   --content-padding: 1.5rem 3rem 1rem 1.75rem;
+  --img-pdg: 0.25rem;
 }
 
 *,
@@ -489,7 +490,7 @@ abbr[title] {
   height: auto;
   width: auto;
   border: 1px black dashed;
-  padding: 0.25rem;
+  padding: var(--img-pdg);
   margin: 15px 0; 
 }
 
@@ -580,11 +581,12 @@ ul.gallery {
 
 
 /* Review, s */
-.reviews .notice {
+.reviews .notice, .article .notice  {
   margin-top: var(--margin);
 }
 
-.reviews .notice > div:first-of-type {
+.reviews .notice > div:first-of-type, 
+.article .notice > div:first-of-type {
   padding-top: 0.6rem;
 }
 

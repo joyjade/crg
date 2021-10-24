@@ -1,18 +1,6 @@
 <?php snippet('nav') ?>
 <main class="<?= $page ?> triptych">
-  <div class="notice">
-    <div>
-      <h3>
-        <a href="<?= $page->url()?>">
-          <span class="uppercase"><?= $page -> title() ?>&nbsp;
-          <?= $page-> subtitle() ?></span>  
-        </a>
-      </h3>
-    </div>
-    <div>
-      <h3><a href="<?= $page -> find('mast') -> url()?>">About</a></h3>
-    </div>
-  </div> 
+  <?php snippet('review_header', ['review' => $page]) ?>
   <div class="content">
     <?php foreach($page->children()->listed() as $article):?>
       <div>

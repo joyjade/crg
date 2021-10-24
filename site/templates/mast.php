@@ -1,19 +1,6 @@
 <?php snippet('nav') ?>
 <main class="<?= $page ?> reviews triptych">
-  <div class="notice">
-    <div>
-      <h3>
-        <a href="<?= $page->parent()->url()?>">
-            <span class="uppercase"><?= $page->parent()->title() ?>&nbsp;
-            <?= $page-> parent() -> subtitle() ?></span>  
-        </a>
-      </h3>
-    </div>
-    <div>
-      <h3><a href="<?= $page -> url()?>"></a>
-        About</h3>
-    </div>
-  </div> 
+  <?php snippet('review_header', ['review' => $page->parent()]) ?>
   <div class="content"> 
       <h4 class="uppercase">About</h4></br>
       <?= $page -> mission() -> markdown() ?>
