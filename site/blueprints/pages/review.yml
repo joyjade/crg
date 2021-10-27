@@ -64,4 +64,10 @@ columns:
             open: false
             fieldsets:
               - code
+      endnotes:
+        type: textarea
+        label: Citations
+      bio:
+        type: textarea
+        label: Bio
       

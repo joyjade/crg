@@ -22,7 +22,15 @@
           <?= $block ?>
         </div>
       <?php endforeach ?>
+      <div class="endnotes">
+        <h6>Notes</h6>
+        <?= $page->endnotes()->kirbytext()?>
       </div>
+      <div class="bio">
+        <h6>author</h6>
+        <?= $page->bio()->kirbytext()?>
+      </div>
+    </div>
   </div>
 
 </main>
