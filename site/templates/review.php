@@ -11,7 +11,7 @@
         <p class="subtitle"><em><?= $page->subtitle() ?></em></p>
       </div>
       <?php if($page->cover()): ?>
-        <div class="featured-image">
+        <div class="featured-image m-hide">
           <?= $page->cover()->toFile()?>
         </div>
       <?php endif ?>

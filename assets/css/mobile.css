@@ -7,6 +7,7 @@
     box-sizing: border-box;
     position: relative;
     --margin: 0;
+    --mobile-pdg: 0.75rem;
   }
       
   .grid, footer {
@@ -202,9 +203,9 @@
     margin-right: 0;
   }
 
-  /* Readings */
+  /* Readings, Review Posts */
   
-  ul.calendar li {
+  ul.calendar li, .reviews .post {
     display: flex;
     flex-direction: column;
     padding: 0.75rem;
@@ -225,13 +226,13 @@
     justify-content: space-between;
   }
 
-  .upcoming .image img {
+  .upcoming .image img, .reviews .post .image img {
     margin: 15px 0;
     max-width: 100%;
     max-height: 100vh;
   }
 
-  .upcoming .image {
+  .upcoming .image, .reviews .post .image {
     width: 80%;
     align-self: flex-start;
   }
@@ -280,10 +281,57 @@
   }
 
   /* Reviews */
-  .reviews div {
-    padding: 0.75rem;
+  .reviews .notice, .article .notice {
+    border-top: none;
+    padding: 0;
   }
 
+  .reviews .notice > div, .article .notice > div {
+    padding: var(--mobile-pdg);
+  }
+
+  .article .article-header, .article .article-body {
+    padding: var(--mobile-pdg);
+    display: flex;
+    flex-flow: column;
+  }
+
+  .article .article-header > div:first-of-type {
+    margin-right: 0;
+  }
+
+  .article .article-header h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .article .article-body h4 {
+    font-size: 1.6rem;
+  }
+
+  .article .block-type-gallery .flex {
+    flex-flow: column;
+  }
+
+  .article .block-type-gallery .flex li:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .article .block-type-gallery .flex li {
+    width: 100%;
+    margin-bottom: var(--mobile-pdg);
+  }
+
+  .article .block-type-gallery .caption-top-padding figcaption {
+    padding-top: 0;
+  }
+
+  .article .article-body .block-type-list .double {
+    columns: 1;
+  }
+
+  .article-body .endnotes ol li {
+    word-break: break-word;
+  }
 }
 
 @media screen and (max-width: 360px) {

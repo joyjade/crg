@@ -8,7 +8,7 @@
       </h3>
     </div>
     <?php if($mast): ?>
-      <div>
+      <div class="m-hide">
         <h3><a href="<?= $review -> find('mast') -> url()?>">About</a></h3>
       </div>
     <?php endif ?>
