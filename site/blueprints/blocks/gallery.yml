@@ -21,3 +21,6 @@ fields:
     label: Hide Individual Caption
     type: toggle
     default: false
+  class:
+    label: Custom class
+    type: text

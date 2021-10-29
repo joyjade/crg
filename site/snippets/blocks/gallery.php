@@ -1,5 +1,5 @@
 <?php /** @var \Kirby\Cms\Block $block */ ?>
-<figure>
+<figure class="<?= $block->class() ?>">
   <ul class="flex">
     <?php foreach ($block->images()->toFiles() as $image): ?>
     <li>

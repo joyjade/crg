@@ -119,7 +119,7 @@ figcaption {
 }
 
 
-.block-type-gallery {
+.block-type-gallery figure {
   margin: 6rem 0;
 }
 
@@ -141,4 +141,24 @@ figcaption {
 
 .block-type-gallery .flex li:not(:last-of-type) {
   margin-right: 0.7rem;
+}
+
+.block-type-gallery .caption-top-padding figcaption {
+  padding-top: 4rem;
+}
+
+.block-type-gallery .caption-top-padding-2 figcaption {
+  padding-top: 2rem;
+}
+
+.block-type-gallery .clear-bottom {
+  margin-bottom: 0;
+}
+
+.block-type-gallery .wrap-4 .flex {
+  flex-wrap: wrap;
+}
+
+.block-type-gallery .wrap-4 li {
+  width: 30%;
 }
