@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 <main class="<?= $page ?> triptych">
-  <?php snippet('review_header', ['review' => $page]) ?>
+  <?php snippet('review_header', ['review' => $page, 'mast' => true]) ?>
   <div class="content">
     <?php foreach($page->children()->listed() as $article):?>
       <div class="post">

@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 <main class="article triptych">
-  <?php snippet('review_header', ['review' => $page->parent()]) ?>
+  <?php snippet('review_header', ['review' => $page->parent(),  'mast' => false]) ?>
 
   <div class="content">
     <div class="article-header <?= $page->cover() ? "flex" : ""?>">

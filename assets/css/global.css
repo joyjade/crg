@@ -330,7 +330,7 @@ h3.header {
   border-bottom: var(--dotted-border);
 }
 
-.notice > div:last-of-type {
+.notice > div:nth-of-type(2) {
   border-left: var(--dotted-border);
  }
 
@@ -690,7 +690,8 @@ ul.gallery {
 }
 
 .reviews .notice > div:first-of-type, 
-.article .notice > div:first-of-type {
+.article .notice > div:first-of-type, 
+.mast .notice > div:first-of-type {
   padding-top: 0.6rem;
 }
 
