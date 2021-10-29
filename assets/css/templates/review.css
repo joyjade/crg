@@ -162,3 +162,7 @@ figcaption {
 .block-type-gallery .wrap-4 li {
   width: 30%;
 }
+
+.indented {
+  margin-left: var(--paragraph-pdg);
+}
