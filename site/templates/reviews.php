@@ -2,6 +2,12 @@
 <main class="<?= $page ?> triptych">
   <?php snippet('review_header', ['review' => $page, 'mast' => true]) ?>
   <div class="content">
+    <div class="post issue">
+      <div>
+        <h1 class="header"><?= $page->issue_title()?></h1>
+        <?= $page-> intro() -> kirbytext() ?>
+      </div>
+    </div>
     <?php foreach($page->children()->listed() as $article):?>
       <div class="post">
         <div class="head-line">
