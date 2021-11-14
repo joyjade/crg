@@ -22,10 +22,12 @@
           <?= $block ?>
         </div>
       <?php endforeach ?>
-      <div class="endnotes">
-        <h6>Notes</h6>
-        <?= $page->endnotes()->kirbytext()?>
-      </div>
+      <?php if ($page->endnotes()->isNotEmpty()) :?>
+        <div class="endnotes">
+          <h6>Notes</h6>
+          <?= $page->endnotes()->kirbytext()?>
+        </div>
+      <?php endif ?>
       <div class="bio">
         <h6>author</h6>
         <?= $page->bio()->kirbytext()?>

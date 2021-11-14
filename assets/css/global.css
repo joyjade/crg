@@ -702,15 +702,17 @@ ul.gallery {
 .reviews .post.issue {
   display: flex;
   flex-flow: column;
-  padding-right: 10rem;
+}
+
+@media screen and (min-width: 440px) {
+  .reviews .post.issue {
+    padding-right: 10rem;
+  }
 }
 
 .reviews .post.issue .header {
   padding-bottom: 1.5rem;
   padding-top: 4rem;
-  font-family: "triptych-italick";
-  letter-spacing: -0.5px;
-  font-style: normal;
 }
 
 /* Ellipses Loader, from Jon Gacnik */ 

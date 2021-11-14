@@ -45,6 +45,7 @@
   border: var(--dotted-border); 
   padding: var(--img-pdg);
   max-height: 300px;
+  max-width: 280px;
   width:auto;
   float: right;
 }
@@ -71,7 +72,7 @@ figcaption {
 }
 
 .endnotes {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .article .content .bio p, .article .content .bio p {

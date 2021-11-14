@@ -4,6 +4,7 @@
   <div class="content">
     <div class="post issue">
       <div>
+        <h6>Issue #1</h6>
         <h1 class="header"><?= $page->issue_title()?></h1>
         <?= $page-> intro() -> kirbytext() ?>
       </div>
