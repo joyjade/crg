@@ -24,11 +24,7 @@ Article: [{"content":{"text":"<p>During the winter of 2020, the United Auto Work
 
 ----
 
-Endnotes:
-
-- UAW 2865:  represents student employees—Teaching Assistants, Graduate Student Instructors, Tutors, and Readers—across the University of California system. 
-- COLA:
-- UCPD
+Endnotes: 
 
 ----
 
