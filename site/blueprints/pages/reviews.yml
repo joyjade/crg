@@ -1,0 +1,48 @@
+title: Counter
+icon: 📰
+type: pages
+info: Journal about organizing, art, and why we invoke community
+
+options: 
+  status: false
+
+columns:
+  top:
+    width: 3/3
+    sections:
+      info:
+        type: info
+        headline: Counter
+        theme: positive 
+        text: 
+          A journal on organizing, art, and why we invoke community  
+    fields: 
+      issue_title:
+        type: text
+        label: Issue Title
+      intro:
+        type: textarea
+
+
+  left:
+    width: 2/3
+    sections: 
+      drafts:
+        extends: sections/reviews 
+        headline: Drafts
+        status: draft
+      listed:
+        extends: sections/reviews 
+        headline: Live
+        status: listed
+
+  right:
+    width: 1/3
+    sections:
+      unlisted:
+        type: pages
+        headline: Other
+        status: unlisted
+        layout: list
+        parent: site.find("reviews")
+        template: mast

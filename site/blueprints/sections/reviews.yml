@@ -1,0 +1,8 @@
+type: pages
+headline: Article
+layout: list
+text: "{{ page.title }} — {{ page.author }}"
+parent: site.find("reviews")
+template: review
+empty: No readings yet
+flip: true

@@ -1,7 +1,3 @@
-.readings h3.header {
-  border-bottom: none;
-}
-
 .readings button.load-more {
   font-family: inherit;
   padding: 0.5rem 1.5rem;
@@ -9,68 +5,20 @@
   cursor: pointer;
 }
 
-ul.calendar li {
-  padding: 1rem 1.5rem;
-}
-
-ul.calendar li {
-  border-top: var(--dotted-border);
-  display: grid;
-  grid-template-columns: 30% 4fr 1fr;
-}
-
-ul.calendar li:last-of-type {
-  margin-bottom: var(--margin);
-}
-
-ul.calendar.upcoming li {
-  grid-template-rows: 100px auto 80px;
-}
-
-.upcoming h2 {
-  grid-row: 1;
-  grid-column: 1/3;
-}
-
-.upcoming .head-line {
-  grid-column: 1/3;
-}
-
-.upcoming h3, .reading .header h3 {
-  display: flex;
-}
-
-.upcoming .event-line .subheader {
-  padding-bottom: 0.75rem;
-}
-
-
 .past-events .image img {
   max-width: 100px;
   max-height: 100px;
 }
 
-.event-line {
-  font-size: 1.25rem;
-  position: relative;
-  grid-column: 2/4;
-  grid-row: 1;
+.past-events h2 {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'triptych-grotesque';
+  padding-left: 1rem;
 }
-
-.event-line h3 {
-  padding-bottom: 0.75rem;
-}
-
-.event-line h3:hover {
-  font-family: triptych-italick;
-}
-.event-line .location {
-  margin-bottom: 0.5rem;
-  padding-top: 1.25rem;
-  bottom: 0;
-}
-
-.event-line > div:nth-child(2) { flex: auto }
 
 .past-events h2 {
   padding: 1.5rem;
@@ -81,93 +29,3 @@ ul.calendar.upcoming li {
   font-size: 1.25rem;
   padding-bottom: 0.25rem;
 }
-
-ul.calendar header {
-	padding: 0.7rem;
-}
-
-.upcoming .event-line {
-  grid-row: 2;
-  grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.featured {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.upcoming .image {
-  grid-row: 2;
-  grid-column: 1;
-  justify-self: end;
-  align-self: center;
-}
-
-.upcoming .image img {
-  margin: 0 30px;
-}
-
-.calendar li:hover img {
-  background-color: var(--main-color);
-}
-
-@media screen and (max-width: 440px) {
-  ul.calendar li {
-    display: flex;
-    flex-direction: column;
-    padding: 0.75rem;
-  }
-  .readings .past-events .header {
-    border-top: var(--dotted-border);
-    margin-top: 4rem;
-  }
-
-  .past-events time {
-    padding-bottom: 1rem;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  .head-line h3 {
-    justify-content: space-between;
-  }
-
-  .past-events h2 {
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'triptych-grotesque';
-    padding-left: 1rem;
-  }
-
-  .upcoming .image img {
-    margin: 15px 0;
-    max-width: 100%;
-    max-height: 100vh;
-  }
-
-  .upcoming .image {
-    width: 80%;
-    align-self: flex-start;
-  }
-
-  .readings button.load-more {
-    padding: 1.5rem 1rem;
-  }
-
-  
-}
-
-@media screen and (min-width: 440px) {
-  .upcoming .label, .reading .header .label {
-    margin-left: 1rem;
-  }
-}
-

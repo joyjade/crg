@@ -1,0 +1,14 @@
+title: About
+preset: page
+icon: ⛳
+
+pages: false
+
+
+fields:
+  mission:
+    label: Mission Statement
+    type: textarea
+  editor:
+    label: Editor
+    type: text

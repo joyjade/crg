@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 440px) {
   .home > div:first-of-type {
-    padding: 1.5rem 3rem 1rem 1.75rem;
+    padding: var(--content-padding);
     flex-grow: 1;
   }
 }
