@@ -145,13 +145,16 @@ People:
   url: ""
   role: Editor
 - 
-  name: Joy / Jade
-  url: ""
+  name: Joy Park
+  url: https://joy-jade.com
   role: 'Designer & Programmer'
 - 
-  name: and Hailey Loman
+  name: Hailey Loman
   url: ""
   role: ""
+- 
+  name: and Zach Whitworth
+  url: ""
 
 ----
 

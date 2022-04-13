@@ -26,5 +26,5 @@ Byline:
 
 - 
   action: 'Written by '
-  name: Joy / Jade
+  name: Joy Park
   date: 2021-04-11

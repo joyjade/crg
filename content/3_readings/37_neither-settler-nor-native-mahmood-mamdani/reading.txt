@@ -54,7 +54,7 @@ Location: Zoom/In person
 
 ----
 
-Current: true
+Current: false
 
 ----
 

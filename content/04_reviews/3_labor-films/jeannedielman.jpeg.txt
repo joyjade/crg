@@ -1,0 +1,17 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Link: 
+
+----
+
+License: 
+
+----
+
+Template: blocks/image
