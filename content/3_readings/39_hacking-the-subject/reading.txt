@@ -54,8 +54,16 @@ Location: Zoom
 
 ----
 
-Current: true
+Current: false
 
 ----
 
 Category: 
+
+----
+
+Custom-time: 
+
+----
+
+Show-date: false
