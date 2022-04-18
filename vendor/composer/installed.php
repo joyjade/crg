@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '879fd1029b753eacc65710743bb2ef8e34dd098c',
+        'reference' => '20984dc686bbc36cb10d8456b934723c3b1180c2',
         'name' => 'getkirby/plainkit',
         'dev' => true,
     ),
@@ -52,7 +52,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '879fd1029b753eacc65710743bb2ef8e34dd098c',
+            'reference' => '20984dc686bbc36cb10d8456b934723c3b1180c2',
             'dev_requirement' => false,
         ),
         'laminas/laminas-escaper' => array(
