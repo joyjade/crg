@@ -23,5 +23,8 @@
     },
     "config": {
         "optimize-autoloader": true
+    },
+    "extra": {
+        "kirby-cms-path": "kirby"
     }
 }
