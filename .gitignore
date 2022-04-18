@@ -28,6 +28,11 @@ Icon
 # ---------------
 .user.ini
 
+# Composer files
+# ---------------
+/kirby
+/vendor
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
