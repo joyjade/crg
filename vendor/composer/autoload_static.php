@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69
+class ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667
 {
     public static $files = array (
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
@@ -71,8 +71,8 @@ class ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/kirby/src',
-            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            1 => __DIR__ . '/../..' . '/kirby/src',
         ),
     );
 
@@ -412,11 +412,11 @@ class ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit1a574e824961b0ff4ae11488cb07bc69::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit70e33fd5036bb33e11e5bb35c7a29667::$classMap;
 
         }, null, ClassLoader::class);
     }
