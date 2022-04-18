@@ -6,7 +6,8 @@
     <div class="header">
       <div class="w70">
         <h4 class="uppercase">
-          <?= $date ->toDate('F Y') ?>
+          <?php $page->show_date()->bool() ? $date = $date->toDate('F d, Y') : $date = $date ->toDate('F Y') ?>
+          <?= $date ?>
         </h4>
         <h2>
           <a href="<?= $page-> url() ?>"><?= $page-> fullTitle() ?>,</a>
@@ -74,7 +75,13 @@
           <?php if($page->current()->bool()) :?>
             <li><span class="label">Currently Reading</span></li>
           <?php endif ?>
-          <li><span>Sunday, 7-9PM</span></li>
+          <li>
+            <?php if($page->custom_time()->isNotEmpty()) :?> 
+              <span><?= $page->custom_time() ?></span>
+            <?php else :?>
+              <span>Sunday, 7-9PM</span>
+            <?php endif ?>
+          </li>
           <?php if ($page->category()->isNotEmpty()) :?>
             <li><span class="subheader"><?=$page->category()?><span></li>
           <?php endif ?>

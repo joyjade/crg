@@ -134,6 +134,15 @@
   transform: rotate(315deg);
 } 
 
+.content a {
+  color: var(--main-color);
+}
+
+.content a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
 @media screen and (max-width: 440px) {
   .reading {
     order: 2;

@@ -1,7 +1,8 @@
 <li data-src="<?= $reading-> cover() ? $reading-> cover()-> url() : '' ?>">
     <div class="head-line">
       <h3>
-        <?= $reading->date()->toDate('F Y')?>
+        <?php $reading->show_date()->bool() ? $date = $reading->date()->toDate('F d, Y') : $date = $reading->date() ->toDate('F Y') ?>
+        <?= $date?>
         <?php if ($reading->current()->bool()) :?>
           <span class="label subheader">currently reading</span>
         <?php endif ?>
@@ -24,10 +25,10 @@
           <span class="triptych-italick"><?= $reading-> author()?></span>  
         </h2>
       </div>
-      <p class="location">
+      <!-- <p class="location">
         On <?= $reading->location()->isNotEmpty() ?  $reading->location()->html() : ''?>, 
         <span class="tint"><?= Html::email(page('info')->email(), 'Email to Join') ?></span> 
-      </p>
+      </p> -->
     </div>
     
 </li>
