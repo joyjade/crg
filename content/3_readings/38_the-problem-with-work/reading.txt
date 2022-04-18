@@ -26,7 +26,7 @@ Download-reading: https://bookshop.org/books/the-problem-with-work-feminism-marx
 
 ----
 
-Hosted-elsewhere: false
+Hosted-elsewhere: true
 
 ----
 
@@ -59,3 +59,11 @@ Current: false
 ----
 
 Category: 
+
+----
+
+Custom-time: 
+
+----
+
+Show-date: false
