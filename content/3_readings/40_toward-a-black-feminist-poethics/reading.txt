@@ -10,19 +10,19 @@ Subtitle: The Quest(ion) of Blackness Toward the End of the World
 
 ----
 
-Note: 
+Note: *“From without the World as we know it, where the Category of Blackness exists in/as thought—always already a referent of commodity, an object, and the other, as fact beyond evidence—a Poethics of Blackness would announce a whole range of possibilities for knowing, doing, and existing.”*
 
 ----
 
-Blurb: 
+Blurb: My favorite structure for my life is when it's 1/3 volunteering (investing in community), and 1/3 making art (praxis), and 1/3 meandering research (burning questions). For the last third, I wish to contemplate ideas like accountability, vulnerability, and neurodivergence. And I hope to bring these terms to bear on questions of what it might look like to foster everyday relationships that further the possibility of an anti-capitalist future.
 
 ----
 
-Contributor: 
+Contributor: Cedric Tai
 
 ----
 
-Download-reading: 
+Download-reading: https://d1wqtxts1xzle7.cloudfront.net/40226400/Toward_a_Black_Feminist_Poethics_-_The_Black_Scholar__Summer_2014-libre.pdf?1448077794=&response-content-disposition=attachment%3B+filename%3DToward_a_Black_Feminist_Poethics_The_Que.pdf&Expires=1650310041&Signature=D5Mi9D19vcQWYHW8znIB7FOMR~3Kt8w2zGbP5qnXwtNCP4H7tnmN3748Vq8q0TcVv9uORQuMIP~pQ0xJEx18bIgG9IP6NZOP4asYlyZYEZyj5LTOcSNnSllXMthvZaVHpzmlth3yc4w5vgFlfmAvQ7u8W5OVmNP18DO32cZma0F1c7XwxwHq0WrN3LSDKuT0~jb8IH81-X4eTykfb6ePlwgWoQDCR~kJyt1nysJh0X-srNzrQkJ0V3~5xdVh2umpb~s5sBMSu7kd24YZDFenj1OkfgwrfCPtlJpDvC2oInkFX7JHS1aWOWRqgPLwRCdfgqPc4RdjAoDa61a-priG3w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 
 ----
 
@@ -54,7 +54,7 @@ Location: Zoom
 
 ----
 
-Current: true
+Current: false
 
 ----
 

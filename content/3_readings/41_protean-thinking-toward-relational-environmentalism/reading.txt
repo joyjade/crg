@@ -64,7 +64,7 @@ Location: Los Angeles Contemporary Archive
 
 ----
 
-Current: false
+Current: true
 
 ----
 
