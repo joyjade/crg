@@ -14,7 +14,7 @@ History:
 
 In 2018, the Community Reading Group began as a general interest study group to explore the continental response to the communitarian debates in the Anglophone world throughout the 1980s and 90s. Our first meeting was supported by the Liberation School of Los Angeles and generously hosted by Skira Martinez, Director of CIELO Galleries and Studios in Boyle Heights. (The impetus to form this initial meet-up would have never come to fruition if it were not for the encouragement of artist Hans Kuzmich, to whom a special *debt* is owed.) In 2019, we moved to our permanent home at the Los Angeles Contemporary Archive in Chinatown. 
 
-Over time our numbers ebbed and flowed; nevertheless, a steady stream of new arrivals kept our philosophical pursuits alive. Today, our focus has shifted away from communitarianism and toward philosophies of freedom, histories of emancipatory struggle, and theorizations of the commons (and its appositional under-). We have amassed a consistent and committed group of intellectuals who attend our weekly seminar and, in their respective ways, integrate the question of community in their praxis. In addition, our focus has broadened beyond the mere discussion of scholarship and is now aimed toward discursive production. While many voices have shaped and perfected our commitment to one another, some deserve to be amplified in particular; they are Olivia Leiter,  Joy / Jade, Hailey Loman, and Michael Berlin.
+Over time our numbers ebbed and flowed; nevertheless, a steady stream of new arrivals kept our philosophical pursuits alive. Today, our focus has shifted away from communitarianism and toward philosophies of freedom, histories of emancipatory struggle, and theorizations of the commons (and its appositional under-). We have amassed a consistent and committed group of intellectuals who attend our weekly seminar and, in their respective ways, integrate the question of community in their praxis. In addition, our focus has broadened beyond the mere discussion of scholarship and is now aimed toward discursive production. While many voices have shaped and perfected our commitment to one another, some deserve to be amplified in particular; they are Olivia Leiter,  Joy / Jade, Hailey Loman, Michael Berlin, Eve Ruether, and Zach Whitworth.
 
 ----
 
@@ -138,11 +138,11 @@ People:
 
 - 
   name: Olivia Leiter
-  url: ""
+  url: https://www.olivialeiter.com/
   role: Curator (Community Bookmarks)
 - 
   name: Michael Berlin
-  url: ""
+  url: https://www.mpberlin.com/
   role: Editor
 - 
   name: Joy Park
@@ -150,11 +150,14 @@ People:
   role: 'Designer & Programmer'
 - 
   name: Hailey Loman
-  url: ""
+  url: http://haileyloman.com/
   role: ""
 - 
-  name: and Zach Whitworth
+  name: Evelena Ruether
   url: ""
+- 
+  name: and Zach Whitworth
+  url: https://zachwhitworth.com/
 
 ----
 
@@ -163,7 +166,7 @@ Steward:
 - 
   name: Andrew McNeely
   group: Chinatown Group
-  url: ""
+  url: https://andrew-mcneely.com/
 
 ----
 
