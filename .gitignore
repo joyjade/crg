@@ -58,3 +58,8 @@ Icon
 # License
 # ---------------
 /site/config/.license
+
+
+# Docker
+# ---------------
+docker-compose.yml
