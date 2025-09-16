@@ -38,7 +38,7 @@ Hosted-elsewhere: true
 
 ----
 
-Keywords: family
+Keywords: family, communism
 
 ----
 
@@ -46,7 +46,15 @@ Interlocutors:
 
 ----
 
-Links: 
+Links:
+
+- 
+  description: 'Book: Alexandra Kollontai, "Selected Writings"'
+  url: 'https://ia601506.us.archive.org/17/items/selected-writings-alexandra-kollontai-alix-holt-z-lib.org/Selected%20Writings%20%28Alexandra%20Kollontai%20Alix%20Holt%29%20%28z-lib.org%29.pdf'
+- 
+  description: 'Book: Sophie Lewis, "Abolish the Family"'
+  url: >
+    https://www.versobooks.com/products/2890-abolish-the-family
 
 ----
 

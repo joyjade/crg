@@ -48,7 +48,16 @@ Interlocutors:
 
 ----
 
-Links: 
+Links:
+
+- 
+  description: 'Book: Walter Benjamin, "Illuminations"'
+  url: >
+    https://archive.org/details/IlluminationsEssaysAndReflections
+- 
+  description: 'Book: Lucien Febvre & Henri-Jean Martin, "The Coming of the Book"'
+  url: >
+    https://archive.org/details/comingofbookimpa0000febv
 
 ----
 
@@ -64,7 +73,7 @@ Location: Zoom
 
 ----
 
-Current: true
+Current: false
 
 ----
 

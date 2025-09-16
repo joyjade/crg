@@ -34,11 +34,11 @@ Download-reading: https://libcom.org/files/Murray_Bookchin_The_Ecology_of_Freedo
 
 ----
 
-Hosted-elsewhere: false
+Hosted-elsewhere: true
 
 ----
 
-Keywords: 
+Keywords: ecology, anarchism, marxism, socialism, environmentalism, nature, philosophy
 
 ----
 
@@ -46,7 +46,16 @@ Interlocutors:
 
 ----
 
-Links: 
+Links:
+
+- 
+  description: 'Book: Ernst Bloch, "The Principle of Hope"'
+  url: >
+    https://archive.org/details/principleofhope0001bloc/page/n5/mode/2up
+- 
+  description: 'Book: Hans Jonas, "The Phenomenon of Life"'
+  url: >
+    https://archive.org/details/phenomenonoflife0000jona/page/n5/mode/2up
 
 ----
 
@@ -67,3 +76,11 @@ Current: false
 ----
 
 Category: 
+
+----
+
+Custom-time: 
+
+----
+
+Show-date: false
