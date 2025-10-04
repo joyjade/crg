@@ -99,7 +99,7 @@
           <?php endforeach ?>
           <br/><br/>
           <h3>Credits</h3>
-          Website design and build&nbsp;&nbsp; ⟶  &nbsp;&nbsp;<a href="https://joy-jade.com" target="_blank">Joy Park</a>
+          Website design and build&nbsp;&nbsp; ⟶  &nbsp;&nbsp;<a href="https://joy-jade.com" target="_blank">JJ</a>
           </div>  
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </section>
