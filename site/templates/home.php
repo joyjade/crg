@@ -2,11 +2,17 @@
 
 <?php 
   $reading_list = page('readings'); 
+  $currently_readings = $reading_list->currentlyReading();
   if ($readings = page('readings')->children()->listed()): 
 ?>
 
 <main class="<?= $page ?> triptych">
   <div>
+
+    <?php snippet('home_intro', [
+      'reading_list'       => $reading_list,
+      'currently_readings' => $currently_readings ?? null
+    ]) ?>
     <h1>    
       <?php if ($currently_readings = $reading_list->currentlyReading()): ?>  
         We’re currently reading 
