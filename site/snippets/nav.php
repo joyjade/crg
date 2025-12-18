@@ -18,6 +18,7 @@
 			</div>
 			<div class="m-nav">
 				<?php foreach ($site->children()->listed() as $item): ?>
+					<?php if ($item->slug() === 'annotations') continue; ?>
 					<?php if($item == page('info')): ?>
 						<div class="triptych uppercase" id='info'><?=$item->title()?></div>
 					<?php else: ?>
