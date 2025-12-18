@@ -28,15 +28,9 @@
       <?php else: ?>
         We’re about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
-        Usually, we meet at LACA. 
-        In the meantime, 
-        <span  class="tooltip">
-          join us
-          <span class="tooltip-text">
-            Email communityreadinggroup@gmail.com to receive instructions for our upcoming meeting
-          </span>
-        </span> 
-        every <span class="underline">Sunday, 7-9PM PST.</span>
+        Our primary study group meets weekly on Sundays from 7–9pm (Pacific Time).
+To join, email <a href="mailto:communityreadinggroup@gmail.com">communityreadinggroup@gmail.com</a>.
+
     </h1>
     <br/><br/>
 
