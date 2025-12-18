@@ -92,10 +92,11 @@ nav {
 	font-size: 1.8rem;
 	display: inline-block;
 	width: auto;	
-  height: auto;	
+  height: 100%;	
 }
 
 nav .dotted {
+  height: 100%;
 	padding: 10px 20px 16px;
 }
 
