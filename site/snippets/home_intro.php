@@ -9,7 +9,7 @@
     Welcome to <em>CRG</em>, a community literacy platform, where folks share in study to become more thoughtful allies, 
 organizers, and dissenters.
 
-<br />
+<br /><br />
 
   </h1>
 </div>
