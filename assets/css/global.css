@@ -102,8 +102,9 @@ nav .dotted {
 main {
 	grid-column: 2;
 	grid-row: 1 / span 2;
-	height: 100vh;;
-	/* overflow-y: auto; */
+	height: 100vh;
+	overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
 	flex: 1;
 	position: relative;
 }
