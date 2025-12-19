@@ -28,7 +28,7 @@
       <?php else: ?>
         We’re about to read <?= snippet('book_title', ['rdg'=> $reading_list->children()->listed()->last()])?>.
       <?php endif ?>
-        Our primary study group meets weekly on Sundays from 7–9pm (Pacific Time).
+        Our primary study group meets weekly on Sundays via Zoom from 7–9pm (Pacific Time).
 To join, email <a href="mailto:communityreadinggroup@gmail.com">communityreadinggroup@gmail.com</a>.
 
     </h1>
